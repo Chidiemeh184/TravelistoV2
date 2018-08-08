@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92298045EE947EB707E84282 /* Pods_TravelistoV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB689482D521EFBA9058CBE /* Pods_TravelistoV2.framework */; };
 		EF255F7C21173E2B00942F13 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255F7B21173E2B00942F13 /* test2.swift */; };
+		EF255F7E21175F1F00942F13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF255F7D21175F1F00942F13 /* GoogleService-Info.plist */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82B2116605D00F179B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C82A2116605D00F179B9 /* ViewController.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
@@ -18,7 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB5AA9B267CE4D8B9E57B38F /* Pods-TravelistoV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelistoV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2.debug.xcconfig"; sourceTree = "<group>"; };
+		C42EA45687200C73AB7EE5C8 /* Pods-TravelistoV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelistoV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2.release.xcconfig"; sourceTree = "<group>"; };
+		DBB689482D521EFBA9058CBE /* Pods_TravelistoV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelistoV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF255F7B21173E2B00942F13 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
+		EF255F7D21175F1F00942F13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82A2116605D00F179B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92298045EE947EB707E84282 /* Pods_TravelistoV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26750A1F1EB3E885359ADBF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBB689482D521EFBA9058CBE /* Pods_TravelistoV2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		285BAA2F186E44D4D5CB6B4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB5AA9B267CE4D8B9E57B38F /* Pods-TravelistoV2.debug.xcconfig */,
+				C42EA45687200C73AB7EE5C8 /* Pods-TravelistoV2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EFA8C81C2116605D00F179B9 = {
 			isa = PBXGroup;
 			children = (
 				EFA8C8272116605D00F179B9 /* TravelistoV2 */,
 				EFA8C8262116605D00F179B9 /* Products */,
+				285BAA2F186E44D4D5CB6B4E /* Pods */,
+				26750A1F1EB3E885359ADBF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +93,7 @@
 				EFA8C82F2116605F00F179B9 /* Assets.xcassets */,
 				EFA8C8312116605F00F179B9 /* LaunchScreen.storyboard */,
 				EFA8C8342116605F00F179B9 /* Info.plist */,
+				EF255F7D21175F1F00942F13 /* GoogleService-Info.plist */,
 				EFA8C83C21172C7400F179B9 /* test.swift */,
 				EF255F7B21173E2B00942F13 /* test2.swift */,
 			);
@@ -80,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFA8C8372116605F00F179B9 /* Build configuration list for PBXNativeTarget "TravelistoV2" */;
 			buildPhases = (
+				AB1891D6859EB3CFC79B7D7B /* [CP] Check Pods Manifest.lock */,
 				EFA8C8212116605D00F179B9 /* Sources */,
 				EFA8C8222116605D00F179B9 /* Frameworks */,
 				EFA8C8232116605D00F179B9 /* Resources */,
+				262D9F2F6D753E96C0471677 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,12 +161,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA8C8332116605F00F179B9 /* LaunchScreen.storyboard in Resources */,
+				EF255F7E21175F1F00942F13 /* GoogleService-Info.plist in Resources */,
 				EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */,
 				EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		262D9F2F6D753E96C0471677 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1891D6859EB3CFC79B7D7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TravelistoV2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EFA8C8212116605D00F179B9 /* Sources */ = {
@@ -290,15 +361,13 @@
 		};
 		EFA8C8382116605F00F179B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5AA9B267CE4D8B9E57B38F /* Pods-TravelistoV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -308,15 +377,13 @@
 		};
 		EFA8C8392116605F00F179B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42EA45687200C73AB7EE5C8 /* Pods-TravelistoV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
