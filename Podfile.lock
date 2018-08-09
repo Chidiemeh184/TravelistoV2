@@ -21,9 +21,11 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - RevealingSplashView (0.5.0)
 
 DEPENDENCIES:
   - Firebase/Core
+  - RevealingSplashView
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -33,6 +35,7 @@ SPEC REPOS:
     - FirebaseInstanceID
     - GoogleToolboxForMac
     - nanopb
+    - RevealingSplashView
 
 SPEC CHECKSUMS:
   Firebase: d6861c2059d8c32d1e6dd8932e22ada346d90a3a
@@ -41,7 +44,8 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 83e0040351565df711a5db3d8ebe5ea21aca998a
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
 
-PODFILE CHECKSUM: 4fd868011e58e5ad7641649d6eb047500368cb25
+PODFILE CHECKSUM: b0a52bb3486380b4f6c0bf33619e5947eb4d260d
 
 COCOAPODS: 1.5.0

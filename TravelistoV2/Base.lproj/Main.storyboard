@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="szx-5X-BbU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Revealing Splash View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RevealingSplashViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +33,137 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="Wpg-L6-E3s">
+            <objects>
+                <viewController id="szx-5X-BbU" customClass="OnboardingViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9mX-R3-mk1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WXG-JZ-whn">
+                                <rect key="frame" x="0.0" y="139" width="375" height="357"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="cod-RU-Y3i">
+                                    <size key="itemSize" width="366" height="344"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="dfs-1R-Erz" customClass="OnboardingCollectionViewCell" customModule="TravelistoV2" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="6.5" width="366" height="344"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="366" height="344"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan your trivel anywhere, anytime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Bdg-0D-OJz">
+                                                    <rect key="frame" x="43" y="315" width="280" height="19"/>
+                                                    <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="16"/>
+                                                    <color key="textColor" name="TravelistoBlack"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="1000" verticalHuggingPriority="251" image="travel-onboarding-1" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-mE-IJP">
+                                                    <rect key="frame" x="43" y="20" width="280" height="279"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="1ce-mE-IJP" secondAttribute="height" multiplier="280:279" id="nu0-vX-1PU"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Bdg-0D-OJz" firstAttribute="leading" secondItem="dfs-1R-Erz" secondAttribute="leading" constant="43" id="4YD-ys-cYy"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bdg-0D-OJz" secondAttribute="bottom" constant="10" id="CwT-Ci-Z8R"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bdg-0D-OJz" secondAttribute="trailing" constant="43" id="Eci-iV-1hx"/>
+                                            <constraint firstItem="1ce-mE-IJP" firstAttribute="leading" secondItem="dfs-1R-Erz" secondAttribute="leading" constant="43" id="Zeu-vK-d2s"/>
+                                            <constraint firstItem="Bdg-0D-OJz" firstAttribute="top" secondItem="1ce-mE-IJP" secondAttribute="bottom" constant="16" id="d6D-Im-vpX"/>
+                                            <constraint firstItem="1ce-mE-IJP" firstAttribute="top" secondItem="dfs-1R-Erz" secondAttribute="top" constant="20" id="dIT-oj-H42"/>
+                                            <constraint firstAttribute="trailing" secondItem="1ce-mE-IJP" secondAttribute="trailing" constant="43" id="nLM-iK-ceH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="onboardImageView" destination="1ce-mE-IJP" id="YaI-CC-5BH"/>
+                                            <outlet property="onboardMessageLabel" destination="Bdg-0D-OJz" id="eSD-my-Zpq"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Text" translatesAutoresizingMaskIntoConstraints="NO" id="a8Z-ec-Oci">
+                                <rect key="frame" x="119" y="62" width="137" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already on Travelisto? Log in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isG-gK-jOg">
+                                <rect key="frame" x="42" y="626" width="291" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="c27-pt-pCg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                <color key="textColor" name="TravelistoBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8B-XZ-gA3" customClass="CustomButton" customModule="TravelistoV2" customModuleProvider="target">
+                                <rect key="frame" x="20" y="556" width="335" height="56"/>
+                                <color key="backgroundColor" name="TravelistoRed"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="tfY-HE-COz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <state key="normal" title="Create an account">
+                                    <color key="titleColor" name="TravelistoWhite"/>
+                                </state>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-Uh-vAP">
+                                <rect key="frame" x="160" y="504" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" name="TravelistoRed"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a8Z-ec-Oci" firstAttribute="top" secondItem="4l2-pa-gM2" secondAttribute="top" constant="42" id="4X8-sc-lc2"/>
+                            <constraint firstItem="4l2-pa-gM2" firstAttribute="trailing" secondItem="isG-gK-jOg" secondAttribute="trailing" constant="42" id="Aua-64-C5w"/>
+                            <constraint firstItem="4l2-pa-gM2" firstAttribute="trailing" secondItem="a8Z-ec-Oci" secondAttribute="trailing" constant="119" id="Fpr-N9-Oiv"/>
+                            <constraint firstItem="WXG-JZ-whn" firstAttribute="trailing" secondItem="4l2-pa-gM2" secondAttribute="trailing" id="MW6-v0-0QY"/>
+                            <constraint firstItem="WXG-JZ-whn" firstAttribute="top" secondItem="a8Z-ec-Oci" secondAttribute="bottom" constant="37" id="NXa-c5-wlT"/>
+                            <constraint firstItem="isG-gK-jOg" firstAttribute="top" secondItem="R8B-XZ-gA3" secondAttribute="bottom" constant="14" id="Vgc-W7-4e2"/>
+                            <constraint firstItem="4l2-pa-gM2" firstAttribute="trailing" secondItem="R8B-XZ-gA3" secondAttribute="trailing" constant="20" id="Vvz-W4-LcO"/>
+                            <constraint firstItem="WXG-JZ-whn" firstAttribute="leading" secondItem="4l2-pa-gM2" secondAttribute="leading" id="WkI-xe-gpQ"/>
+                            <constraint firstItem="uw4-Uh-vAP" firstAttribute="centerX" secondItem="9mX-R3-mk1" secondAttribute="centerX" id="XhC-EJ-p8r"/>
+                            <constraint firstItem="R8B-XZ-gA3" firstAttribute="top" secondItem="uw4-Uh-vAP" secondAttribute="bottom" constant="15" id="goj-Wj-e8b"/>
+                            <constraint firstItem="isG-gK-jOg" firstAttribute="leading" secondItem="4l2-pa-gM2" secondAttribute="leading" constant="42" id="oDZ-4R-egX"/>
+                            <constraint firstItem="R8B-XZ-gA3" firstAttribute="leading" secondItem="4l2-pa-gM2" secondAttribute="leading" constant="20" id="oVG-Xa-hn7"/>
+                            <constraint firstItem="4l2-pa-gM2" firstAttribute="bottom" secondItem="isG-gK-jOg" secondAttribute="bottom" constant="20" id="p0l-pQ-Ytt"/>
+                            <constraint firstItem="a8Z-ec-Oci" firstAttribute="leading" secondItem="4l2-pa-gM2" secondAttribute="leading" constant="119" id="rhU-by-Ovs"/>
+                            <constraint firstItem="uw4-Uh-vAP" firstAttribute="top" secondItem="WXG-JZ-whn" secondAttribute="bottom" constant="8" id="tLQ-Cj-WmL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4l2-pa-gM2"/>
+                    </view>
+                    <connections>
+                        <outlet property="onboardPageControl" destination="uw4-Uh-vAP" id="LiQ-Bw-Irm"/>
+                        <outlet property="onboardingCollectionView" destination="WXG-JZ-whn" id="uF7-MI-jNc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBp-S4-kLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo-Text" width="127" height="40"/>
+        <image name="travel-onboarding-1" width="1280" height="853"/>
+        <namedColor name="TravelistoBlack">
+            <color red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoBlack">
+            <color red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoRed">
+            <color red="0.94117647058823528" green="0.35294117647058826" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
