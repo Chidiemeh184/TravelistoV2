@@ -30,11 +30,20 @@ class OnboardingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideNav()
         self.onboardingCollectionView.delegate = self
         self.onboardingCollectionView.dataSource = self
         self.screenSize = UIScreen.main.bounds
         self.screenWidth = screenSize.width
         self.screenHeight = screenSize.height
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.hideNav()
+        self.loadViewIfNeeded()
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        self.showNav()
     }
 }
 

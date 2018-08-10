@@ -7,7 +7,10 @@ target 'TravelistoV2' do
 
   # Pods for TravelistoV2
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
   pod 'RevealingSplashView' 
-
+  pod 'SVProgressHUD'
 
 end

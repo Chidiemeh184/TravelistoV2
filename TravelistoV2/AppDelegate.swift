@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        UITextField.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.1450980392, blue: 0.2392156863, alpha: 1)
         return true
     }
 

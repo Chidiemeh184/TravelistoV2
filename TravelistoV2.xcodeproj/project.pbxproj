@@ -44,6 +44,12 @@
 		EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FC9211BBEFB00942F13 /* OnboardingViewController.swift */; };
 		EF255FCC211BCE7100942F13 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FCB211BCE7100942F13 /* OnboardingCollectionViewCell.swift */; };
 		EF255FCF211C226900942F13 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FCE211C226900942F13 /* CustomButton.swift */; };
+		EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FD3211C2E6C00942F13 /* SignInViewController.swift */; };
+		EF255FD8211C3AD300942F13 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FD7211C3AD300942F13 /* CustomTextField.swift */; };
+		EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FDA211C48F200942F13 /* ResetPasswordViewController.swift */; };
+		EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */; };
+		EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FDF211C4A4100942F13 /* CreateAccountViewController.swift */; };
+		EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FE1211C6D4700942F13 /* AuthService.swift */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82B2116605D00F179B9 /* RevealingSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C82A2116605D00F179B9 /* RevealingSplashViewController.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
@@ -93,6 +99,12 @@
 		EF255FC9211BBEFB00942F13 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		EF255FCB211BCE7100942F13 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF255FCE211C226900942F13 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		EF255FD3211C2E6C00942F13 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		EF255FD7211C3AD300942F13 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EF255FDA211C48F200942F13 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		EF255FDF211C4A4100942F13 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		EF255FE1211C6D4700942F13 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82A2116605D00F179B9 /* RevealingSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealingSplashViewController.swift; sourceTree = "<group>"; };
@@ -191,8 +203,35 @@
 			isa = PBXGroup;
 			children = (
 				EF255FCE211C226900942F13 /* CustomButton.swift */,
+				EF255FD7211C3AD300942F13 /* CustomTextField.swift */,
+				EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		EF255FD0211C2E0500942F13 /* Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				EF255FD3211C2E6C00942F13 /* SignInViewController.swift */,
+				EF255FE1211C6D4700942F13 /* AuthService.swift */,
+			);
+			path = "Sign In";
+			sourceTree = "<group>";
+		};
+		EF255FD9211C48D300942F13 /* Reset Password */ = {
+			isa = PBXGroup;
+			children = (
+				EF255FDA211C48F200942F13 /* ResetPasswordViewController.swift */,
+			);
+			path = "Reset Password";
+			sourceTree = "<group>";
+		};
+		EF255FDE211C4A2900942F13 /* Create Account */ = {
+			isa = PBXGroup;
+			children = (
+				EF255FDF211C4A4100942F13 /* CreateAccountViewController.swift */,
+			);
+			path = "Create Account";
 			sourceTree = "<group>";
 		};
 		EFA8C81C2116605D00F179B9 = {
@@ -218,6 +257,9 @@
 			children = (
 				EF255FCD211C225300942F13 /* Custom */,
 				EF255FC8211BBEAA00942F13 /* Onboarding */,
+				EF255FD0211C2E0500942F13 /* Sign In */,
+				EF255FD9211C48D300942F13 /* Reset Password */,
+				EF255FDE211C4A2900942F13 /* Create Account */,
 				EF255FC7211BB7A500942F13 /* RevealingSplashVC */,
 				EFA8C8282116605D00F179B9 /* AppDelegate.swift */,
 				EFA8C83A21172C6600F179B9 /* key.swift */,
@@ -342,14 +384,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,11 +433,17 @@
 				EFA8C82B2116605D00F179B9 /* RevealingSplashViewController.swift in Sources */,
 				EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */,
 				EFA8C83D21172C7400F179B9 /* test.swift in Sources */,
+				EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */,
+				EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */,
+				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
 				EFA8C83B21172C6600F179B9 /* key.swift in Sources */,
+				EF255FD8211C3AD300942F13 /* CustomTextField.swift in Sources */,
 				EF255FCF211C226900942F13 /* CustomButton.swift in Sources */,
+				EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */,
 				EF255F7C21173E2B00942F13 /* test2.swift in Sources */,
 				EF255FCC211BCE7100942F13 /* OnboardingCollectionViewCell.swift in Sources */,
 				EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */,
+				EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,10 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -556,10 +607,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

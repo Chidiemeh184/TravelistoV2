@@ -19,5 +19,14 @@ class CustomButton: UIButton {
         self.layer.backgroundColor = backgroundColor.cgColor
         self.layer.frame.size = CGSize(width: 335, height: 56)
         self.layer.cornerRadius = self.layer.frame.height/2
+        
+        self.layer.borderColor = UIColor.lightGray.cgColor
+        self.layer.borderWidth = 0.5
+        
+        layer.backgroundColor = UIColor.clear.cgColor
+        layer.shadowColor = UIColor.lightGray.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        layer.shadowOpacity = 0.2
+        layer.shadowRadius = 4.0
     }
 }
