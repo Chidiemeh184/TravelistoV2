@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         UITextField.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.1450980392, blue: 0.2392156863, alpha: 1)
+        
+        //Sign In Already Existing User
+        if Auth.auth().currentUser != nil {
+            //            let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
+            //            let tabVC = storyboard.instantiateViewController(withIdentifier: StoryboardID.tabbarViewController.rawValue) as! UITabBarController
+            //            self.present(tabVC, animated: true, completion: nil)
+            
+        }else{
+            //show login Screen
+        }
+        
         return true
     }
 

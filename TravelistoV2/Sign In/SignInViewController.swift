@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 import SVProgressHUD
 
 class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
@@ -29,6 +30,7 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
         self.hideNav()
         self.loadViewIfNeeded()
         self.enableLeftSwipe()
+        self.checkAlreadyExistingUser()
     }
     
     @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
@@ -58,6 +60,10 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func forgotPasswordButtonTapped(_ sender: UIButton) {
         
+    }
+    
+    private func checkAlreadyExistingUser(){
+
     }
 
 }
