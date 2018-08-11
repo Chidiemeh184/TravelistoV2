@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
         <array key="SF-Pro-Display-Regular.otf">
             <string>SFProDisplay-Regular</string>
         </array>
@@ -100,7 +103,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="tfY-HE-COz"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
                                 <state key="normal" title="Create an account">
                                     <color key="titleColor" name="TravelistoWhite"/>
                                 </state>
@@ -120,7 +123,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
                                 <state key="normal" title="Already on Travelisto? Login">
-                                    <color key="titleColor" name="TravelistoBlack"/>
+                                    <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="0.90226348458904104" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="jOW-nS-e8A" kind="show" id="Ign-PO-Gua"/>
@@ -169,6 +172,9 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ix1-wQ-DrJ">
                                 <rect key="frame" x="16" y="32" width="343" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="S9G-OP-cxj"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Sign In" id="y3Z-zz-LUQ">
                                         <barButtonItem key="leftBarButtonItem" image="back-24" id="XKM-NO-oj6">
@@ -182,12 +188,12 @@
                                 </items>
                             </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Z7f-QT-AH7">
-                                <rect key="frame" x="20" y="200" width="335" height="274"/>
+                                <rect key="frame" x="20" y="200" width="335" height="230"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="HeV-1z-Ayu">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="124"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y0F-VA-bao" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
+                                            <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y0F-VA-bao" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="56"/>
                                                 <color key="backgroundColor" name="TextFieldGrey"/>
                                                 <constraints>
@@ -195,23 +201,23 @@
                                                     <constraint firstAttribute="height" constant="56" id="Z1I-pG-OXW"/>
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-8p-65a" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
+                                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-8p-65a" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="68" width="335" height="56"/>
                                                 <color key="backgroundColor" name="TextFieldGrey"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="56" id="ehV-XD-R3V"/>
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="oO5-wa-PFA">
-                                        <rect key="frame" x="0.0" y="174" width="335" height="100"/>
+                                        <rect key="frame" x="0.0" y="174" width="335" height="56"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oV7-mJ-WeB" customClass="CustomButton" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="56"/>
@@ -220,7 +226,7 @@
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="KLI-JE-q3q"/>
                                                     <constraint firstAttribute="height" constant="56" id="sQH-wA-J9N"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
                                                 <state key="normal" title="Sign In">
                                                     <color key="titleColor" name="TravelistoWhite"/>
                                                 </state>
@@ -228,14 +234,14 @@
                                                     <action selector="signInButtonTapped:" destination="jOW-nS-e8A" eventType="touchUpInside" id="AYP-X7-oBe"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJp-VW-80P">
-                                                <rect key="frame" x="0.0" y="72" width="335" height="28"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJp-VW-80P">
+                                                <rect key="frame" x="0.0" y="-374" width="335" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="q0Y-IR-yXf"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
                                                 <state key="normal" title="Forgot your password?">
-                                                    <color key="titleColor" name="TravelistoBlack"/>
+                                                    <color key="titleColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="forgotPasswordButtonTapped:" destination="jOW-nS-e8A" eventType="touchUpInside" id="68R-2F-EQ1"/>
@@ -245,11 +251,13 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="274" id="Gul-lY-QLX"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Mgz-HK-QH6" firstAttribute="bottom" secondItem="Z7f-QT-AH7" secondAttribute="bottom" constant="193" id="17t-E8-mbE"/>
                             <constraint firstItem="Mgz-HK-QH6" firstAttribute="trailing" secondItem="Z7f-QT-AH7" secondAttribute="trailing" constant="20" id="3zI-3d-aRb"/>
                             <constraint firstItem="Mgz-HK-QH6" firstAttribute="trailing" secondItem="Ix1-wQ-DrJ" secondAttribute="trailing" constant="16" id="7io-Kv-Nsg"/>
                             <constraint firstItem="Ix1-wQ-DrJ" firstAttribute="top" secondItem="Mgz-HK-QH6" secondAttribute="top" constant="12" id="UH1-sS-Q8X"/>
@@ -262,6 +270,7 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="emailTextField" destination="Y0F-VA-bao" id="IDy-Bk-IgF"/>
+                        <outlet property="forgotPasswordButton" destination="zJp-VW-80P" id="ySZ-me-wCc"/>
                         <outlet property="navBar" destination="Ix1-wQ-DrJ" id="FfZ-0K-aHa"/>
                         <outlet property="passwordTextField" destination="eMh-8p-65a" id="8sF-1D-1tb"/>
                     </connections>
@@ -298,6 +307,9 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baT-qx-0Rb">
                                 <rect key="frame" x="16" y="32" width="343" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="aoe-Hz-pdI"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Reset Password" id="S9Z-WS-UGv">
                                         <barButtonItem key="leftBarButtonItem" image="back-24" id="nu1-5M-Uhe">
@@ -310,7 +322,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="x0V-LS-nzx">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="x0V-LS-nzx">
                                 <rect key="frame" x="20" y="200" width="335" height="142"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tLJ-Tl-h8C" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
@@ -321,17 +333,16 @@
                                             <constraint firstAttribute="height" constant="56" id="hcC-11-Ibk"/>
                                         </constraints>
                                         <color key="textColor" name="TravelistoBlack"/>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj3-pa-vXL" customClass="CustomButton" customModule="TravelistoV2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86" width="335" height="56"/>
                                         <color key="backgroundColor" name="TravelistoLightOrange"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="1LA-Bl-YFF"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="OxQ-Uf-Ppt"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
                                         <state key="normal" title="Reset your password">
                                             <color key="titleColor" name="TravelistoWhite"/>
                                         </state>
@@ -340,6 +351,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="mFN-Hi-h7s"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -347,7 +361,6 @@
                             <constraint firstItem="baT-qx-0Rb" firstAttribute="top" secondItem="yFC-zt-BGZ" secondAttribute="top" constant="12" id="564-y6-j6X"/>
                             <constraint firstItem="x0V-LS-nzx" firstAttribute="top" secondItem="baT-qx-0Rb" secondAttribute="bottom" constant="72" id="Lez-Qh-Z3h"/>
                             <constraint firstItem="x0V-LS-nzx" firstAttribute="leading" secondItem="yFC-zt-BGZ" secondAttribute="leading" constant="20" id="NrL-zP-Lqz"/>
-                            <constraint firstItem="yFC-zt-BGZ" firstAttribute="bottom" secondItem="x0V-LS-nzx" secondAttribute="bottom" constant="325" id="PGh-ap-rIw"/>
                             <constraint firstItem="baT-qx-0Rb" firstAttribute="leading" secondItem="yFC-zt-BGZ" secondAttribute="leading" constant="16" id="gb2-RD-THf"/>
                             <constraint firstItem="yFC-zt-BGZ" firstAttribute="trailing" secondItem="baT-qx-0Rb" secondAttribute="trailing" constant="16" id="guC-qh-F3A"/>
                             <constraint firstItem="yFC-zt-BGZ" firstAttribute="trailing" secondItem="x0V-LS-nzx" secondAttribute="trailing" constant="20" id="tkQ-4q-GNK"/>
@@ -374,6 +387,9 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a8A-92-C2i">
                                 <rect key="frame" x="16" y="32" width="343" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="pLQ-3Z-Yrc"/>
+                                </constraints>
                                 <items>
                                     <navigationItem title="Sign Up" id="xca-Jc-pBj">
                                         <barButtonItem key="leftBarButtonItem" image="back-24" id="Szl-Ug-LyD">
@@ -392,7 +408,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="y5u-my-0n7">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="192"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHs-PS-Ha4" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IHs-PS-Ha4" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="56"/>
                                                 <color key="backgroundColor" name="TextFieldGrey"/>
                                                 <constraints>
@@ -400,8 +416,8 @@
                                                     <constraint firstAttribute="height" constant="56" id="6Uy-ya-B2c"/>
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
-                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" textContentType="name"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="253-ei-iPu" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="68" width="335" height="56"/>
@@ -410,7 +426,7 @@
                                                     <constraint firstAttribute="height" constant="56" id="GSV-yI-1kn"/>
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-VR-muD" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
@@ -420,7 +436,7 @@
                                                     <constraint firstAttribute="height" constant="56" id="epk-He-4Cz"/>
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
@@ -432,7 +448,7 @@
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="92e-KU-1zg"/>
                                             <constraint firstAttribute="height" constant="56" id="hM6-o6-yVA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
+                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" name="TravelistoWhite"/>
                                         </state>
@@ -441,11 +457,13 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="278" id="10i-S9-0tS"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="47K-8h-W04" firstAttribute="bottom" secondItem="HCy-fg-BDT" secondAttribute="bottom" constant="213" id="HJO-QE-xbM"/>
                             <constraint firstItem="a8A-92-C2i" firstAttribute="leading" secondItem="47K-8h-W04" secondAttribute="leading" constant="16" id="Ydz-H4-S0S"/>
                             <constraint firstItem="a8A-92-C2i" firstAttribute="top" secondItem="47K-8h-W04" secondAttribute="top" constant="12" id="eXe-6v-5v0"/>
                             <constraint firstItem="HCy-fg-BDT" firstAttribute="top" secondItem="a8A-92-C2i" secondAttribute="bottom" constant="48" id="jPo-vS-cbc"/>
