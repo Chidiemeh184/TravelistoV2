@@ -24,10 +24,11 @@ class CustomButton: UIButton {
         self.layer.borderWidth = 0.5
         
         layer.backgroundColor = UIColor.clear.cgColor
-        layer.shadowColor = #colorLiteral(red: 0.7076158901, green: 0.714621988, blue: 0.714621988, alpha: 1)
-        layer.shadowOffset = CGSize(width: 3.0, height: 2.0)
-        layer.shadowOpacity = 0.7
-        layer.shadowRadius = 5.0
+        layer.shadowColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
+        layer.shadowOpacity = 0.5
+        layer.shadowRadius = 4.0
+        layer.shadowPath = UIBezierPath(roundedRect: layer.bounds, cornerRadius: layer.cornerRadius).cgPath
         applyTextSpacing()
     }
     
@@ -40,18 +41,5 @@ class CustomButton: UIButton {
         let logInButtonAtrributedString = NSMutableAttributedString(string: labelText, attributes: fontAttribute)
         logInButtonAtrributedString.addAttribute(NSAttributedStringKey.kern, value: spacing, range: NSMakeRange(0, logInButtonAtrributedString.length))
         self.setAttributedTitle(logInButtonAtrributedString, for: .normal)
-    }
-}
-
-extension UIImageView {
-    func dropShadow() {
-        self.layer.masksToBounds = false
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.5
-        self.layer.shadowOffset = CGSize(width: 3, height: 2)
-        self.layer.shadowRadius = 1
-        self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        self.layer.shouldRasterize = true
-        self.layer.rasterizationScale = UIScreen.main.scale
     }
 }
