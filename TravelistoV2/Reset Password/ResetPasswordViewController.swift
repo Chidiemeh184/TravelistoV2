@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import SVProgressHUD
 
 class ResetPasswordViewController: UIViewController, UIGestureRecognizerDelegate  {
     
@@ -31,6 +33,21 @@ class ResetPasswordViewController: UIViewController, UIGestureRecognizerDelegate
     }
     
     @IBAction func resetPasswordButtonTapped(_ sender: CustomButton) {
+        guard let email = emailTextField.text, !email.isEmpty else {
+            return
+        }
+        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
+            CustomProgressHud.blackTheme()
+            if error != nil {
+                SVProgressHUD.showError(withStatus: error.debugDescription)
+            }
+        }
+        SVProgressHUD.showInfo(withStatus: TravelistoMessages.passwordResetMessage)
+        SVProgressHUD.setMaximumDismissTimeInterval(5)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            self.navigationController?.popViewController(animated: true)
+            SVProgressHUD.setMaximumDismissTimeInterval(2)
+        }
     }
     
 }

@@ -19,5 +19,4 @@ extension UIViewController {
     func enableLeftSwipe(){
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
-    
 }

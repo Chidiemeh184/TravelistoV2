@@ -34,14 +34,27 @@ class CreateAccountViewController: UIViewController, UIGestureRecognizerDelegate
     }
     
     @IBAction func signUpButtonTapped(_ sender: CustomButton) {
-        guard let username = emailTextField.text, let email = emailTextField.text, let password = passwordTextField.text else {
-            return
-        }
-        AuthService.signUp(username: username, email: email, password: password, onSuccess: { (user) in
-            SVProgressHUD.showSuccess(withStatus: "Success!")
-            //Set Global User path with created user
-        }) { (errorMessage) in
-             SVProgressHUD.showError(withStatus: errorMessage)
+        CustomProgressHud.blackTheme()
+        if (emailTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)! || (usernameTextField.text?.isEmpty)! {
+            SVProgressHUD.showError(withStatus: TravelistoMessages.emptySignUpFieldsErrorMessage)
+        }else {
+            guard let username = usernameTextField.text, let email = emailTextField.text,
+                let password = passwordTextField.text else {
+                return
+            }
+            AuthService.signUp(username: username, email: email, password: password, onSuccess: { (user) in
+                user.sendEmailVerification(completion: nil)
+                CustomProgressHud.blackTheme()
+                SVProgressHUD.showSuccess(withStatus: TravelistoMessages.createdUserSuccess)
+                SVProgressHUD.setMaximumDismissTimeInterval(8)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 8) {
+                    //GO TO HOME
+                    //self.navigationController?.popViewController(animated: true)
+                }
+            }) { (errorMessage) in
+                SVProgressHUD.showError(withStatus: errorMessage)
+            }
+            
         }
     }
 }

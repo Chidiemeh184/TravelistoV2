@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-649" y="116"/>
+            <point key="canvasLocation" x="-514" y="116"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="Wpg-L6-E3s">
@@ -202,7 +202,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-8p-65a" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="68" width="335" height="56"/>
@@ -212,7 +212,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -334,7 +334,7 @@
                                         </constraints>
                                         <color key="textColor" name="TravelistoBlack"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj3-pa-vXL" customClass="CustomButton" customModule="TravelistoV2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86" width="335" height="56"/>
@@ -376,6 +376,20 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etr-7R-Dl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3310" y="119"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NjR-4G-U57">
+            <objects>
+                <tabBarController id="nyM-NK-r92" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FlC-Ds-buU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aas-5I-NDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2558" y="1208"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="ntS-Wc-flP">
@@ -427,7 +441,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-VR-muD" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="136" width="335" height="56"/>
@@ -437,7 +451,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                     </stackView>

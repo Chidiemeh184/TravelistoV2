@@ -38,22 +38,22 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     @IBAction func signInButtonTapped(_ sender: CustomButton) {
-        loginTriesCount = loginTriesCount + 1
-        guard let email = emailTextField.text, let password = passwordTextField.text else {
-            return
-        }
-        
-        SVProgressHUD.setDefaultStyle(.dark)
-        SVProgressHUD.setDefaultMaskType(.custom)
-        SVProgressHUD.setMaximumDismissTimeInterval(3.0)
-        
-        AuthService.signIn(email: email, password: password, onSuccess: {
-            //Segue to home
-            SVProgressHUD.showSuccess(withStatus: "Success!")
-        }) { (errorMessage) in
-            SVProgressHUD.showError(withStatus: errorMessage)
-            if self.loginTriesCount == 2 && errorMessage == SignInErrorMessages.incorrectPassword {
-                self.forgotPasswordButton.isHidden = false
+        CustomProgressHud.blackTheme()
+        if (emailTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)! {
+            SVProgressHUD.showError(withStatus: TravelistoMessages.emptySignInFieldsErrorMessage)
+        }else {
+            guard let email = emailTextField.text, let password = passwordTextField.text else {
+                return
+            }
+            AuthService.signIn(email: email, password: password, onSuccess: {
+                //Segue to home
+                SVProgressHUD.showSuccess(withStatus: TravelistoMessages.sucess)
+            }) { (errorMessage) in
+                self.loginTriesCount = self.loginTriesCount + 1
+                SVProgressHUD.showError(withStatus: errorMessage)
+                if self.loginTriesCount == 2 && errorMessage == TravelistoMessages.wrongPasswordErrorMessage {
+                    self.forgotPasswordButton.isHidden = false
+                }
             }
         }
     }
@@ -75,14 +75,5 @@ extension SignInViewController : UITextFieldDelegate {
         return true
     }
 }
-
-
-
-private struct SignInErrorMessages {
-    static let incorrectPassword = "The password is invalid or the user does not have a password."
-}
-
-
-
 
 

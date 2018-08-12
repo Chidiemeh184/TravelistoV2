@@ -57,6 +57,8 @@
 		EFA8C8332116605F00F179B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C8312116605F00F179B9 /* LaunchScreen.storyboard */; };
 		EFA8C83B21172C6600F179B9 /* key.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C83A21172C6600F179B9 /* key.swift */; };
 		EFA8C83D21172C7400F179B9 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C83C21172C7400F179B9 /* test.swift */; };
+		EFC9AD82211F9C6500E41FEA /* CustomProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD81211F9C6500E41FEA /* CustomProgressHud.swift */; };
+		EFC9AD84211FB43D00E41FEA /* TravelistoMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD83211FB43D00E41FEA /* TravelistoMessages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,8 @@
 		EFA8C8342116605F00F179B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFA8C83A21172C6600F179B9 /* key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = key.swift; sourceTree = "<group>"; };
 		EFA8C83C21172C7400F179B9 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		EFC9AD81211F9C6500E41FEA /* CustomProgressHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressHud.swift; sourceTree = "<group>"; };
+		EFC9AD83211FB43D00E41FEA /* TravelistoMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelistoMessages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +209,8 @@
 				EF255FCE211C226900942F13 /* CustomButton.swift */,
 				EF255FD7211C3AD300942F13 /* CustomTextField.swift */,
 				EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */,
+				EFC9AD81211F9C6500E41FEA /* CustomProgressHud.swift */,
+				EFC9AD83211FB43D00E41FEA /* TravelistoMessages.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -432,11 +438,13 @@
 			files = (
 				EFA8C82B2116605D00F179B9 /* RevealingSplashViewController.swift in Sources */,
 				EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */,
+				EFC9AD82211F9C6500E41FEA /* CustomProgressHud.swift in Sources */,
 				EFA8C83D21172C7400F179B9 /* test.swift in Sources */,
 				EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */,
 				EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */,
 				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
 				EFA8C83B21172C6600F179B9 /* key.swift in Sources */,
+				EFC9AD84211FB43D00E41FEA /* TravelistoMessages.swift in Sources */,
 				EF255FD8211C3AD300942F13 /* CustomTextField.swift in Sources */,
 				EF255FCF211C226900942F13 /* CustomButton.swift in Sources */,
 				EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */,
