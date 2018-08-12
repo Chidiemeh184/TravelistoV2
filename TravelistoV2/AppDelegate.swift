@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import SVProgressHUD
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,15 +21,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         UITextField.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.1450980392, blue: 0.2392156863, alpha: 1)
+        let storyboard = UIStoryboard(name: Storyboard.main, bundle: nil)
+        let startNavigationController = storyboard.instantiateViewController(withIdentifier: Storyboard.StartNavigationController) as! UINavigationController
+        
+        do {
+            try Auth.auth().signOut()
+        }catch let logoutError {
+            SVProgressHUD.showError(withStatus: logoutError.localizedDescription)
+        }
         
         //Sign In Already Existing User
         if Auth.auth().currentUser != nil {
-            //            let storyboard = UIStoryboard(name: "TabBar", bundle: nil)
-            //            let tabVC = storyboard.instantiateViewController(withIdentifier: StoryboardID.tabbarViewController.rawValue) as! UITabBarController
-            //            self.present(tabVC, animated: true, completion: nil)
-            
+            let tabBarController = storyboard.instantiateViewController(withIdentifier: Storyboard.tabBar) as! UITabBarController
+            window?.rootViewController = tabBarController
         }else{
             //show login Screen
+            let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+            if launchedBefore  {
+                let signInViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.SignInViewController) as! SignInViewController
+                startNavigationController.viewControllers = [signInViewController]
+                window?.rootViewController = startNavigationController
+            } else {
+                UserDefaults.standard.set(true, forKey: "launchedBefore")
+                let onboardingViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.OnboardingViewController) as! OnboardingViewController
+                startNavigationController.viewControllers = [onboardingViewController]
+                window?.rootViewController = startNavigationController
+            }
         }
         
         return true

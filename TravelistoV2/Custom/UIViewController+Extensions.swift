@@ -13,8 +13,14 @@ extension UIViewController {
     func hideNav(){
         self.navigationController?.navigationBar.isHidden = true
     }
+    func hideTabBar(){
+        self.navigationController?.tabBarController?.tabBar.isHidden = true
+    }
     func showNav(){
         self.navigationController?.navigationBar.isHidden = false
+    }
+    func showTabBar(){
+        self.navigationController?.tabBarController?.tabBar.isHidden = false
     }
     func enableLeftSwipe(){
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true

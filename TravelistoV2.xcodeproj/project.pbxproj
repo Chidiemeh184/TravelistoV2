@@ -50,8 +50,9 @@
 		EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */; };
 		EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FDF211C4A4100942F13 /* CreateAccountViewController.swift */; };
 		EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FE1211C6D4700942F13 /* AuthService.swift */; };
+		EF3D922A212069DF0012DF97 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D9229212069DF0012DF97 /* Segue.swift */; };
+		EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D922B2120716E0012DF97 /* Storyboard.swift */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
-		EFA8C82B2116605D00F179B9 /* RevealingSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C82A2116605D00F179B9 /* RevealingSplashViewController.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
 		EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82F2116605F00F179B9 /* Assets.xcassets */; };
 		EFA8C8332116605F00F179B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C8312116605F00F179B9 /* LaunchScreen.storyboard */; };
@@ -59,6 +60,10 @@
 		EFA8C83D21172C7400F179B9 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C83C21172C7400F179B9 /* test.swift */; };
 		EFC9AD82211F9C6500E41FEA /* CustomProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD81211F9C6500E41FEA /* CustomProgressHud.swift */; };
 		EFC9AD84211FB43D00E41FEA /* TravelistoMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD83211FB43D00E41FEA /* TravelistoMessages.swift */; };
+		EFC9AD88211FC8F300E41FEA /* ExploreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD87211FC8F300E41FEA /* ExploreTableViewController.swift */; };
+		EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */; };
+		EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */; };
+		EFC9AD92211FD07400E41FEA /* RevealSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,9 +112,10 @@
 		EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		EF255FDF211C4A4100942F13 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		EF255FE1211C6D4700942F13 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		EF3D9229212069DF0012DF97 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		EF3D922B2120716E0012DF97 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EFA8C82A2116605D00F179B9 /* RevealingSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealingSplashViewController.swift; sourceTree = "<group>"; };
 		EFA8C82D2116605D00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFA8C82F2116605F00F179B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFA8C8322116605F00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -118,6 +124,10 @@
 		EFA8C83C21172C7400F179B9 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		EFC9AD81211F9C6500E41FEA /* CustomProgressHud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressHud.swift; sourceTree = "<group>"; };
 		EFC9AD83211FB43D00E41FEA /* TravelistoMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelistoMessages.swift; sourceTree = "<group>"; };
+		EFC9AD87211FC8F300E41FEA /* ExploreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewController.swift; sourceTree = "<group>"; };
+		EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealSplashViewController.swift; sourceTree = "<group>"; };
+		EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RevealSplashViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,7 +199,8 @@
 		EF255FC7211BB7A500942F13 /* RevealingSplashVC */ = {
 			isa = PBXGroup;
 			children = (
-				EFA8C82A2116605D00F179B9 /* RevealingSplashViewController.swift */,
+				EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */,
+				EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */,
 			);
 			path = RevealingSplashVC;
 			sourceTree = "<group>";
@@ -220,6 +231,8 @@
 			children = (
 				EF255FD3211C2E6C00942F13 /* SignInViewController.swift */,
 				EF255FE1211C6D4700942F13 /* AuthService.swift */,
+				EF3D9229212069DF0012DF97 /* Segue.swift */,
+				EF3D922B2120716E0012DF97 /* Storyboard.swift */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -261,12 +274,14 @@
 		EFA8C8272116605D00F179B9 /* TravelistoV2 */ = {
 			isa = PBXGroup;
 			children = (
+				EFC9AD89211FCE1800E41FEA /* Tab Bar */,
 				EF255FCD211C225300942F13 /* Custom */,
 				EF255FC8211BBEAA00942F13 /* Onboarding */,
 				EF255FD0211C2E0500942F13 /* Sign In */,
 				EF255FD9211C48D300942F13 /* Reset Password */,
 				EF255FDE211C4A2900942F13 /* Create Account */,
 				EF255FC7211BB7A500942F13 /* RevealingSplashVC */,
+				EFC9AD86211FC8BF00E41FEA /* Explore */,
 				EFA8C8282116605D00F179B9 /* AppDelegate.swift */,
 				EFA8C83A21172C6600F179B9 /* key.swift */,
 				EFA8C82C2116605D00F179B9 /* Main.storyboard */,
@@ -280,6 +295,22 @@
 				EF255F83211B9F3400942F13 /* Resources */,
 			);
 			path = TravelistoV2;
+			sourceTree = "<group>";
+		};
+		EFC9AD86211FC8BF00E41FEA /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AD87211FC8F300E41FEA /* ExploreTableViewController.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		EFC9AD89211FCE1800E41FEA /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */,
+			);
+			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,6 +389,7 @@
 				EF255FAB211BA7F400942F13 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
 				EF255FAE211BA7F400942F13 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				EF255FAC211BA7F400942F13 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				EFC9AD92211FD07400E41FEA /* RevealSplashViewController.xib in Resources */,
 				EF255FC4211BA7F400942F13 /* SF-Pro-Display-Medium.otf in Resources */,
 				EF255FAD211BA7F400942F13 /* SF-Pro-Text-MediumItalic.otf in Resources */,
 				EF255FBA211BA7F400942F13 /* SF-Pro-Display-Bold.otf in Resources */,
@@ -436,21 +468,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFA8C82B2116605D00F179B9 /* RevealingSplashViewController.swift in Sources */,
 				EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */,
 				EFC9AD82211F9C6500E41FEA /* CustomProgressHud.swift in Sources */,
+				EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */,
 				EFA8C83D21172C7400F179B9 /* test.swift in Sources */,
 				EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */,
 				EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */,
 				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
 				EFA8C83B21172C6600F179B9 /* key.swift in Sources */,
 				EFC9AD84211FB43D00E41FEA /* TravelistoMessages.swift in Sources */,
+				EFC9AD88211FC8F300E41FEA /* ExploreTableViewController.swift in Sources */,
 				EF255FD8211C3AD300942F13 /* CustomTextField.swift in Sources */,
 				EF255FCF211C226900942F13 /* CustomButton.swift in Sources */,
 				EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */,
 				EF255F7C21173E2B00942F13 /* test2.swift in Sources */,
+				EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */,
 				EF255FCC211BCE7100942F13 /* OnboardingCollectionViewCell.swift in Sources */,
+				EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */,
 				EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */,
+				EF3D922A212069DF0012DF97 /* Segue.swift in Sources */,
 				EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

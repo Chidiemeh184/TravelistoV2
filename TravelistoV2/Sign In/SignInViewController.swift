@@ -16,7 +16,7 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var emailTextField: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     @IBOutlet weak var forgotPasswordButton: UIButton!
-    
+    @IBOutlet weak var signInLeftBarButtonItem: UIBarButtonItem!
     private var loginTriesCount = 0
     
     override func viewDidLoad() {
@@ -24,13 +24,14 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
         self.hideNav()
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         navBar.setValue(true, forKey: "hidesShadow")
+        hideNavBarBackButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         self.hideNav()
         self.loadViewIfNeeded()
         self.enableLeftSwipe()
-        self.checkAlreadyExistingUser()
+        hideNavBarBackButton()
     }
     
     @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
@@ -46,8 +47,9 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
                 return
             }
             AuthService.signIn(email: email, password: password, onSuccess: {
-                //Segue to home
-                SVProgressHUD.showSuccess(withStatus: TravelistoMessages.sucess)
+                DispatchQueue.main.async {
+                    self.performSegue(withIdentifier: Segue.signInToTabbar, sender: nil)
+                }
             }) { (errorMessage) in
                 self.loginTriesCount = self.loginTriesCount + 1
                 SVProgressHUD.showError(withStatus: errorMessage)
@@ -57,15 +59,25 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
             }
         }
     }
+
+    private func presentTabBar(){
+        let storyboard = UIStoryboard(name: Storyboard.main, bundle: nil)
+        let tabBarController = storyboard.instantiateViewController(withIdentifier: Storyboard.tabBar) as! UITabBarController
+        self.present(tabBarController, animated: true, completion: nil)
+    }
+    
+    private func hideNavBarBackButton() {
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if launchedBefore  {
+            self.signInLeftBarButtonItem.isEnabled = false
+            self.signInLeftBarButtonItem.setBackgroundImage(UIImage(), for: .normal, barMetrics: .default)
+        }
+    }
     
     @IBAction func forgotPasswordButtonTapped(_ sender: UIButton) {
-        
+        self.performSegue(withIdentifier: Segue.signInToResetPassword, sender: nil)
     }
     
-    private func checkAlreadyExistingUser(){
-
-    }
-
 }
 
 //MARK - Textfield Delegates

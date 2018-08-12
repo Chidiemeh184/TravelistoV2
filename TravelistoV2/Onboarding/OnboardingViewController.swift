@@ -41,6 +41,15 @@ class OnboardingViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         self.showNav()
     }
+    
+    @IBAction func alreadyOnTravelistoLogInButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Segue.onboardToSignIn, sender: nil)
+    }
+    
+    @IBAction func createAccountLogInButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Segue.onboardToSignUp, sender: nil)
+    }
+    
 }
 
 //MARK: Delegate & Datasource
