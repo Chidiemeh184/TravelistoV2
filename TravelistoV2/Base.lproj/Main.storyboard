@@ -389,9 +389,10 @@
                             <outlet property="delegate" destination="vr2-uB-k7p" id="zEL-cm-aXp"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Travel" id="5yV-N4-ie6">
+                    <navigationItem key="navigationItem" title="Travel" largeTitleDisplayMode="always" id="5yV-N4-ie6">
                         <barButtonItem key="leftBarButtonItem" id="nho-NI-UUL"/>
                     </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebh-RY-w6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -421,14 +422,31 @@
         <!--Flights-->
         <scene sceneID="u5W-XA-1NG">
             <objects>
-                <tableViewController id="JLF-mL-S3B" sceneMemberID="viewController">
+                <tableViewController id="JLF-mL-S3B" customClass="FlightsTableViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RsU-hi-Qbi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="2g3-0I-f5l">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Flights" id="fMN-8h-K4q">
+                                    <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="r6U-vR-nm3">
+                                        <rect key="frame" x="127" y="7" width="121" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Flights"/>
+                                            <segment title="Hotels"/>
+                                        </segments>
+                                        <color key="tintColor" name="TravelistoLightOrange"/>
+                                    </segmentedControl>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2hA-DV-G7x">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="124" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2hA-DV-G7x" id="dcd-7m-WK2">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -442,17 +460,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Flights" id="cM6-Xh-tp2"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WGO-R7-xa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2354" y="2985"/>
+            <point key="canvasLocation" x="2364" y="2922"/>
         </scene>
         <!--Trips-->
         <scene sceneID="S88-7B-Ysa">
             <objects>
                 <tableViewController id="PhG-JW-YWE" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="loW-6r-FQg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -481,7 +500,7 @@
             <objects>
                 <tableViewController id="lbZ-aX-z5d" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ezU-4L-GtI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -637,11 +656,16 @@
         <scene sceneID="kq4-vF-elc">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yc8-EY-qLx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="worldglobe-icon" id="b2h-db-uTi"/>
+                    <tabBarItem key="tabBarItem" title="" image="worldglobe-icon" selectedImage="worldglobe-icon-filled" id="b2h-db-uTi">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="mal-4t-euc">
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="SanFranciscoDisplay-Bold" family="San Francisco Display" pointSize="30"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -656,10 +680,12 @@
         <scene sceneID="EqC-2Y-4Ym">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iIj-97-Dok" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="magic-stick-icon" id="Lck-vl-3JK"/>
+                    <tabBarItem key="tabBarItem" title="" image="magic-stick-icon" selectedImage="magic-stick-icon-filled" id="Lck-vl-3JK">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="yl8-XC-qNP">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yl8-XC-qNP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -675,10 +701,12 @@
         <scene sceneID="O3w-Yx-OQV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TTf-eh-SBQ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="mappin-icon" id="TCM-aZ-JEA"/>
+                    <tabBarItem key="tabBarItem" title="" image="mappin-icon" selectedImage="mappin-icon-filled" id="TCM-aZ-JEA">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="vN1-KI-xB9">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="vN1-KI-xB9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -694,10 +722,12 @@
         <scene sceneID="mRY-14-Du0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="39B-bc-xDN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="gears-icon" id="OpY-t6-TKa"/>
+                    <tabBarItem key="tabBarItem" title="" image="gears-icon" selectedImage="gears-icon-filled" id="OpY-t6-TKa">
+                        <inset key="imageInsets" minX="0.0" minY="5" maxX="0.0" maxY="-5"/>
+                    </tabBarItem>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="6OH-bR-RPK">
-                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="6OH-bR-RPK">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -714,15 +744,22 @@
         <image name="Logo-Text" width="127" height="40"/>
         <image name="back-24" width="24" height="24"/>
         <image name="gears-icon" width="26" height="26"/>
+        <image name="gears-icon-filled" width="26" height="26"/>
         <image name="magic-stick-icon" width="35" height="27"/>
+        <image name="magic-stick-icon-filled" width="35" height="27"/>
         <image name="mappin-icon" width="21" height="27"/>
+        <image name="mappin-icon-filled" width="21" height="27"/>
         <image name="travel-onboarding-1" width="1280" height="853"/>
         <image name="worldglobe-icon" width="21" height="27"/>
+        <image name="worldglobe-icon-filled" width="21" height="28"/>
         <namedColor name="TextFieldGrey">
             <color red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TravelistoBlack">
             <color red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoLightOrange">
+            <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TravelistoLightOrange">
             <color red="0.99215686270000003" green="0.3411764706" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -735,6 +772,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="W1p-d5-8yK"/>
+        <segue reference="Y6h-Mf-v1q"/>
     </inferredMetricsTieBreakers>
 </document>

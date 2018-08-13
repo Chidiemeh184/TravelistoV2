@@ -13,12 +13,14 @@ class ExploreTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.hideNav()
     }
     
     override func viewWillAppear(_ animated: Bool) {
 //        let tabVC = RevealSplashViewController(nibName: "RevealSplashViewController", bundle: nil)
 //        self.modalPresentationStyle = .fullScreen
 //        self.present(tabVC, animated: false, completion: nil)
+        self.navigationItem.largeTitleDisplayMode = .always
     }
 
 }
