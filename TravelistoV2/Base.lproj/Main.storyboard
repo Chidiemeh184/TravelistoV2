@@ -23,25 +23,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Revealing Splash View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="RevealingSplashViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-649" y="116"/>
-        </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="Wpg-L6-E3s">
             <objects>
-                <viewController id="szx-5X-BbU" customClass="OnboardingViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" id="szx-5X-BbU" customClass="OnboardingViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9mX-R3-mk1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +93,7 @@
                                     <color key="titleColor" name="TravelistoWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VVa-y1-9r6" kind="show" id="JVY-rj-v8b"/>
+                                    <action selector="createAccountLogInButtonTapped:" destination="szx-5X-BbU" eventType="touchUpInside" id="tRE-0C-C2e"/>
                                 </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="uw4-Uh-vAP">
@@ -126,7 +111,7 @@
                                     <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="0.90226348458904104" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="jOW-nS-e8A" kind="show" id="Ign-PO-Gua"/>
+                                    <action selector="alreadyOnTravelistoLogInButtonTapped:" destination="szx-5X-BbU" eventType="touchUpInside" id="d6y-rX-qgu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -156,6 +141,8 @@
                     <connections>
                         <outlet property="onboardPageControl" destination="uw4-Uh-vAP" id="LiQ-Bw-Irm"/>
                         <outlet property="onboardingCollectionView" destination="WXG-JZ-whn" id="uF7-MI-jNc"/>
+                        <segue destination="jOW-nS-e8A" kind="show" identifier="onboardToSignIn" id="wdX-92-8Lq"/>
+                        <segue destination="VVa-y1-9r6" kind="show" identifier="onboardToSignUp" id="j34-Mi-5Zi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBp-S4-kLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,7 +152,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="Oza-4P-hit">
             <objects>
-                <viewController id="jOW-nS-e8A" customClass="SignInViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="jOW-nS-e8A" customClass="SignInViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jx9-4V-t7X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +189,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eMh-8p-65a" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="68" width="335" height="56"/>
@@ -212,7 +199,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -245,7 +232,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="forgotPasswordButtonTapped:" destination="jOW-nS-e8A" eventType="touchUpInside" id="68R-2F-EQ1"/>
-                                                    <segue destination="AgJ-e9-zk3" kind="show" id="F7h-yM-FFn"/>
+                                                    <segue destination="AgJ-e9-zk3" kind="show" identifier="signInToResetPassword" id="F7h-yM-FFn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -273,16 +260,18 @@
                         <outlet property="forgotPasswordButton" destination="zJp-VW-80P" id="ySZ-me-wCc"/>
                         <outlet property="navBar" destination="Ix1-wQ-DrJ" id="FfZ-0K-aHa"/>
                         <outlet property="passwordTextField" destination="eMh-8p-65a" id="8sF-1D-1tb"/>
+                        <outlet property="signInLeftBarButtonItem" destination="XKM-NO-oj6" id="W55-Eo-xJx"/>
+                        <segue destination="r2K-22-OmI" kind="show" identifier="signInToTabbar" animates="NO" id="W1p-d5-8yK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LoA-Nx-FXx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557.5999999999999" y="119.1904047976012"/>
+            <point key="canvasLocation" x="2532" y="116"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xiF-Y6-CNh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ril-Eo-i3V" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StartNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ril-Eo-i3V" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="f41-Dq-bvZ">
@@ -334,7 +323,7 @@
                                         </constraints>
                                         <color key="textColor" name="TravelistoBlack"/>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bj3-pa-vXL" customClass="CustomButton" customModule="TravelistoV2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="86" width="335" height="56"/>
@@ -375,7 +364,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etr-7R-Dl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3310" y="119"/>
+            <point key="canvasLocation" x="3346" y="119"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="ntS-Wc-flP">
@@ -427,7 +416,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" enablesReturnKeyAutomatically="YES" textContentType="email"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWf-VR-muD" customClass="CustomTextField" customModule="TravelistoV2" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="136" width="335" height="56"/>
@@ -437,7 +426,7 @@
                                                 </constraints>
                                                 <color key="textColor" name="TravelistoBlack"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="18"/>
-                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -479,11 +468,20 @@
                         <outlet property="navBar" destination="a8A-92-C2i" id="IIV-BN-Hw0"/>
                         <outlet property="passwordTextField" destination="CWf-VR-muD" id="OBr-hY-ZcP"/>
                         <outlet property="usernameTextField" destination="IHs-PS-Ha4" id="smy-jI-ucB"/>
+                        <segue destination="r2K-22-OmI" kind="presentation" identifier="signUpToTabbar" id="Y6h-Mf-v1q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o1G-u7-NOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4092" y="119"/>
+        </scene>
+        <!--TabBarSB-->
+        <scene sceneID="Xsi-Lk-ubZ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TabBarController" storyboardName="TabBarSB" referencedIdentifier="TabBarSB" id="r2K-22-OmI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qWN-HS-Mg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="1336"/>
         </scene>
     </scenes>
     <resources>
@@ -493,71 +491,20 @@
         <namedColor name="TextFieldGrey">
             <color red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="TextFieldGrey">
-            <color red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TextFieldGrey">
-            <color red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TextFieldGrey">
-            <color red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TextFieldGrey">
-            <color red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TextFieldGrey">
-            <color red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="TravelistoBlack">
             <color red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoBlack">
-            <color red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoBlack">
-            <color red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoBlack">
-            <color red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoBlack">
-            <color red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoBlack">
-            <color red="0.14117647059999999" green="0.1450980392" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoLightOrange">
-            <color red="0.99215686270000003" green="0.3411764706" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TravelistoLightOrange">
             <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="TravelistoLightOrange">
-            <color red="0.99215686270000003" green="0.3411764706" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoLightOrange">
-            <color red="0.99215686270000003" green="0.3411764706" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="TravelistoRed">
             <color red="0.94117647059999998" green="0.35294117650000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoRed">
-            <color red="0.94117647059999998" green="0.35294117650000001" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoRed">
-            <color red="0.94117647058823528" green="0.35294117647058826" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoWhite">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoWhite">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoWhite">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TravelistoWhite">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Y6h-Mf-v1q"/>
+    </inferredMetricsTieBreakers>
 </document>

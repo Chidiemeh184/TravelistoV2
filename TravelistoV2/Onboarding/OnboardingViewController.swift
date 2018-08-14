@@ -13,15 +13,11 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var onboardingCollectionView: UICollectionView!
     @IBOutlet weak var onboardPageControl: UIPageControl!
     
-    private let images = [UIImage(named: "travel-onboarding-1"),
-                          UIImage(named: "travel-onboarding-2"),
-                          UIImage(named: "travel-onboarding-3"),
-                          UIImage(named: "travel-onboarding-4")]
-    
-    private let messages = ["Explore travel destinations",
-                            "Find cheap flight and more savings",
-                            "Checkout best restuarants nearby",
-                            "There's more comfort where you'll sleep"]
+    private let images = [ #imageLiteral(resourceName: "travel-onboarding-1"), #imageLiteral(resourceName: "travel-onboarding-2"), #imageLiteral(resourceName: "travel-onboarding-3"), #imageLiteral(resourceName: "travel-onboarding-4")]
+    private let messages = [TravelistoMessages.onboarding1,
+                            TravelistoMessages.onboarding2,
+                            TravelistoMessages.onboarding3,
+                            TravelistoMessages.onboarding4]
     
     private var screenSize: CGRect!
     private var screenWidth: CGFloat!
@@ -45,6 +41,15 @@ class OnboardingViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         self.showNav()
     }
+    
+    @IBAction func alreadyOnTravelistoLogInButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Segue.onboardToSignIn, sender: nil)
+    }
+    
+    @IBAction func createAccountLogInButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: Segue.onboardToSignUp, sender: nil)
+    }
+    
 }
 
 //MARK: Delegate & Datasource
@@ -56,7 +61,7 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let onboardcell = collectionView.dequeueReusableCell(withReuseIdentifier: OnboardingCollectionViewCell.identifier, for: indexPath) as! OnboardingCollectionViewCell
-        onboardcell.setUp(withImage: images[indexPath.row]!, message: messages[indexPath.row])
+        onboardcell.setUp(withImage: images[indexPath.row], message: messages[indexPath.row])
         onboardcell.layer.borderColor = UIColor.clear.cgColor
         return onboardcell
     }

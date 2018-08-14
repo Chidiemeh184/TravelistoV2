@@ -16,10 +16,10 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var onboardMessageLabel: UILabel!
     
     override func awakeFromNib() {
-        self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 3
-        self.onboardImageView.layer.cornerRadius = onboardImageView.frame.height / 2
+        self.onboardImageView.layer.cornerRadius = onboardImageView.frame.height * 0.50
         self.onboardImageView.clipsToBounds = true
+        self.onboardImageView.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        self.onboardImageView.layer.borderWidth = 0.2
     }
     
     func setUp(withImage image: UIImage, message text: String){
