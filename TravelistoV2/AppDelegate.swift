@@ -22,13 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         UITextField.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.1450980392, blue: 0.2392156863, alpha: 1)
         let storyboard = UIStoryboard(name: Storyboard.main, bundle: nil)
-        let startNavigationController = storyboard.instantiateViewController(withIdentifier: Storyboard.StartNavigationController) as! UINavigationController
         
-        do {
-            try Auth.auth().signOut()
-        }catch let logoutError {
-            SVProgressHUD.showError(withStatus: logoutError.localizedDescription)
-        }
+//        do {
+//            try Auth.auth().signOut()
+//        }catch let logoutError {
+//            SVProgressHUD.showError(withStatus: logoutError.localizedDescription)
+//        }
         
         //Sign In Already Existing User
         if Auth.auth().currentUser != nil {
@@ -39,11 +38,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
             if launchedBefore  {
                 let signInViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.SignInViewController) as! SignInViewController
-                startNavigationController.viewControllers = [signInViewController]
-                window?.rootViewController = startNavigationController
+                signInViewController.isSecondLaunched = true
+                window?.rootViewController = signInViewController
             } else {
                 UserDefaults.standard.set(true, forKey: "launchedBefore")
                 let onboardingViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.OnboardingViewController) as! OnboardingViewController
+                let startNavigationController = storyboard.instantiateViewController(withIdentifier: Storyboard.StartNavigationController) as! UINavigationController
                 startNavigationController.viewControllers = [onboardingViewController]
                 window?.rootViewController = startNavigationController
             }

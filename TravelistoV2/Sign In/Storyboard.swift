@@ -13,6 +13,10 @@ struct Storyboard {
     //MARK: Storyboard Files
     static let tabBar = "TabBarController"
     static let main = "Main"
+    static let Explore = "Explore"
+    static let Trips = "Trips"
+    static let Settings = "Settings"
+    static let Flights = "Flights"
     
     //MARK: ViewControllers
     static let ExploreTableViewController = "ExploreTableViewController"

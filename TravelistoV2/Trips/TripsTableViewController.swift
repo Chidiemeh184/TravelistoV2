@@ -1,5 +1,5 @@
 //
-//  FlightsTableViewController.swift
+//  TripsTableViewController.swift
 //  TravelistoV2
 //
 //  Created by Chidi Emeh on 8/13/18.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class FlightsTableViewController: UITableViewController {
+class TripsTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
     }
 
 

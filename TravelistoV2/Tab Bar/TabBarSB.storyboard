@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="NjR-4G-U57">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarSB" id="nyM-NK-r92" customClass="TabBarController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FlC-Ds-buU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="TravelistoLightOrange"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VSW-5K-aDC" kind="relationship" relationship="viewControllers" id="PhM-JJ-U8o"/>
+                        <segue destination="5yY-Te-I6x" kind="relationship" relationship="viewControllers" id="doL-Gn-eCj"/>
+                        <segue destination="Goc-B2-0sd" kind="relationship" relationship="viewControllers" id="DZX-UA-JiV"/>
+                        <segue destination="OlS-fO-K5m" kind="relationship" relationship="viewControllers" id="5OY-mh-fRK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aas-5I-NDq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="1336"/>
+        </scene>
+        <!--ExploreSB-->
+        <scene sceneID="Ipw-fP-uKM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Explore" referencedIdentifier="ExploreSB" id="VSW-5K-aDC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7yR-tQ-MrP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08l-tr-0hX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2109" y="1861"/>
+        </scene>
+        <!--FlightsSB-->
+        <scene sceneID="irN-41-jj3">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Flights" referencedIdentifier="FlightsSB" id="5yY-Te-I6x" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qAb-Xd-yMu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="plH-Sh-qiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2699" y="1862"/>
+        </scene>
+        <!--TripsSB-->
+        <scene sceneID="dTs-Ds-ocR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Trips" referencedIdentifier="TripsSB" id="Goc-B2-0sd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="a8Y-am-vaz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Yu-uq-Us5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3172" y="1861"/>
+        </scene>
+        <!--SettingsSB-->
+        <scene sceneID="7wF-BP-2SA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsSB" id="OlS-fO-K5m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Bfv-8Q-0zB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WgG-Yb-uy3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3597" y="1849"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="TravelistoLightOrange">
+            <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

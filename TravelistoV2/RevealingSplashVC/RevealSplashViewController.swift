@@ -23,8 +23,8 @@ class RevealSplashViewController: UIViewController {
             print("Completed")
             self.showNav()
             self.showTabBar()
-            let storyboard = UIStoryboard(name: Storyboard.main, bundle: nil)
-            let exploreTableViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.ExploreTableViewController) as! ExploreTableViewController
+            let explore = UIStoryboard(name: Storyboard.Explore, bundle: nil)
+            let exploreTableViewController = explore.instantiateViewController(withIdentifier: Storyboard.ExploreTableViewController) as! ExploreTableViewController
             self.navigationController?.pushViewController(exploreTableViewController, animated: false)
         }
         

@@ -53,6 +53,13 @@
 		EF3D922A212069DF0012DF97 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D9229212069DF0012DF97 /* Segue.swift */; };
 		EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D922B2120716E0012DF97 /* Storyboard.swift */; };
 		EF3D922F212235810012DF97 /* FlightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D922E212235810012DF97 /* FlightsTableViewController.swift */; };
+		EF3D9234212247F50012DF97 /* TabBarSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D9233212247F50012DF97 /* TabBarSB.storyboard */; };
+		EF3D9236212252090012DF97 /* Explore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D9235212252090012DF97 /* Explore.storyboard */; };
+		EF3D9238212253480012DF97 /* Flights.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D9237212253480012DF97 /* Flights.storyboard */; };
+		EF3D923B212253D50012DF97 /* TripsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D923A212253D50012DF97 /* TripsTableViewController.swift */; };
+		EF3D923D2122564D0012DF97 /* Trips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D923C2122564D0012DF97 /* Trips.storyboard */; };
+		EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D923F212257000012DF97 /* SettingsTableViewController.swift */; };
+		EF3D9242212257170012DF97 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D9241212257170012DF97 /* Settings.storyboard */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
 		EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82F2116605F00F179B9 /* Assets.xcassets */; };
@@ -116,6 +123,13 @@
 		EF3D9229212069DF0012DF97 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		EF3D922B2120716E0012DF97 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		EF3D922E212235810012DF97 /* FlightsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsTableViewController.swift; sourceTree = "<group>"; };
+		EF3D9233212247F50012DF97 /* TabBarSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBarSB.storyboard; sourceTree = "<group>"; };
+		EF3D9235212252090012DF97 /* Explore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Explore.storyboard; sourceTree = "<group>"; };
+		EF3D9237212253480012DF97 /* Flights.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Flights.storyboard; sourceTree = "<group>"; };
+		EF3D923A212253D50012DF97 /* TripsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsTableViewController.swift; sourceTree = "<group>"; };
+		EF3D923C2122564D0012DF97 /* Trips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trips.storyboard; sourceTree = "<group>"; };
+		EF3D923F212257000012DF97 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		EF3D9241212257170012DF97 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82D2116605D00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -201,8 +215,8 @@
 		EF255FC7211BB7A500942F13 /* RevealingSplashVC */ = {
 			isa = PBXGroup;
 			children = (
-				EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */,
 				EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */,
+				EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */,
 			);
 			path = RevealingSplashVC;
 			sourceTree = "<group>";
@@ -258,9 +272,28 @@
 		EF3D922D212235410012DF97 /* Flights */ = {
 			isa = PBXGroup;
 			children = (
+				EF3D9237212253480012DF97 /* Flights.storyboard */,
 				EF3D922E212235810012DF97 /* FlightsTableViewController.swift */,
 			);
 			path = Flights;
+			sourceTree = "<group>";
+		};
+		EF3D9239212253BF0012DF97 /* Trips */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D923C2122564D0012DF97 /* Trips.storyboard */,
+				EF3D923A212253D50012DF97 /* TripsTableViewController.swift */,
+			);
+			path = Trips;
+			sourceTree = "<group>";
+		};
+		EF3D923E212256E50012DF97 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D9241212257170012DF97 /* Settings.storyboard */,
+				EF3D923F212257000012DF97 /* SettingsTableViewController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		EFA8C81C2116605D00F179B9 = {
@@ -293,6 +326,8 @@
 				EF255FC7211BB7A500942F13 /* RevealingSplashVC */,
 				EFC9AD86211FC8BF00E41FEA /* Explore */,
 				EF3D922D212235410012DF97 /* Flights */,
+				EF3D9239212253BF0012DF97 /* Trips */,
+				EF3D923E212256E50012DF97 /* Settings */,
 				EFA8C8282116605D00F179B9 /* AppDelegate.swift */,
 				EFA8C83A21172C6600F179B9 /* key.swift */,
 				EFA8C82C2116605D00F179B9 /* Main.storyboard */,
@@ -311,6 +346,7 @@
 		EFC9AD86211FC8BF00E41FEA /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				EF3D9235212252090012DF97 /* Explore.storyboard */,
 				EFC9AD87211FC8F300E41FEA /* ExploreTableViewController.swift */,
 			);
 			path = Explore;
@@ -319,6 +355,7 @@
 		EFC9AD89211FCE1800E41FEA /* Tab Bar */ = {
 			isa = PBXGroup;
 			children = (
+				EF3D9233212247F50012DF97 /* TabBarSB.storyboard */,
 				EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */,
 			);
 			path = "Tab Bar";
@@ -385,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF255FBC211BA7F400942F13 /* SF-Pro-Text-Medium.otf in Resources */,
+				EF3D9234212247F50012DF97 /* TabBarSB.storyboard in Resources */,
 				EF255FB8211BA7F400942F13 /* SF-Pro-Text-Light.otf in Resources */,
 				EF255FB0211BA7F400942F13 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
 				EFA8C8332116605F00F179B9 /* LaunchScreen.storyboard in Resources */,
@@ -394,11 +432,14 @@
 				EF255FB2211BA7F400942F13 /* SF-Pro-Display-Black.otf in Resources */,
 				EF255FB3211BA7F400942F13 /* SF-Pro-Text-RegularItalic.otf in Resources */,
 				EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */,
+				EF3D9242212257170012DF97 /* Settings.storyboard in Resources */,
 				EF255FA7211BA7F400942F13 /* SF-Pro-Text-BoldItalic.otf in Resources */,
 				EF255FAA211BA7F400942F13 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				EF255FB7211BA7F400942F13 /* SF-Pro-Text-Bold.otf in Resources */,
 				EF255FAB211BA7F400942F13 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
 				EF255FAE211BA7F400942F13 /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				EF3D9238212253480012DF97 /* Flights.storyboard in Resources */,
+				EF3D923D2122564D0012DF97 /* Trips.storyboard in Resources */,
 				EF255FAC211BA7F400942F13 /* SF-Pro-Display-MediumItalic.otf in Resources */,
 				EFC9AD92211FD07400E41FEA /* RevealSplashViewController.xib in Resources */,
 				EF255FC4211BA7F400942F13 /* SF-Pro-Display-Medium.otf in Resources */,
@@ -413,6 +454,7 @@
 				EF255FBF211BA7F400942F13 /* SF-Pro-Text-Semibold.otf in Resources */,
 				EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */,
 				EF255FB9211BA7F400942F13 /* SF-Pro-Text-Heavy.otf in Resources */,
+				EF3D9236212252090012DF97 /* Explore.storyboard in Resources */,
 				EF255FA9211BA7F400942F13 /* SF-Pro-Display-LightItalic.otf in Resources */,
 				EF255FBE211BA7F400942F13 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
 				EF255FC6211BAB9900942F13 /* Colors.xcassets in Resources */,
@@ -489,6 +531,7 @@
 				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
 				EFA8C83B21172C6600F179B9 /* key.swift in Sources */,
 				EFC9AD84211FB43D00E41FEA /* TravelistoMessages.swift in Sources */,
+				EF3D923B212253D50012DF97 /* TripsTableViewController.swift in Sources */,
 				EFC9AD88211FC8F300E41FEA /* ExploreTableViewController.swift in Sources */,
 				EF255FD8211C3AD300942F13 /* CustomTextField.swift in Sources */,
 				EF255FCF211C226900942F13 /* CustomButton.swift in Sources */,
@@ -499,6 +542,7 @@
 				EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */,
 				EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */,
 				EF3D922A212069DF0012DF97 /* Segue.swift in Sources */,
+				EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */,
 				EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

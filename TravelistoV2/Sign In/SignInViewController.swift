@@ -19,6 +19,8 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var signInLeftBarButtonItem: UIBarButtonItem!
     private var loginTriesCount = 0
     
+    var isSecondLaunched = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideNav()
@@ -67,8 +69,7 @@ class SignInViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     
     private func hideNavBarBackButton() {
-        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
-        if launchedBefore  {
+        if isSecondLaunched {
             self.signInLeftBarButtonItem.isEnabled = false
             self.signInLeftBarButtonItem.setBackgroundImage(UIImage(), for: .normal, barMetrics: .default)
         }
