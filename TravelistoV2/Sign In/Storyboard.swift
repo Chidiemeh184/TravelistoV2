@@ -23,4 +23,6 @@ struct Storyboard {
     static let SignInViewController = "SignInViewController"
     static let OnboardingViewController = "OnboardingViewController"
     static let StartNavigationController = "StartNavigationController"
+    static let CreateAccountViewController = "CreateAccountViewController"
+    static let ResetPasswordViewController = "ResetPasswordViewController"
 }

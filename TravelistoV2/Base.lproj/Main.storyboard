@@ -271,7 +271,7 @@
         <!--Navigation Controller-->
         <scene sceneID="xiF-Y6-CNh">
             <objects>
-                <navigationController storyboardIdentifier="StartNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ril-Eo-i3V" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="StartNavigationController" navigationBarHidden="YES" id="ril-Eo-i3V" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="f41-Dq-bvZ">
@@ -289,7 +289,7 @@
         <!--Reset Password View Controller-->
         <scene sceneID="ncI-o9-cLg">
             <objects>
-                <viewController id="AgJ-e9-zk3" customClass="ResetPasswordViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResetPasswordViewController" id="AgJ-e9-zk3" customClass="ResetPasswordViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4RS-t0-PJ4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -369,7 +369,7 @@
         <!--Create Account View Controller-->
         <scene sceneID="ntS-Wc-flP">
             <objects>
-                <viewController id="VVa-y1-9r6" customClass="CreateAccountViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateAccountViewController" id="VVa-y1-9r6" customClass="CreateAccountViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rwa-P4-LlA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -505,6 +505,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Y6h-Mf-v1q"/>
+        <segue reference="W1p-d5-8yK"/>
     </inferredMetricsTieBreakers>
 </document>
