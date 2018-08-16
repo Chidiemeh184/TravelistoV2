@@ -6,26 +6,224 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Explore-->
         <scene sceneID="DkF-s7-2xS">
             <objects>
                 <tableViewController storyboardIdentifier="ExploreTableViewController" id="vr2-uB-k7p" customClass="ExploreTableViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Mz-4D-pZj">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Mz-4D-pZj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="exploreCell" id="wEI-Y2-fYM">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TripToTableViewCell" rowHeight="250" id="wEI-Y2-fYM" customClass="TripToTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wEI-Y2-fYM" id="MNC-U5-K8j">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WiE-sP-Wra">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <inset key="scrollIndicatorInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aSC-6u-haS">
+                                                <size key="itemSize" width="334" height="224"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TripToCollectionViewCell" id="j1v-c9-v8v" customClass="TripToCollectionViewCell" customModule="TravelistoV2" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="13" width="334" height="224"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-11" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-ag-YzX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
+                                                            </imageView>
+                                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-fh-GAm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.85137521400000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eP5-jq-WV7">
+                                                                <rect key="frame" x="8" y="75" width="318" height="74"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip to Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmc-zu-VGu">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="318" height="37"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="318" id="Es3-xg-BBn"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="30"/>
+                                                                        <color key="textColor" name="TravelistoWhite"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <color key="shadowColor" red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="0.40154109589041098" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a journey to the city of Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPM-ZW-5AJ">
+                                                                        <rect key="frame" x="0.0" y="42" width="318" height="32"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="32" id="u2F-gV-KZg"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
+                                                                        <color key="textColor" name="TravelistoWhite"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <color key="shadowColor" red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="0.39691245719178081" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <size key="shadowOffset" width="0.0" height="1"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstItem="eP5-jq-WV7" firstAttribute="centerX" secondItem="j1v-c9-v8v" secondAttribute="centerX" id="DGd-BY-udY"/>
+                                                        <constraint firstItem="eP5-jq-WV7" firstAttribute="centerY" secondItem="j1v-c9-v8v" secondAttribute="centerY" id="ObB-Lg-Xq8"/>
+                                                        <constraint firstItem="4ce-ag-YzX" firstAttribute="leading" secondItem="j1v-c9-v8v" secondAttribute="leading" id="ZAT-6w-oB3"/>
+                                                        <constraint firstItem="Q1m-fh-GAm" firstAttribute="leading" secondItem="j1v-c9-v8v" secondAttribute="leading" id="gN6-8B-0iT"/>
+                                                        <constraint firstItem="Q1m-fh-GAm" firstAttribute="top" secondItem="j1v-c9-v8v" secondAttribute="top" id="hDG-1a-zgM"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Q1m-fh-GAm" secondAttribute="trailing" id="jOQ-oQ-HQ0"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Q1m-fh-GAm" secondAttribute="bottom" id="mxE-Lg-bxN"/>
+                                                        <constraint firstAttribute="bottom" secondItem="4ce-ag-YzX" secondAttribute="bottom" id="nDD-S3-Njd"/>
+                                                        <constraint firstItem="4ce-ag-YzX" firstAttribute="top" secondItem="j1v-c9-v8v" secondAttribute="top" id="oG2-oP-DrT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="4ce-ag-YzX" secondAttribute="trailing" id="vvF-DP-xaK"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="placeImageView" destination="4ce-ag-YzX" id="lbH-rH-vBe"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="WiE-sP-Wra" firstAttribute="leading" secondItem="MNC-U5-K8j" secondAttribute="leading" id="0fQ-7a-AS7"/>
+                                        <constraint firstItem="WiE-sP-Wra" firstAttribute="top" secondItem="MNC-U5-K8j" secondAttribute="top" id="H5H-qe-zOk"/>
+                                        <constraint firstAttribute="bottom" secondItem="WiE-sP-Wra" secondAttribute="bottom" id="cfd-jp-WHV"/>
+                                        <constraint firstAttribute="trailing" secondItem="WiE-sP-Wra" secondAttribute="trailing" id="ka4-QI-gco"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="tripToCollectionView" destination="WiE-sP-Wra" id="MZD-W4-Lhw"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RelaxationTableViewCell" rowHeight="233" id="dfc-or-WtI" customClass="RelaxationTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="278" width="375" height="233"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dfc-or-WtI" id="E6Z-vK-Nda">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="233"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YNm-K9-fOZ">
+                                            <rect key="frame" x="0.0" y="42" width="375" height="191"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="191" id="Prx-vV-0SM"/>
+                                            </constraints>
+                                            <inset key="scrollIndicatorInsets" minX="20" minY="10" maxX="20" maxY="0.0"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s1c-bE-YtF">
+                                                <size key="itemSize" width="128" height="172"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RelaxationCollectionViewCell" id="dwa-Zt-PGk" customClass="RelaxationCollectionViewCell" customModule="TravelistoV2" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="9.5" width="128" height="172"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="172"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-10" translatesAutoresizingMaskIntoConstraints="NO" id="aJA-hk-wmn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="172"/>
+                                                            </imageView>
+                                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eke-2E-tOD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="128" height="172"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.85137521404109584" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCj-5r-gC9">
+                                                                <rect key="frame" x="8" y="139" width="112" height="21"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" name="TravelistoLightGrey"/>
+                                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="DCj-5r-gC9" secondAttribute="bottom" constant="12" id="6jQ-XR-79A"/>
+                                                        <constraint firstAttribute="trailing" secondItem="aJA-hk-wmn" secondAttribute="trailing" id="7Hp-T7-xyi"/>
+                                                        <constraint firstItem="eke-2E-tOD" firstAttribute="top" secondItem="dwa-Zt-PGk" secondAttribute="top" id="93N-wy-RH4"/>
+                                                        <constraint firstAttribute="bottom" secondItem="aJA-hk-wmn" secondAttribute="bottom" id="Bvy-Yb-f3K"/>
+                                                        <constraint firstItem="aJA-hk-wmn" firstAttribute="top" secondItem="dwa-Zt-PGk" secondAttribute="top" id="Og0-Fb-CHY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="eke-2E-tOD" secondAttribute="bottom" id="SlN-6N-tMD"/>
+                                                        <constraint firstItem="DCj-5r-gC9" firstAttribute="leading" secondItem="dwa-Zt-PGk" secondAttribute="leading" constant="8" id="aI0-Nj-0wK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="eke-2E-tOD" secondAttribute="trailing" id="ePA-wH-OJC"/>
+                                                        <constraint firstItem="eke-2E-tOD" firstAttribute="leading" secondItem="dwa-Zt-PGk" secondAttribute="leading" id="gLC-sA-9C8"/>
+                                                        <constraint firstAttribute="trailing" secondItem="DCj-5r-gC9" secondAttribute="trailing" constant="8" id="iXn-F8-Uiz"/>
+                                                        <constraint firstItem="aJA-hk-wmn" firstAttribute="leading" secondItem="dwa-Zt-PGk" secondAttribute="leading" id="kbq-nj-6f0"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="placeImageView" destination="aJA-hk-wmn" id="16G-L5-SzM"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ygd-tk-4kF">
+                                            <rect key="frame" x="16" y="11" width="343" height="21"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relaxation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEL-7Y-ghy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="rhQ-im-Onq"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="17"/>
+                                                    <color key="textColor" name="TravelistoBlack"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7Z-2V-kLg">
+                                                    <rect key="frame" x="192" y="0.0" width="151" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="151" id="FqQ-Vn-FpL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                                    <state key="normal" title="Show more">
+                                                        <color key="titleColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Ygd-tk-4kF" secondAttribute="trailing" constant="16" id="2jg-gP-aIs"/>
+                                        <constraint firstItem="YNm-K9-fOZ" firstAttribute="leading" secondItem="E6Z-vK-Nda" secondAttribute="leading" id="Ogc-Z2-JWf"/>
+                                        <constraint firstAttribute="trailing" secondItem="YNm-K9-fOZ" secondAttribute="trailing" id="bdU-dg-dqM"/>
+                                        <constraint firstAttribute="bottom" secondItem="YNm-K9-fOZ" secondAttribute="bottom" id="eSO-LN-LdR"/>
+                                        <constraint firstItem="Ygd-tk-4kF" firstAttribute="leading" secondItem="E6Z-vK-Nda" secondAttribute="leading" constant="16" id="rAx-yj-YyI"/>
+                                        <constraint firstItem="Ygd-tk-4kF" firstAttribute="top" secondItem="E6Z-vK-Nda" secondAttribute="top" constant="11" id="uJ6-xH-x1D"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="relaxationCollectionView" destination="YNm-K9-fOZ" id="Ox8-nG-8DO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -35,12 +233,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Explore" largeTitleDisplayMode="always" id="5yV-N4-ie6">
                         <barButtonItem key="leftBarButtonItem" id="nho-NI-UUL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="8Ut-0c-sHF">
+                            <color key="tintColor" name="TravelistoLightOrange"/>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebh-RY-w6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2878" y="2184"/>
+            <point key="canvasLocation" x="2877.5999999999999" y="2183.658170914543"/>
         </scene>
         <!--Reveal Splash View Controller-->
         <scene sceneID="VNf-RW-HKe">
@@ -87,7 +288,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="travel-10" width="720" height="480"/>
+        <image name="travel-11" width="720" height="480"/>
         <image name="worldglobe-icon" width="21" height="27"/>
         <image name="worldglobe-icon-filled" width="21" height="28"/>
+        <namedColor name="TravelistoBlack">
+            <color red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoLightGrey">
+            <color red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoLightOrange">
+            <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

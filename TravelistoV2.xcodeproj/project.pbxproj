@@ -60,6 +60,13 @@
 		EF3D923D2122564D0012DF97 /* Trips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D923C2122564D0012DF97 /* Trips.storyboard */; };
 		EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D923F212257000012DF97 /* SettingsTableViewController.swift */; };
 		EF3D9242212257170012DF97 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D9241212257170012DF97 /* Settings.storyboard */; };
+		EF66D09521250CD500E3C43C /* TripToTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09421250CD500E3C43C /* TripToTableViewCell.swift */; };
+		EF66D09721250CF900E3C43C /* TripToCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09621250CF900E3C43C /* TripToCollectionViewCell.swift */; };
+		EF66D09921250DC500E3C43C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09821250DC500E3C43C /* Cell.swift */; };
+		EF66D09C21250F0D00E3C43C /* RelaxationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09B21250F0D00E3C43C /* RelaxationTableViewCell.swift */; };
+		EF66D09E21250F2C00E3C43C /* RelaxationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */; };
+		EF66D0A02125463E00E3C43C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */; };
+		EF66D0A221254FB800E3C43C /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
 		EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82F2116605F00F179B9 /* Assets.xcassets */; };
@@ -130,6 +137,13 @@
 		EF3D923C2122564D0012DF97 /* Trips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trips.storyboard; sourceTree = "<group>"; };
 		EF3D923F212257000012DF97 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		EF3D9241212257170012DF97 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		EF66D09421250CD500E3C43C /* TripToTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripToTableViewCell.swift; sourceTree = "<group>"; };
+		EF66D09621250CF900E3C43C /* TripToCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripToCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF66D09821250DC500E3C43C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		EF66D09B21250F0D00E3C43C /* RelaxationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxationTableViewCell.swift; sourceTree = "<group>"; };
+		EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxationCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82D2116605D00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -235,9 +249,11 @@
 			children = (
 				EF255FCE211C226900942F13 /* CustomButton.swift */,
 				EF255FD7211C3AD300942F13 /* CustomTextField.swift */,
-				EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */,
 				EFC9AD81211F9C6500E41FEA /* CustomProgressHud.swift */,
 				EFC9AD83211FB43D00E41FEA /* TravelistoMessages.swift */,
+				EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */,
+				EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */,
+				EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -249,6 +265,7 @@
 				EF255FE1211C6D4700942F13 /* AuthService.swift */,
 				EF3D9229212069DF0012DF97 /* Segue.swift */,
 				EF3D922B2120716E0012DF97 /* Storyboard.swift */,
+				EF66D09821250DC500E3C43C /* Cell.swift */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -294,6 +311,24 @@
 				EF3D923F212257000012DF97 /* SettingsTableViewController.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		EF66D09321250C4F00E3C43C /* Trip To */ = {
+			isa = PBXGroup;
+			children = (
+				EF66D09421250CD500E3C43C /* TripToTableViewCell.swift */,
+				EF66D09621250CF900E3C43C /* TripToCollectionViewCell.swift */,
+			);
+			path = "Trip To";
+			sourceTree = "<group>";
+		};
+		EF66D09A21250ED200E3C43C /* Relaxation */ = {
+			isa = PBXGroup;
+			children = (
+				EF66D09B21250F0D00E3C43C /* RelaxationTableViewCell.swift */,
+				EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */,
+			);
+			path = Relaxation;
 			sourceTree = "<group>";
 		};
 		EFA8C81C2116605D00F179B9 = {
@@ -348,6 +383,8 @@
 			children = (
 				EF3D9235212252090012DF97 /* Explore.storyboard */,
 				EFC9AD87211FC8F300E41FEA /* ExploreTableViewController.swift */,
+				EF66D09321250C4F00E3C43C /* Trip To */,
+				EF66D09A21250ED200E3C43C /* Relaxation */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -523,11 +560,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF66D0A02125463E00E3C43C /* UIImageView+Extensions.swift in Sources */,
+				EF66D09C21250F0D00E3C43C /* RelaxationTableViewCell.swift in Sources */,
 				EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */,
 				EFC9AD82211F9C6500E41FEA /* CustomProgressHud.swift in Sources */,
 				EF3D922F212235810012DF97 /* FlightsTableViewController.swift in Sources */,
 				EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */,
 				EFA8C83D21172C7400F179B9 /* test.swift in Sources */,
+				EF66D09921250DC500E3C43C /* Cell.swift in Sources */,
+				EF66D0A221254FB800E3C43C /* UICollectionViewCell+Extensions.swift in Sources */,
 				EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */,
 				EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */,
 				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
@@ -540,12 +581,15 @@
 				EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */,
 				EF255F7C21173E2B00942F13 /* test2.swift in Sources */,
 				EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */,
+				EF66D09521250CD500E3C43C /* TripToTableViewCell.swift in Sources */,
 				EF255FCC211BCE7100942F13 /* OnboardingCollectionViewCell.swift in Sources */,
 				EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */,
 				EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */,
+				EF66D09721250CF900E3C43C /* TripToCollectionViewCell.swift in Sources */,
 				EF3D922A212069DF0012DF97 /* Segue.swift in Sources */,
 				EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */,
 				EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */,
+				EF66D09E21250F2C00E3C43C /* RelaxationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -693,7 +737,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -709,7 +756,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

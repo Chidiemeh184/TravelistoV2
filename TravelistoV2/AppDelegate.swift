@@ -23,16 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITextField.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.1450980392, blue: 0.2392156863, alpha: 1)
         let storyboard = UIStoryboard(name: Storyboard.main, bundle: nil)
         
-        do {
-            try Auth.auth().signOut()
-        }catch let logoutError {
-            SVProgressHUD.showError(withStatus: logoutError.localizedDescription)
-        }
+//        do {
+//            try Auth.auth().signOut()
+//        }catch let logoutError {
+//            SVProgressHUD.showError(withStatus: logoutError.localizedDescription)
+//        }
         
         //Sign In Already Existing User
         if Auth.auth().currentUser != nil {
             let tabBarController = storyboard.instantiateViewController(withIdentifier: Storyboard.tabBar) as! UITabBarController
             window?.rootViewController = tabBarController
+            
         }else{
             //show login Screen
             let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
