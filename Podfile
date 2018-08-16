@@ -12,5 +12,6 @@ target 'TravelistoV2' do
   pod 'Firebase/Storage'
   pod 'RevealingSplashView' 
   pod 'SVProgressHUD'
+  pod 'ChameleonFramework'
 
 end
