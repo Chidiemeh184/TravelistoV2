@@ -152,10 +152,10 @@ extension ExploreTableViewController: UICollectionViewDelegateFlowLayout {
         let tag = CollectionViewTag(rawValue: collectionView.tag)!
         switch tag {
         case .isTripToCollectionViewTag:
-            let inset = UIEdgeInsetsMake(20, 20, 20, 20)
+            let inset = UIEdgeInsetsMake(0, 16, 0, 16)
             return inset
         case .isRelaxationCollectionViewTag:
-            let inset = UIEdgeInsetsMake(20, 20, 20, 20)
+            let inset = UIEdgeInsetsMake(0, 16, 0, 16)
             return inset
         }
     }

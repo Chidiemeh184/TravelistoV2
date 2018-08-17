@@ -28,7 +28,7 @@ class RevealSplashViewController: UIViewController {
             self.navigationController?.pushViewController(exploreTableViewController, animated: false)
         }
         
-        _ = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false) { (timer) in
+        _ = Timer.scheduledTimer(withTimeInterval: 3.0, repeats: false) { (timer) in
             revealingSplashView.heartAttack = true
         }
        

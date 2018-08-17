@@ -67,6 +67,9 @@
 		EF66D09E21250F2C00E3C43C /* RelaxationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */; };
 		EF66D0A02125463E00E3C43C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */; };
 		EF66D0A221254FB800E3C43C /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */; };
+		EF66D0A5212558E300E3C43C /* ExploreOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */; };
+		EF66D0A72125D96500E3C43C /* ExploreOpenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */; };
+		EF66D0A921261BB600E3C43C /* ExploreOpenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
 		EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82F2116605F00F179B9 /* Assets.xcassets */; };
@@ -144,6 +147,9 @@
 		EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxationCollectionViewCell.swift; sourceTree = "<group>"; };
 		EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenViewController.swift; sourceTree = "<group>"; };
+		EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenTableViewCell.swift; sourceTree = "<group>"; };
+		EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenCollectionViewCell.swift; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82D2116605D00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -331,6 +337,16 @@
 			path = Relaxation;
 			sourceTree = "<group>";
 		};
+		EF66D0A3212558AB00E3C43C /* Explore Open */ = {
+			isa = PBXGroup;
+			children = (
+				EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */,
+				EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */,
+				EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */,
+			);
+			path = "Explore Open";
+			sourceTree = "<group>";
+		};
 		EFA8C81C2116605D00F179B9 = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +401,7 @@
 				EFC9AD87211FC8F300E41FEA /* ExploreTableViewController.swift */,
 				EF66D09321250C4F00E3C43C /* Trip To */,
 				EF66D09A21250ED200E3C43C /* Relaxation */,
+				EF66D0A3212558AB00E3C43C /* Explore Open */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -571,13 +588,16 @@
 				EF66D0A221254FB800E3C43C /* UICollectionViewCell+Extensions.swift in Sources */,
 				EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */,
 				EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */,
+				EF66D0A5212558E300E3C43C /* ExploreOpenViewController.swift in Sources */,
 				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
+				EF66D0A72125D96500E3C43C /* ExploreOpenTableViewCell.swift in Sources */,
 				EFA8C83B21172C6600F179B9 /* key.swift in Sources */,
 				EFC9AD84211FB43D00E41FEA /* TravelistoMessages.swift in Sources */,
 				EF3D923B212253D50012DF97 /* TripsTableViewController.swift in Sources */,
 				EFC9AD88211FC8F300E41FEA /* ExploreTableViewController.swift in Sources */,
 				EF255FD8211C3AD300942F13 /* CustomTextField.swift in Sources */,
 				EF255FCF211C226900942F13 /* CustomButton.swift in Sources */,
+				EF66D0A921261BB600E3C43C /* ExploreOpenCollectionViewCell.swift in Sources */,
 				EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */,
 				EF255F7C21173E2B00942F13 /* test2.swift in Sources */,
 				EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */,
