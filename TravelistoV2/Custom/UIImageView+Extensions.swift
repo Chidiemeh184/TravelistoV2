@@ -22,4 +22,19 @@ extension UIImageView {
         self.layer.shadowRadius = 10
     }
     
+    func applyCustomImageCurve(){
+        self.layer.cornerRadius = 8
+    }
+}
+
+
+class CustomUIView : UIView {
+    
+    override func awakeFromNib() {
+        applyCustomImageCurve()
+    }
+    
+    func applyCustomImageCurve(){
+        self.layer.cornerRadius = 8
+    }
 }

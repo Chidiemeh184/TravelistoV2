@@ -28,9 +28,9 @@ class ExploreOpenViewController: UIViewController, UITableViewDelegate, UITableV
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         UIApplication.shared.statusBarStyle = .lightContent
         
-        exploreOpenTableView.rowHeight = UITableViewAutomaticDimension
         let defaultTableViewHeight = CGFloat(1367)
         exploreOpenTableView.estimatedRowHeight = defaultTableViewHeight
+        exploreOpenTableView.rowHeight = UITableViewAutomaticDimension
     }
     
     override func viewDidLayoutSubviews() {
@@ -129,8 +129,8 @@ extension ExploreOpenViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellDefaultHeight = CGFloat(160)
-        let cellDefaultWidth = CGFloat(120)
+        let cellDefaultHeight = CGFloat(140)
+        let cellDefaultWidth = CGFloat(110)
         let size = CGSize(width: cellDefaultWidth, height: cellDefaultHeight)
         return size
     }

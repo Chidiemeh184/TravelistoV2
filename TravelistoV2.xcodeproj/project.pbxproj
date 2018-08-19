@@ -82,6 +82,22 @@
 		EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */; };
 		EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */; };
 		EFC9AD92211FD07400E41FEA /* RevealSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */; };
+		EFCD82EE212856D100EF2A25 /* TopImageHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82EC212856D100EF2A25 /* TopImageHeaderTableViewCell.swift */; };
+		EFCD82EF212856D100EF2A25 /* TopImageHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82ED212856D100EF2A25 /* TopImageHeaderTableViewCell.xib */; };
+		EFCD82F22128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82F02128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift */; };
+		EFCD82F32128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82F12128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib */; };
+		EFCD82F6212857A400EF2A25 /* PlaceMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82F4212857A400EF2A25 /* PlaceMapTableViewCell.swift */; };
+		EFCD82F7212857A400EF2A25 /* PlaceMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82F5212857A400EF2A25 /* PlaceMapTableViewCell.xib */; };
+		EFCD82FA212857EE00EF2A25 /* TopExperiencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82F8212857EE00EF2A25 /* TopExperiencesTableViewCell.swift */; };
+		EFCD82FB212857EE00EF2A25 /* TopExperiencesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82F9212857EE00EF2A25 /* TopExperiencesTableViewCell.xib */; };
+		EFCD82FE212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82FC212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift */; };
+		EFCD82FF212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82FD212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib */; };
+		EFCD830221286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD830021286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift */; };
+		EFCD830321286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD830121286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib */; };
+		EFCD830721286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD830521286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift */; };
+		EFCD830821286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD830621286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib */; };
+		EFCD830A2128747D00EF2A25 /* ExploreOpenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD83092128747D00EF2A25 /* ExploreOpenTableViewController.swift */; };
+		EFCD830C2128F62800EF2A25 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD830B2128F62800EF2A25 /* UILabel+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +180,22 @@
 		EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealSplashViewController.swift; sourceTree = "<group>"; };
 		EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RevealSplashViewController.xib; sourceTree = "<group>"; };
+		EFCD82EC212856D100EF2A25 /* TopImageHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopImageHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82ED212856D100EF2A25 /* TopImageHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopImageHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82F02128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82F12128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82F4212857A400EF2A25 /* PlaceMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82F5212857A400EF2A25 /* PlaceMapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceMapTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82F8212857EE00EF2A25 /* TopExperiencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopExperiencesTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82F9212857EE00EF2A25 /* TopExperiencesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopExperiencesTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82FC212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPlaceListTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82FD212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalPlaceListTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD830021286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPlaceListCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFCD830121286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalPlaceListCollectionViewCell.xib; sourceTree = "<group>"; };
+		EFCD830521286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationButtonTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD830621286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationButtonTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD83092128747D00EF2A25 /* ExploreOpenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenTableViewController.swift; sourceTree = "<group>"; };
+		EFCD830B2128F62800EF2A25 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +292,7 @@
 				EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */,
 				EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */,
 				EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */,
+				EFCD830B2128F62800EF2A25 /* UILabel+Extensions.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -340,6 +373,8 @@
 		EF66D0A3212558AB00E3C43C /* Explore Open */ = {
 			isa = PBXGroup;
 			children = (
+				EFCD83092128747D00EF2A25 /* ExploreOpenTableViewController.swift */,
+				EFCD82D92128522100EF2A25 /* Cells */,
 				EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */,
 				EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */,
 				EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */,
@@ -415,6 +450,35 @@
 			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
+		EFCD82D92128522100EF2A25 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFCD82ED212856D100EF2A25 /* TopImageHeaderTableViewCell.xib */,
+				EFCD82EC212856D100EF2A25 /* TopImageHeaderTableViewCell.swift */,
+				EFCD82F12128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib */,
+				EFCD82F02128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift */,
+				EFCD82F5212857A400EF2A25 /* PlaceMapTableViewCell.xib */,
+				EFCD82F4212857A400EF2A25 /* PlaceMapTableViewCell.swift */,
+				EFCD82F9212857EE00EF2A25 /* TopExperiencesTableViewCell.xib */,
+				EFCD82F8212857EE00EF2A25 /* TopExperiencesTableViewCell.swift */,
+				EFCD830421286B3C00EF2A25 /* Horizontal Place List */,
+				EFCD830621286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib */,
+				EFCD830521286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EFCD830421286B3C00EF2A25 /* Horizontal Place List */ = {
+			isa = PBXGroup;
+			children = (
+				EFCD82FD212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib */,
+				EFCD82FC212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift */,
+				EFCD830121286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib */,
+				EFCD830021286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift */,
+			);
+			path = "Horizontal Place List";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -475,26 +539,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFCD82F7212857A400EF2A25 /* PlaceMapTableViewCell.xib in Resources */,
 				EF255FBC211BA7F400942F13 /* SF-Pro-Text-Medium.otf in Resources */,
 				EF3D9234212247F50012DF97 /* TabBarSB.storyboard in Resources */,
 				EF255FB8211BA7F400942F13 /* SF-Pro-Text-Light.otf in Resources */,
 				EF255FB0211BA7F400942F13 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				EFCD830321286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib in Resources */,
 				EFA8C8332116605F00F179B9 /* LaunchScreen.storyboard in Resources */,
 				EF255FBD211BA7F400942F13 /* SF-Pro-Display-Light.otf in Resources */,
 				EF255F7E21175F1F00942F13 /* GoogleService-Info.plist in Resources */,
 				EF255FC0211BA7F400942F13 /* SF-Pro-Text-Regular.otf in Resources */,
 				EF255FB2211BA7F400942F13 /* SF-Pro-Display-Black.otf in Resources */,
 				EF255FB3211BA7F400942F13 /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				EFCD830821286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib in Resources */,
 				EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */,
 				EF3D9242212257170012DF97 /* Settings.storyboard in Resources */,
 				EF255FA7211BA7F400942F13 /* SF-Pro-Text-BoldItalic.otf in Resources */,
 				EF255FAA211BA7F400942F13 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				EF255FB7211BA7F400942F13 /* SF-Pro-Text-Bold.otf in Resources */,
 				EF255FAB211BA7F400942F13 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				EFCD82FB212857EE00EF2A25 /* TopExperiencesTableViewCell.xib in Resources */,
+				EFCD82F32128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib in Resources */,
 				EF255FAE211BA7F400942F13 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				EF3D9238212253480012DF97 /* Flights.storyboard in Resources */,
 				EF3D923D2122564D0012DF97 /* Trips.storyboard in Resources */,
 				EF255FAC211BA7F400942F13 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				EFCD82EF212856D100EF2A25 /* TopImageHeaderTableViewCell.xib in Resources */,
 				EFC9AD92211FD07400E41FEA /* RevealSplashViewController.xib in Resources */,
 				EF255FC4211BA7F400942F13 /* SF-Pro-Display-Medium.otf in Resources */,
 				EF255FAD211BA7F400942F13 /* SF-Pro-Text-MediumItalic.otf in Resources */,
@@ -516,6 +586,7 @@
 				EF255FBB211BA7F400942F13 /* SF-Pro-Display-Semibold.otf in Resources */,
 				EF255FB5211BA7F400942F13 /* SF-Pro-Display-ThinItalic.otf in Resources */,
 				EF255FB6211BA7F400942F13 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				EFCD82FF212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,13 +652,20 @@
 				EF66D09C21250F0D00E3C43C /* RelaxationTableViewCell.swift in Sources */,
 				EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */,
 				EFC9AD82211F9C6500E41FEA /* CustomProgressHud.swift in Sources */,
+				EFCD82F6212857A400EF2A25 /* PlaceMapTableViewCell.swift in Sources */,
 				EF3D922F212235810012DF97 /* FlightsTableViewController.swift in Sources */,
+				EFCD830C2128F62800EF2A25 /* UILabel+Extensions.swift in Sources */,
 				EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */,
+				EFCD82FA212857EE00EF2A25 /* TopExperiencesTableViewCell.swift in Sources */,
+				EFCD830721286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift in Sources */,
 				EFA8C83D21172C7400F179B9 /* test.swift in Sources */,
+				EFCD82FE212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift in Sources */,
 				EF66D09921250DC500E3C43C /* Cell.swift in Sources */,
 				EF66D0A221254FB800E3C43C /* UICollectionViewCell+Extensions.swift in Sources */,
 				EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */,
+				EFCD830221286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift in Sources */,
 				EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */,
+				EFCD830A2128747D00EF2A25 /* ExploreOpenTableViewController.swift in Sources */,
 				EF66D0A5212558E300E3C43C /* ExploreOpenViewController.swift in Sources */,
 				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
 				EF66D0A72125D96500E3C43C /* ExploreOpenTableViewCell.swift in Sources */,
@@ -599,6 +677,7 @@
 				EF255FCF211C226900942F13 /* CustomButton.swift in Sources */,
 				EF66D0A921261BB600E3C43C /* ExploreOpenCollectionViewCell.swift in Sources */,
 				EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */,
+				EFCD82F22128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift in Sources */,
 				EF255F7C21173E2B00942F13 /* test2.swift in Sources */,
 				EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */,
 				EF66D09521250CD500E3C43C /* TripToTableViewCell.swift in Sources */,
@@ -609,6 +688,7 @@
 				EF3D922A212069DF0012DF97 /* Segue.swift in Sources */,
 				EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */,
 				EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */,
+				EFCD82EE212856D100EF2A25 /* TopImageHeaderTableViewCell.swift in Sources */,
 				EF66D09E21250F2C00E3C43C /* RelaxationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
