@@ -70,6 +70,7 @@
 		EF66D0A5212558E300E3C43C /* ExploreOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */; };
 		EF66D0A72125D96500E3C43C /* ExploreOpenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */; };
 		EF66D0A921261BB600E3C43C /* ExploreOpenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */; };
+		EF733C452129F64D00B88880 /* ExploreOpen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF733C442129F64D00B88880 /* ExploreOpen.storyboard */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
 		EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82F2116605F00F179B9 /* Assets.xcassets */; };
@@ -166,6 +167,7 @@
 		EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenViewController.swift; sourceTree = "<group>"; };
 		EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenTableViewCell.swift; sourceTree = "<group>"; };
 		EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF733C442129F64D00B88880 /* ExploreOpen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExploreOpen.storyboard; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82D2116605D00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 		EF66D0A3212558AB00E3C43C /* Explore Open */ = {
 			isa = PBXGroup;
 			children = (
+				EF733C442129F64D00B88880 /* ExploreOpen.storyboard */,
 				EFCD83092128747D00EF2A25 /* ExploreOpenTableViewController.swift */,
 				EFCD82D92128522100EF2A25 /* Cells */,
 				EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */,
@@ -555,6 +558,7 @@
 				EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */,
 				EF3D9242212257170012DF97 /* Settings.storyboard in Resources */,
 				EF255FA7211BA7F400942F13 /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				EF733C452129F64D00B88880 /* ExploreOpen.storyboard in Resources */,
 				EF255FAA211BA7F400942F13 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				EF255FB7211BA7F400942F13 /* SF-Pro-Text-Bold.otf in Resources */,
 				EF255FAB211BA7F400942F13 /* SF-Pro-Text-HeavyItalic.otf in Resources */,

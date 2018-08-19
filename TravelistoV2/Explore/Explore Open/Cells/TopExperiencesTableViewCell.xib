@@ -14,9 +14,6 @@
         <array key="SF-Pro-Text-Medium.otf">
             <string>SFProText-Medium</string>
         </array>
-        <array key="SF-Pro-Text-Regular.otf">
-            <string>SFProText-Regular</string>
-        </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -85,7 +82,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Eiffel Tower" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA8-4t-Izv">
                                                 <rect key="frame" x="12" y="131" width="99" height="17"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -97,9 +94,8 @@
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="12"/>
+                                                <integer key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="URm-hC-1tN">
@@ -110,8 +106,14 @@
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-14" translatesAutoresizingMaskIntoConstraints="NO" id="jLv-WR-PDq">
                                                         <rect key="frame" x="0.0" y="0.0" width="192" height="75"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </imageView>
-                                                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmC-aw-rjZ">
+                                                    <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XmC-aw-rjZ" customClass="CustomUIView" customModule="TravelistoV2" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="192" height="75"/>
                                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
@@ -137,26 +139,37 @@
                                                     <constraint firstItem="jLv-WR-PDq" firstAttribute="leading" secondItem="Jr4-La-4iX" secondAttribute="leading" id="thA-tZ-e0K"/>
                                                     <constraint firstItem="XmC-aw-rjZ" firstAttribute="top" secondItem="Jr4-La-4iX" secondAttribute="top" id="vXQ-II-Yww"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="guH-e4-Sme">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="guH-e4-Sme">
                                                 <rect key="frame" x="0.0" y="85" width="192" height="75"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NMl-lT-ewm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="75"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="75"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-13" translatesAutoresizingMaskIntoConstraints="NO" id="iWW-Rc-oNS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="75"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-13" translatesAutoresizingMaskIntoConstraints="NO" id="iWW-Rc-oNS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="107" height="75"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="8"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </imageView>
-                                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zd-D6-DWz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="103" height="75"/>
+                                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zd-D6-DWz" customClass="CustomUIView" customModule="TravelistoV2" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="107" height="75"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pantheon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Gc-2b-a4X">
-                                                                <rect key="frame" x="9" y="48" width="85" height="16"/>
+                                                                <rect key="frame" x="9" y="48" width="89" height="16"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="16" id="pTI-ML-jTe"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -175,23 +188,34 @@
                                                             <constraint firstItem="7zd-D6-DWz" firstAttribute="leading" secondItem="NMl-lT-ewm" secondAttribute="leading" id="ezc-Qf-Ytz"/>
                                                             <constraint firstItem="iWW-Rc-oNS" firstAttribute="leading" secondItem="NMl-lT-ewm" secondAttribute="leading" id="qrz-5f-Age"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ftQ-pR-c9C">
                                                         <rect key="frame" x="117" y="0.0" width="75" height="75"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-3" translatesAutoresizingMaskIntoConstraints="NO" id="afj-MX-IAp">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-3" translatesAutoresizingMaskIntoConstraints="NO" id="afj-MX-IAp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="8"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipToBounds" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
                                                             </imageView>
-                                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzr-86-mZx">
+                                                            <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tzr-86-mZx" customClass="CustomUIView" customModule="TravelistoV2" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="dyk-Fk-NeK">
-                                                                <rect key="frame" x="21.5" y="26.5" width="32.5" height="22"/>
+                                                                <rect key="frame" x="24" y="26.5" width="27" height="22"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="22" id="lRX-hw-e1Y"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="18"/>
+                                                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -204,12 +228,18 @@
                                                             <constraint firstAttribute="trailing" secondItem="afj-MX-IAp" secondAttribute="trailing" id="GwZ-9t-BG4"/>
                                                             <constraint firstItem="dyk-Fk-NeK" firstAttribute="centerX" secondItem="ftQ-pR-c9C" secondAttribute="centerX" id="Lg2-2d-hgr"/>
                                                             <constraint firstItem="afj-MX-IAp" firstAttribute="leading" secondItem="ftQ-pR-c9C" secondAttribute="leading" id="ODH-YH-BgC"/>
+                                                            <constraint firstAttribute="width" constant="75" id="WCy-OY-Ezc"/>
                                                             <constraint firstAttribute="bottom" secondItem="Tzr-86-mZx" secondAttribute="bottom" id="ict-Jd-Lp3"/>
                                                             <constraint firstAttribute="trailing" secondItem="Tzr-86-mZx" secondAttribute="trailing" id="jJJ-hn-Ejh"/>
                                                             <constraint firstItem="dyk-Fk-NeK" firstAttribute="centerY" secondItem="ftQ-pR-c9C" secondAttribute="centerY" id="kds-Kv-dXW"/>
                                                             <constraint firstItem="Tzr-86-mZx" firstAttribute="top" secondItem="ftQ-pR-c9C" secondAttribute="top" id="sqa-ZC-RAZ"/>
                                                             <constraint firstAttribute="height" constant="75" id="wcA-cw-e8O"/>
                                                         </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="8"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>

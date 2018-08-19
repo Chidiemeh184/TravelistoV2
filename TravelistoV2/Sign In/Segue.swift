@@ -14,4 +14,6 @@ struct Segue {
     static let onboardToSignIn = "onboardToSignIn"
     static let onboardToSignUp = "onboardToSignUp"
     static let signInToResetPassword = "signInToResetPassword"
+    static let exploreToExploreOpen = "exploreToExploreOpen"
+    static let exploreToShowMore = "exploreToShowMore"
 }

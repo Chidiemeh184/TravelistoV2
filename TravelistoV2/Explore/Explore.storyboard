@@ -104,7 +104,6 @@
                                                     </constraints>
                                                     <connections>
                                                         <outlet property="placeImageView" destination="4ce-ag-YzX" id="lbH-rH-vBe"/>
-                                                        <segue destination="IrY-DW-OnR" kind="show" id="PtB-ZP-gb9"/>
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
@@ -236,36 +235,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="w9j-JP-sQk" kind="show" identifier="exploreToExploreOpen" id="vob-LF-Nma"/>
+                        <segue destination="zKf-CY-3Fe" kind="show" identifier="exploreToShowMore" id="S4z-92-aQZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebh-RY-w6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2877.5999999999999" y="2183.658170914543"/>
-        </scene>
-        <!--Explore Open Table View Controller-->
-        <scene sceneID="no9-as-ilO">
-            <objects>
-                <tableViewController id="IrY-DW-OnR" customClass="ExploreOpenTableViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="CPm-uZ-mxZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                        <connections>
-                            <outlet property="dataSource" destination="IrY-DW-OnR" id="P3o-Nj-Qqq"/>
-                            <outlet property="delegate" destination="IrY-DW-OnR" id="64k-n9-oqA"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="MO1-8S-WTb">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back-24" id="dbk-FS-Ctm">
-                            <color key="tintColor" name="TravelistoWhite"/>
-                            <connections>
-                                <action selector="backButtonTapped:" destination="IrY-DW-OnR" id="s8W-ig-VWK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hl9-vX-ttj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3772" y="2185"/>
+            <point key="canvasLocation" x="2818" y="2185"/>
         </scene>
         <!--Reveal Splash View Controller-->
         <scene sceneID="VNf-RW-HKe">
@@ -310,6 +287,37 @@
             </objects>
             <point key="canvasLocation" x="1199" y="2184"/>
         </scene>
+        <!--ExploreOpenSB-->
+        <scene sceneID="MZZ-S0-jrl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExploreOpen" referencedIdentifier="ExploreOpenSB" id="w9j-JP-sQk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHe-FB-XY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3430" y="1897"/>
+        </scene>
+        <!--Relaxation-->
+        <scene sceneID="OYW-dp-fdK">
+            <objects>
+                <tableViewController id="zKf-CY-3Fe" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Yd-JO-6aZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="zKf-CY-3Fe" id="9fF-gu-9RQ"/>
+                            <outlet property="delegate" destination="zKf-CY-3Fe" id="qVa-Rj-mYs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Relaxation" id="QoV-7J-cFi">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back-24" id="QiD-aP-VyR">
+                            <color key="tintColor" name="TravelistoLightOrange"/>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZH-Az-0Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3734" y="2525"/>
+        </scene>
     </scenes>
     <resources>
         <image name="back-24" width="24" height="24"/>
@@ -319,6 +327,9 @@
         <image name="worldglobe-icon-filled" width="21" height="28"/>
         <namedColor name="TravelistoBlack">
             <color red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoLightOrange">
+            <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TravelistoLightOrange">
             <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

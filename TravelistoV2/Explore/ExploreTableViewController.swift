@@ -116,10 +116,6 @@ extension ExploreTableViewController: UICollectionViewDelegate, UICollectionView
             return collectionViewCell
         }
     }
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //Perform Segue
-    }
 }
 
 //MARK: CollectionView FlowLayout
@@ -152,14 +148,50 @@ extension ExploreTableViewController: UICollectionViewDelegateFlowLayout {
         let tag = CollectionViewTag(rawValue: collectionView.tag)!
         switch tag {
         case .isTripToCollectionViewTag:
-            let inset = UIEdgeInsetsMake(0, 16, 0, 16)
+            let inset = UIEdgeInsetsMake(0, 20, 0, 20)
             return inset
         case .isRelaxationCollectionViewTag:
-            let inset = UIEdgeInsetsMake(0, 16, 0, 16)
+            let inset = UIEdgeInsetsMake(0, 20, 0, 20)
             return inset
         }
     }
 }
+
+// MARK: - Navigation & Segue
+
+extension ExploreTableViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == Segue.exploreToExploreOpen {
+//            guard let info = sender as? (UICollectionView, IndexPath) else { return }
+//            print("Segue to sent \(info)")
+//             Use switch to determine the cell you want
+//             then get the data for that cell and pass to
+//             the destination VC
+//            guard let indexPath = sender as? NSIndexPath else { return }
+//            let cell = tableView.cellForRow(at: indexPath as IndexPath) as? StarsTableViewCell
+//            if let exploreOpenTableViewController = segue.destination as? ExploreOpenTableViewController {
+//                //Assign destination data
+//            }
+//
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: Segue.exploreToExploreOpen, sender: (tableView, indexPath))
+    }
+}
+
+
+extension ExploreTableViewController {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //GET Item from datasource before sending
+        self.performSegue(withIdentifier: Segue.exploreToExploreOpen, sender: (collectionView, indexPath))
+    }
+}
+
 
 enum CollectionViewTag : Int {
     case isTripToCollectionViewTag = 1
