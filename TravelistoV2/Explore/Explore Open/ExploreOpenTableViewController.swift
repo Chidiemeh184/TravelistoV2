@@ -20,12 +20,7 @@ class ExploreOpenTableViewController: UITableViewController {
         
         let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
         statusBar?.backgroundColor = UIColor.clear
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
-        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        UIApplication.shared.statusBarStyle = .lightContent
+        self.makeNavBarInvisible()
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -67,7 +62,7 @@ class ExploreOpenTableViewController: UITableViewController {
 extension ExploreOpenTableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
-        UIApplication.shared.statusBarStyle = .lightContent
+        self.makeNavBarInvisible()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -168,6 +163,7 @@ extension ExploreOpenTableViewController  {
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: TopExperiencesTableViewCell.identifier, for: indexPath) as! TopExperiencesTableViewCell
+            cell.showMoreButtton.addTarget(self, action: #selector(ExploreOpenTableViewController.showMorePlacesOfInterestsButtonTapped), for: .touchUpInside)
             return cell
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: PlaceDescriptionTableViewCell.identifier, for: indexPath) as! PlaceDescriptionTableViewCell
@@ -177,6 +173,7 @@ extension ExploreOpenTableViewController  {
             return cell
         case 5:
             let cell = tableView.dequeueReusableCell(withIdentifier: HorizontalPlaceListTableViewCell.identifier, for: indexPath) as! HorizontalPlaceListTableViewCell
+            cell.horizontalPlaceShoeMoreButton.addTarget(self, action: #selector(ExploreOpenTableViewController.showMoreRestuarantsButtonTapped), for: .touchUpInside)
             return cell
         case 6:
             let cell = tableView.dequeueReusableCell(withIdentifier: ConfirmationButtonTableViewCell.identifier, for: indexPath) as! ConfirmationButtonTableViewCell
@@ -188,7 +185,7 @@ extension ExploreOpenTableViewController  {
 }
 
 
-// MARK: - Will Display Collectionview
+// MARK: - Tableview Will Display Collectionview
 
 extension ExploreOpenTableViewController {
     
@@ -196,7 +193,7 @@ extension ExploreOpenTableViewController {
         guard let horizontalPlacesCell = cell as? HorizontalPlaceListTableViewCell else  { return }
         let collectionView = horizontalPlacesCell.horizontalPlaceCollectionView
         collectionView?.dataSource = self
-        collectionView?.dataSource = self
+        collectionView?.delegate = self
         collectionView?.register(UINib(nibName: HorizontalPlaceListCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: HorizontalPlaceListCollectionViewCell.identifier)
     }
 }
@@ -211,7 +208,7 @@ extension ExploreOpenTableViewController : UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let cellDefaultHeight = CGFloat(168)
+        let cellDefaultHeight = CGFloat(161)
         let cellDefaultWidth = CGFloat(135)
         let size = CGSize(width: cellDefaultWidth, height: cellDefaultHeight)
         return size
@@ -223,7 +220,7 @@ extension ExploreOpenTableViewController : UICollectionViewDelegate, UICollectio
     }
 }
 
-//MARK: - Datasource
+//MARK: - Collectionview Datasource
 
 extension ExploreOpenTableViewController {
     
@@ -237,9 +234,55 @@ extension ExploreOpenTableViewController {
         return cell
     }
     
+}
+
+// MARK: - Navigation & Segue
+
+extension ExploreOpenTableViewController {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == Segue.exploreOpenToPlacesOfInterest {
+            if let placesOfInterestViewController = segue.destination as? PlacesOfInterestListViewController {
+                placesOfInterestViewController.tableViewCellType = PlaceOfInterestCellType.placeOfInterest
+            }
+        }else if segue.identifier == Segue.exploreToShowMoreRestuarants {
+            if let placesOfInterestViewController = segue.destination as? PlacesOfInterestListViewController {
+                placesOfInterestViewController.tableViewCellType = PlaceOfInterestCellType.restuarant
+            }
+        }
+    }
+        
+}
+
+extension ExploreOpenTableViewController {
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //Perform Segue
+        //GET Item from datasource before sending
+        
+//        let storyboard = UIStoryboard(name: "ExploreOpen", bundle: nil)
+//        let slideShow = storyboard.instantiateViewController(withIdentifier: "SlideShowSB") as! SlideShowViewController
+//        self.present(slideShow, animated: true, completion: nil)
+        
+//        let signInViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.SignInViewController) as! SignInViewController
+//        signInViewController.isSecondLaunched = true
+//        window?.rootViewController = signInViewController
+        
+        self.performSegue(withIdentifier: Segue.exploreOpenToPlacesOfInterest, sender: (collectionView, indexPath))
+    }
+}
+
+
+// MARK: - Show More Open
+
+extension ExploreOpenTableViewController {
+    
+    @objc func showMorePlacesOfInterestsButtonTapped(){
+        self.performSegue(withIdentifier: Segue.exploreOpenToPlacesOfInterest, sender: nil)
     }
     
+    @objc func showMoreRestuarantsButtonTapped(){
+        self.performSegue(withIdentifier: Segue.exploreToShowMoreRestuarants, sender: nil)
+    }
 }
 

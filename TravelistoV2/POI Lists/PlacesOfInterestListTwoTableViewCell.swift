@@ -1,19 +1,16 @@
 //
-//  RelaxationTableViewCell.swift
+//  PlacesOfInterestListTwoTableViewCell.swift
 //  TravelistoV2
 //
-//  Created by Chidi Emeh on 8/15/18.
+//  Created by Chidi Emeh on 8/20/18.
 //  Copyright © 2018 Chidi Emeh. All rights reserved.
 //
 
 import UIKit
 
-class RelaxationTableViewCell: UITableViewCell {
+class PlacesOfInterestListTwoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var relaxationCollectionView: UICollectionView!
-    @IBOutlet weak var showMoreButton: UIButton!
-    
-    static let identifier = "RelaxationTableViewCell"
+    static let identifier = "PlacesOfInterestListTwoTableViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,5 +22,5 @@ class RelaxationTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
 }

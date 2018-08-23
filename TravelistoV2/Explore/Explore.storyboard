@@ -220,6 +220,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="relaxationCollectionView" destination="YNm-K9-fOZ" id="Ox8-nG-8DO"/>
+                                    <outlet property="showMoreButton" destination="f7Z-2V-kLg" id="w18-M9-6wO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -237,7 +238,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="w9j-JP-sQk" kind="show" identifier="exploreToExploreOpen" id="vob-LF-Nma"/>
-                        <segue destination="zKf-CY-3Fe" kind="show" identifier="exploreToShowMore" id="S4z-92-aQZ"/>
+                        <segue destination="cgZ-PW-R6i" kind="show" identifier="exploreToShowMore" id="S4z-92-aQZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebh-RY-w6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -293,43 +294,24 @@
                 <viewControllerPlaceholder storyboardName="ExploreOpen" referencedIdentifier="ExploreOpenSB" id="w9j-JP-sQk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHe-FB-XY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3430" y="1897"/>
+            <point key="canvasLocation" x="3578" y="1915"/>
         </scene>
-        <!--Relaxation-->
-        <scene sceneID="OYW-dp-fdK">
+        <!--ShowMoreSB-->
+        <scene sceneID="Nlc-Gx-ntO">
             <objects>
-                <tableViewController id="zKf-CY-3Fe" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Yd-JO-6aZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <connections>
-                            <outlet property="dataSource" destination="zKf-CY-3Fe" id="9fF-gu-9RQ"/>
-                            <outlet property="delegate" destination="zKf-CY-3Fe" id="qVa-Rj-mYs"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Relaxation" id="QoV-7J-cFi">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="back-24" id="QiD-aP-VyR">
-                            <color key="tintColor" name="TravelistoLightOrange"/>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XZH-Az-0Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ShowMore" referencedIdentifier="ShowMoreSB" id="cgZ-PW-R6i" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mc0-gv-xU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3734" y="2525"/>
+            <point key="canvasLocation" x="3567" y="2449"/>
         </scene>
     </scenes>
     <resources>
-        <image name="back-24" width="24" height="24"/>
         <image name="travel-10" width="720" height="480"/>
         <image name="travel-11" width="720" height="480"/>
         <image name="worldglobe-icon" width="21" height="27"/>
         <image name="worldglobe-icon-filled" width="21" height="28"/>
         <namedColor name="TravelistoBlack">
             <color red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="TravelistoLightOrange">
-            <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TravelistoLightOrange">
             <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

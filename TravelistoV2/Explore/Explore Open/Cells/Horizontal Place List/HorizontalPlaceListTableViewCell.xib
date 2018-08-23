@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -55,8 +54,8 @@
                             </button>
                         </subviews>
                     </stackView>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="O1d-ZC-CQs">
-                        <rect key="frame" x="0.0" y="37" width="375" height="207"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="O1d-ZC-CQs">
+                        <rect key="frame" x="0.0" y="40" width="375" height="206"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="15" sectionInsetReference="layoutMargins" id="4CR-Jb-qAL">
                             <size key="itemSize" width="135" height="161"/>
@@ -67,13 +66,13 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="O1d-ZC-CQs" firstAttribute="centerX" secondItem="zQG-Vz-RD3" secondAttribute="centerX" id="2MV-Mf-ehN"/>
-                    <constraint firstItem="O1d-ZC-CQs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4L6-70-h19"/>
+                    <constraint firstAttribute="trailing" secondItem="O1d-ZC-CQs" secondAttribute="trailing" id="0Sl-eK-sRA"/>
                     <constraint firstItem="zQG-Vz-RD3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="FlQ-Ot-Xk4"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="O1d-ZC-CQs" secondAttribute="bottom" constant="-9" id="KGK-Lf-mXq"/>
                     <constraint firstAttribute="trailing" secondItem="zQG-Vz-RD3" secondAttribute="trailing" constant="20" id="KTm-f4-Odh"/>
-                    <constraint firstItem="O1d-ZC-CQs" firstAttribute="top" secondItem="zQG-Vz-RD3" secondAttribute="bottom" id="Nha-Gb-p3f"/>
+                    <constraint firstAttribute="bottom" secondItem="O1d-ZC-CQs" secondAttribute="bottom" id="Wg2-K1-Ulp"/>
                     <constraint firstItem="zQG-Vz-RD3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="gPQ-zQ-H87"/>
+                    <constraint firstItem="O1d-ZC-CQs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sTU-37-k6L"/>
+                    <constraint firstItem="O1d-ZC-CQs" firstAttribute="top" secondItem="zQG-Vz-RD3" secondAttribute="bottom" constant="3" id="zdW-G4-Q1U"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

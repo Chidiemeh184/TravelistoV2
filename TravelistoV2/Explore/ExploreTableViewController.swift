@@ -33,6 +33,10 @@ class ExploreTableViewController: UITableViewController {
         print("Refreshing ExploreTableViewController ....")
         refreshControl?.endRefreshing()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Load Splash Screen
+    }
 }
 
 //MARK: Row Height
@@ -65,9 +69,12 @@ extension ExploreTableViewController {
             tableViewCell = tableView.dequeueReusableCell(withIdentifier: TripToTableViewCell.identifier) as!
             TripToTableViewCell
         default:
-            tableViewCell = tableView.dequeueReusableCell(withIdentifier: RelaxationTableViewCell.identifier) as!
+            let relaxationTableViewCell = tableView.dequeueReusableCell(withIdentifier: RelaxationTableViewCell.identifier) as!
             RelaxationTableViewCell
+            relaxationTableViewCell.showMoreButton.addTarget(self, action: #selector(ExploreTableViewController.showMoreButtonTapped), for: .touchUpInside)
+            return relaxationTableViewCell
         }
+        
         return tableViewCell
     }
 }
@@ -191,6 +198,17 @@ extension ExploreTableViewController {
         self.performSegue(withIdentifier: Segue.exploreToExploreOpen, sender: (collectionView, indexPath))
     }
 }
+
+
+// MARK: - Show More Open
+
+extension ExploreTableViewController {
+    
+    @objc func showMoreButtonTapped(){
+        self.performSegue(withIdentifier: Segue.exploreToShowMore, sender: nil)
+    }
+}
+
 
 
 enum CollectionViewTag : Int {

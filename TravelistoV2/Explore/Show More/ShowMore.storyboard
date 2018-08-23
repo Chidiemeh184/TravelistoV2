@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Relaxation-->
+        <scene sceneID="OYW-dp-fdK">
+            <objects>
+                <tableViewController storyboardIdentifier="ShowMoreSB" id="zKf-CY-3Fe" customClass="ShowMoreTableViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="scrollableAxes" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Yd-JO-6aZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="87" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <connections>
+                            <outlet property="dataSource" destination="zKf-CY-3Fe" id="9fF-gu-9RQ"/>
+                            <outlet property="delegate" destination="zKf-CY-3Fe" id="qVa-Rj-mYs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Relaxation" id="QoV-7J-cFi">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back-24" id="QiD-aP-VyR">
+                            <color key="tintColor" name="TravelistoLightOrange"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="zKf-CY-3Fe" id="ASm-Vy-cKF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="FSx-Zv-IA1" kind="show" identifier="showMoreToExploreOpen" id="3pK-Nj-GJZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZH-Az-0Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3719" y="2528"/>
+        </scene>
+        <!--ExploreOpenSB-->
+        <scene sceneID="6Xj-r0-8if">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExploreOpen" referencedIdentifier="ExploreOpenSB" id="FSx-Zv-IA1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nus-4o-5WY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4694" y="2256"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back-24" width="24" height="24"/>
+        <namedColor name="TravelistoLightOrange">
+            <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
