@@ -244,10 +244,12 @@ extension ExploreOpenTableViewController {
         
         if segue.identifier == Segue.exploreOpenToPlacesOfInterest {
             if let placesOfInterestViewController = segue.destination as? PlacesOfInterestListViewController {
+                placesOfInterestViewController.navTitle = "Places of Interest"
                 placesOfInterestViewController.tableViewCellType = PlaceOfInterestCellType.placeOfInterest
             }
         }else if segue.identifier == Segue.exploreToShowMoreRestuarants {
             if let placesOfInterestViewController = segue.destination as? PlacesOfInterestListViewController {
+                placesOfInterestViewController.navTitle = "Restuarants"
                 placesOfInterestViewController.tableViewCellType = PlaceOfInterestCellType.restuarant
             }
         }
@@ -268,7 +270,7 @@ extension ExploreOpenTableViewController {
 //        signInViewController.isSecondLaunched = true
 //        window?.rootViewController = signInViewController
         
-        self.performSegue(withIdentifier: Segue.exploreOpenToPlacesOfInterest, sender: (collectionView, indexPath))
+        self.performSegue(withIdentifier: Segue.exploreOpenToRestuarantOpen, sender: (collectionView, indexPath))
     }
 }
 

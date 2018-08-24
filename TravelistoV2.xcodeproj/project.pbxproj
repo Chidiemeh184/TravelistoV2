@@ -86,6 +86,12 @@
 		EF733C67212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C65212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift */; };
 		EF733C68212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF733C66212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib */; };
 		EF733C6C212F36B300B88880 /* RestuarantOpenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C6B212F36B300B88880 /* RestuarantOpenTableViewController.swift */; };
+		EF733C6E212F3B7000B88880 /* POIDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C6D212F3B7000B88880 /* POIDetailTableViewCell.swift */; };
+		EF733C70212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C6F212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift */; };
+		EF733C72212F41A100B88880 /* RestuarantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C71212F41A100B88880 /* RestuarantDetailTableViewCell.swift */; };
+		EF733C74212F437E00B88880 /* RestuarantMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C73212F437E00B88880 /* RestuarantMapTableViewCell.swift */; };
+		EF733C76212F46D900B88880 /* RestuarantScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C75212F46D900B88880 /* RestuarantScheduleTableViewCell.swift */; };
+		EF733C78212F477D00B88880 /* RestuarantAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C77212F477D00B88880 /* RestuarantAddressTableViewCell.swift */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
 		EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82F2116605F00F179B9 /* Assets.xcassets */; };
@@ -198,6 +204,12 @@
 		EF733C65212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIOpenHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		EF733C66212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POIOpenHeaderTableViewCell.xib; sourceTree = "<group>"; };
 		EF733C6B212F36B300B88880 /* RestuarantOpenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantOpenTableViewController.swift; sourceTree = "<group>"; };
+		EF733C6D212F3B7000B88880 /* POIDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C6F212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIRatingReviewTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C71212F41A100B88880 /* RestuarantDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantDetailTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C73212F437E00B88880 /* RestuarantMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantMapTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C75212F46D900B88880 /* RestuarantScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C77212F477D00B88880 /* RestuarantAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantAddressTableViewCell.swift; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82D2116605D00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -461,8 +473,10 @@
 		EF733C64212E894000B88880 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				EF733C65212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift */,
+				EF733C6D212F3B7000B88880 /* POIDetailTableViewCell.swift */,
 				EF733C66212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib */,
+				EF733C65212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift */,
+				EF733C6F212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -479,6 +493,10 @@
 		EF733C6A212F369100B88880 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				EF733C71212F41A100B88880 /* RestuarantDetailTableViewCell.swift */,
+				EF733C73212F437E00B88880 /* RestuarantMapTableViewCell.swift */,
+				EF733C75212F46D900B88880 /* RestuarantScheduleTableViewCell.swift */,
+				EF733C77212F477D00B88880 /* RestuarantAddressTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -760,6 +778,7 @@
 			files = (
 				EF733C6C212F36B300B88880 /* RestuarantOpenTableViewController.swift in Sources */,
 				EF66D0A02125463E00E3C43C /* UIImageView+Extensions.swift in Sources */,
+				EF733C74212F437E00B88880 /* RestuarantMapTableViewCell.swift in Sources */,
 				EF66D09C21250F0D00E3C43C /* RelaxationTableViewCell.swift in Sources */,
 				EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */,
 				EF733C48212A047600B88880 /* ShowMoreTableViewController.swift in Sources */,
@@ -772,6 +791,7 @@
 				EF733C53212A42F800B88880 /* SlideShowCollectionViewCell.swift in Sources */,
 				EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */,
 				EFCD82FA212857EE00EF2A25 /* TopExperiencesTableViewCell.swift in Sources */,
+				EF733C78212F477D00B88880 /* RestuarantAddressTableViewCell.swift in Sources */,
 				EFCD830721286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift in Sources */,
 				EFA8C83D21172C7400F179B9 /* test.swift in Sources */,
 				EFCD82FE212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift in Sources */,
@@ -802,8 +822,12 @@
 				EF255FCC211BCE7100942F13 /* OnboardingCollectionViewCell.swift in Sources */,
 				EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */,
 				EF733C67212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift in Sources */,
+				EF733C6E212F3B7000B88880 /* POIDetailTableViewCell.swift in Sources */,
+				EF733C76212F46D900B88880 /* RestuarantScheduleTableViewCell.swift in Sources */,
+				EF733C72212F41A100B88880 /* RestuarantDetailTableViewCell.swift in Sources */,
 				EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */,
 				EF66D09721250CF900E3C43C /* TripToCollectionViewCell.swift in Sources */,
+				EF733C70212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift in Sources */,
 				EF3D922A212069DF0012DF97 /* Segue.swift in Sources */,
 				EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */,
 				EF733C59212AE38C00B88880 /* PlacesOfInterestListTableViewCell.swift in Sources */,

@@ -11,12 +11,15 @@ import UIKit
 class PlacesOfInterestListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableview: UITableView!
-    
+    @IBOutlet weak var navItem: UINavigationItem!
     var tableViewCellType: PlaceOfInterestCellType!
+    
+    var navTitle  = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideNav()
+        self.navItem.title = navTitle
         tableview.register(UINib(nibName: PlacesOfInterestListTableViewCell.identifier, bundle: nil), forCellReuseIdentifier:  PlacesOfInterestListTableViewCell.identifier)
         tableview.register(UINib(nibName: PlacesOfInterestListTwoTableViewCell.identifier, bundle: nil), forCellReuseIdentifier:  PlacesOfInterestListTwoTableViewCell.identifier)
         tableview.dataSource = self
@@ -27,8 +30,16 @@ class PlacesOfInterestListViewController: UIViewController, UITableViewDelegate,
         self.navigationController?.popViewController(animated: true)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.hideNav()
+    }
+    
     override func viewDidDisappear(_ animated: Bool) {
         self.showNav()
+    }
+    
+    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
+    
     }
     
 }
@@ -59,6 +70,7 @@ extension PlacesOfInterestListViewController {
             case .placeOfInterest:
                 defaultCell = tableView.dequeueReusableCell(withIdentifier: PlacesOfInterestListTableViewCell.identifier) as!
                 PlacesOfInterestListTableViewCell
+                defaultCell.contentView.frame = CGRect(x: 0, y: 0, width: 375, height: 87)
             case .restuarant:
                 defaultCell = tableView.dequeueReusableCell(withIdentifier: PlacesOfInterestListTwoTableViewCell.identifier) as!
                 PlacesOfInterestListTwoTableViewCell
@@ -75,13 +87,22 @@ extension PlacesOfInterestListViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == Segue.showMoreToExploreOpen {
+        if segue.identifier == Segue.placeOfInterestToPOIOpen {
             //Send stuffs
+        }else if segue.identifier == Segue.restuarantsListToRestuarantOpen {
+            //Send restuarant
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //self.performSegue(withIdentifier: Segue.showMoreToExploreOpen, sender: (tableView, indexPath))
+        let cellType = tableView.cellForRow(at: indexPath)
+        
+        switch cellType {
+        case is PlacesOfInterestListTableViewCell :
+            self.performSegue(withIdentifier: Segue.placeOfInterestToPOIOpen, sender: (tableView, indexPath))
+        default:
+            self.performSegue(withIdentifier: Segue.restuarantsListToRestuarantOpen, sender: (tableView, indexPath))
+        }
     }
 }
 

@@ -22,4 +22,8 @@ struct Segue {
     static let exploreOpenToSlideShow = "exploreOpenToSlideShow"
     static let exploreOpenToPlacesOfInterest = "exploreOpenToPlacesOfInterest"
     static let exploreToShowMoreRestuarants = "exploreToShowMoreRestuarants"
+    static let exploreOpenToRestuarantOpen = "exploreOpenToRestuarantOpen"
+    
+    static let placeOfInterestToPOIOpen = "placeOfInterestToPOIOpen"
+    static let restuarantsListToRestuarantOpen = "restuarantsListToRestuarantOpen"
 }

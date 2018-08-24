@@ -49,11 +49,12 @@
                     <connections>
                         <segue destination="Bco-wJ-PXk" kind="show" identifier="exploreOpenToPlacesOfInterest" id="DcW-re-htc"/>
                         <segue destination="Bco-wJ-PXk" kind="show" identifier="exploreToShowMoreRestuarants" id="Tzc-Ae-RGx"/>
+                        <segue destination="WJa-vB-ttS" kind="presentation" identifier="exploreOpenToRestuarantOpen" modalPresentationStyle="overCurrentContext" id="dLM-yB-54s"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hl9-vX-ttj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3772" y="2185"/>
+            <point key="canvasLocation" x="2478" y="3099"/>
         </scene>
         <!--Slide Show View Controller-->
         <scene sceneID="DTz-Mf-u4r">
@@ -244,11 +245,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NOT-B4-BRS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6585" y="3100"/>
+            <point key="canvasLocation" x="7185" y="3099"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NiI-a6-whN">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uek-nm-Zyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="AKc-UO-V8n" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -261,9 +263,8 @@
                         <segue destination="yIy-Xg-PDf" kind="relationship" relationship="rootViewController" id="B1W-yu-PaT"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uek-nm-Zyt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5641" y="3100"/>
+            <point key="canvasLocation" x="6271" y="3099"/>
         </scene>
         <!--Places Of Interest List View Controller-->
         <scene sceneID="lE6-BY-FU1">
@@ -273,6 +274,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nZb-Xy-2XP">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="68" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fRi-5Z-97T">
                                 <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                                 <items>
@@ -287,11 +293,6 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nZb-Xy-2XP">
-                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <inset key="separatorInset" minX="68" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -306,23 +307,26 @@
                         <viewLayoutGuide key="safeArea" id="Agc-Qa-1Td"/>
                     </view>
                     <connections>
+                        <outlet property="navItem" destination="37Y-K4-Vej" id="83v-zm-nhs"/>
                         <outlet property="tableview" destination="nZb-Xy-2XP" id="KUE-CW-uwa"/>
+                        <segue destination="zc7-JH-X1l" kind="presentation" identifier="placeOfInterestToPOIOpen" modalPresentationStyle="currentContext" id="812-Au-M7g"/>
+                        <segue destination="WJa-vB-ttS" kind="presentation" identifier="restuarantsListToRestuarantOpen" modalPresentationStyle="currentContext" id="iZA-TI-uC4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vn1-2v-usF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3497" y="3101"/>
         </scene>
-        <!--Open Table View Controller-->
+        <!--France-->
         <scene sceneID="60s-yd-cH7">
             <objects>
                 <tableViewController id="YRy-oa-LQX" customClass="POIOpenTableViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RR6-Vd-qnR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="573" id="vAb-I2-bXx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="POIDetailTableViewCell" rowHeight="573" id="vAb-I2-bXx" customClass="POIDetailTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="573"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vAb-I2-bXx" id="XOd-8W-v3h">
@@ -343,14 +347,6 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVc-Sl-liE">
                                                     <rect key="frame" x="155" y="232" width="209" height="42"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGR-5U-NmZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="209" height="42"/>
-                                                            <userDefinedRuntimeAttributes>
-                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                                    <integer key="value" value="8"/>
-                                                                </userDefinedRuntimeAttribute>
-                                                            </userDefinedRuntimeAttributes>
-                                                        </button>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-gallery-48" translatesAutoresizingMaskIntoConstraints="NO" id="h8r-VG-Eoe">
                                                             <rect key="frame" x="17" y="8" width="26" height="26"/>
                                                             <constraints>
@@ -358,12 +354,28 @@
                                                                 <constraint firstAttribute="height" constant="26" id="sYK-Ce-T6A"/>
                                                             </constraints>
                                                         </imageView>
+                                                        <navigationBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NU-vX-3Gn">
+                                                            <rect key="frame" x="104" y="21" width="0.0" height="0.0"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </navigationBar>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View All Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZ9-dh-VOo">
                                                             <rect key="frame" x="59" y="10" width="142" height="21"/>
                                                             <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="17"/>
                                                             <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGR-5U-NmZ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="209" height="42"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                    <integer key="value" value="8"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                            <connections>
+                                                                <segue destination="AKc-UO-V8n" kind="presentation" id="TSI-GV-fPP"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -514,8 +526,16 @@ Malang 65115, Indonasia</string>
                                         <constraint firstItem="AhI-JT-7Sx" firstAttribute="top" secondItem="XOd-8W-v3h" secondAttribute="top" constant="-51" id="zNc-60-6tf"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="placeAddressLabel" destination="CEQ-wN-VD8" id="tJG-rB-tqw"/>
+                                    <outlet property="placeImageView" destination="fFa-WS-zMR" id="428-Sb-Tw7"/>
+                                    <outlet property="placeMapview" destination="Ble-V7-bNt" id="4rH-rY-oic"/>
+                                    <outlet property="placeNameLabel" destination="Zwk-6y-kHM" id="UYb-9C-s9Z"/>
+                                    <outlet property="ratingLabel" destination="nxL-ei-jhe" id="fXP-J3-VKI"/>
+                                    <outlet property="viewPhotosButton" destination="WGR-5U-NmZ" id="aC0-gc-ogI"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="oJi-NB-tat">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="POIRatingReviewTableViewCell" rowHeight="87" id="oJi-NB-tat" customClass="POIRatingReviewTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="601" width="375" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oJi-NB-tat" id="gIT-BB-T56">
@@ -543,7 +563,6 @@ Malang 65115, Indonasia</string>
                                                                 <constraint firstAttribute="width" constant="40" id="1cF-on-pR0"/>
                                                                 <constraint firstAttribute="bottom" secondItem="wen-ki-Ygg" secondAttribute="bottom" id="AQA-8A-aPX"/>
                                                                 <constraint firstItem="wen-ki-Ygg" firstAttribute="leading" secondItem="1hE-sK-V2c" secondAttribute="leading" id="LlN-Yk-ldQ"/>
-                                                                <constraint firstAttribute="height" constant="40" id="PNS-Zc-loj"/>
                                                                 <constraint firstAttribute="trailing" secondItem="wen-ki-Ygg" secondAttribute="trailing" id="ZiW-jl-Ec8"/>
                                                                 <constraint firstItem="wen-ki-Ygg" firstAttribute="top" secondItem="1hE-sK-V2c" secondAttribute="top" id="kbH-Vx-1kD"/>
                                                             </constraints>
@@ -591,6 +610,12 @@ Malang 65115, Indonasia</string>
                                         <constraint firstAttribute="trailing" secondItem="0B8-HU-nvl" secondAttribute="trailing" constant="22" id="ceQ-Tt-E1L"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="numberOfReviewLabel" destination="mT7-Ex-GfC" id="Ok7-If-kz6"/>
+                                    <outlet property="ratingDescriptionLabel" destination="c0M-cs-bfa" id="Oy0-si-9N5"/>
+                                    <outlet property="ratingNumberLabel" destination="wen-ki-Ygg" id="WUo-gM-ECl"/>
+                                    <outlet property="seeReviewsButton" destination="9dv-84-8go" id="7VD-18-NaA"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -598,25 +623,30 @@ Malang 65115, Indonasia</string>
                             <outlet property="delegate" destination="YRy-oa-LQX" id="JGk-oo-lPO"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="France" id="Q3n-9r-B2j">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="T2Q-RC-wPN">
+                            <color key="tintColor" name="TravelistoLightOrange"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="YRy-oa-LQX" id="CF6-uy-UWu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="375" height="667"/>
-                    <connections>
-                        <segue destination="AKc-UO-V8n" kind="presentation" modalPresentationStyle="overFullScreen" id="Phh-Nc-rqU"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="STJ-wi-1xv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4650" y="3100"/>
+            <point key="canvasLocation" x="5362" y="3100"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Coco Bamboo Resco & Bar-->
         <scene sceneID="Cm7-lP-Bti">
             <objects>
-                <tableViewController id="6f0-Ch-BXR" sceneMemberID="viewController">
+                <tableViewController id="6f0-Ch-BXR" customClass="RestuarantOpenTableViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="3bB-jP-4vM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="372" id="Ajh-J7-Wnv">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestuarantDetailTableViewCell" rowHeight="372" id="Ajh-J7-Wnv" customClass="RestuarantDetailTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="372"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ajh-J7-Wnv" id="9x7-rZ-wiR">
@@ -772,8 +802,15 @@ Malang 65115, Indonasia</string>
                                         <constraint firstAttribute="trailing" secondItem="ISZ-3C-87x" secondAttribute="trailing" constant="27" id="u3I-qr-roW"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="restuarantImageView" destination="TLj-eV-mBu" id="B2L-PF-w83"/>
+                                    <outlet property="restuarantNameLabel" destination="UOK-ih-eDe" id="2er-BW-Ofp"/>
+                                    <outlet property="restuarantPriceRangeLabel" destination="ISZ-3C-87x" id="n9W-IC-dqO"/>
+                                    <outlet property="restuarantRatingLabel" destination="n0q-Dl-zcx" id="r8M-Xi-B0F"/>
+                                    <outlet property="restuarantTypeLabel" destination="Mzo-5p-REh" id="esi-S5-CGm"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="127" id="G2M-nM-DJW">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestuarantMapTableViewCell" rowHeight="127" id="G2M-nM-DJW" customClass="RestuarantMapTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="400" width="375" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G2M-nM-DJW" id="cT0-2i-UlO">
@@ -791,8 +828,11 @@ Malang 65115, Indonasia</string>
                                         <constraint firstItem="JGw-HR-YGV" firstAttribute="leading" secondItem="cT0-2i-UlO" secondAttribute="leading" constant="20" id="ul2-fc-nqh"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="restuarantMap" destination="JGw-HR-YGV" id="Thz-Bs-0GF"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="81" id="yV4-el-UxD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestuarantScheduleTableViewCell" rowHeight="81" id="yV4-el-UxD" customClass="RestuarantScheduleTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="527" width="375" height="81"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yV4-el-UxD" id="CfO-9S-IS5">
@@ -808,7 +848,6 @@ Malang 65115, Indonasia</string>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday - Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZz-LQ-4Hm">
                                                             <rect key="frame" x="0.0" y="0.0" width="151" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="f6z-SH-l9L"/>
                                                                 <constraint firstAttribute="width" constant="151" id="yyq-B1-f3D"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
@@ -819,7 +858,6 @@ Malang 65115, Indonasia</string>
                                                             <rect key="frame" x="184" y="0.0" width="151" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="151" id="RVb-UZ-ECX"/>
-                                                                <constraint firstAttribute="height" constant="21" id="uqM-zY-vol"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                             <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -834,7 +872,6 @@ Malang 65115, Indonasia</string>
                                                             <rect key="frame" x="0.0" y="0.0" width="151" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="151" id="MR5-by-Z8T"/>
-                                                                <constraint firstAttribute="height" constant="21" id="vKm-au-taY"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
                                                             <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -862,8 +899,14 @@ Malang 65115, Indonasia</string>
                                         <constraint firstItem="cF9-L4-pMA" firstAttribute="top" secondItem="CfO-9S-IS5" secondAttribute="top" constant="11" id="ycY-D1-VVA"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="dayOneLabel" destination="gZz-LQ-4Hm" id="6ij-g6-sef"/>
+                                    <outlet property="dayOneTimeLabel" destination="Fo6-8y-te4" id="OaJ-Uj-cGn"/>
+                                    <outlet property="dayTwoLabel" destination="3ne-RB-MRd" id="FIb-dt-tOz"/>
+                                    <outlet property="dayTwoTimeLabel" destination="hZI-tX-Yn9" id="Myw-yd-CKy"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="75" id="ZKF-ns-cob">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RestuarantAddressTableViewCell" rowHeight="75" id="ZKF-ns-cob" customClass="RestuarantAddressTableViewCell" customModule="TravelistoV2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="608" width="375" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZKF-ns-cob" id="7Tq-6J-gox">
@@ -886,6 +929,9 @@ Malang 65115, Indonasia</string>
                                         <constraint firstItem="oEm-b5-7X7" firstAttribute="top" secondItem="7Tq-6J-gox" secondAttribute="top" constant="11" id="bf2-iP-xFv"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailInformationLabel" destination="oEm-b5-7X7" id="DkF-AQ-Kgf"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -893,10 +939,54 @@ Malang 65115, Indonasia</string>
                             <outlet property="delegate" destination="6f0-Ch-BXR" id="8j3-XU-A0E"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Coco Bamboo Resco &amp; Bar" id="Kv7-us-mFI">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="tbj-0I-HL7">
+                            <color key="tintColor" name="TravelistoLightOrange"/>
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="6f0-Ch-BXR" id="S4Z-GU-urA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pAf-F7-B6Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4656.8000000000002" y="3945.8770614692658"/>
+            <point key="canvasLocation" x="4946" y="3939"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z4h-a1-MjN">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EiQ-es-wIW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zc7-JH-X1l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ppQ-fn-FSs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YRy-oa-LQX" kind="relationship" relationship="rootViewController" id="V9l-Se-K1J"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="4458" y="3100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="44N-xf-Rnl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WJa-vB-ttS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="VHx-02-eVm">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6f0-Ch-BXR" kind="relationship" relationship="rootViewController" id="OOE-sG-pGP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74W-Yp-E6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4097" y="3939"/>
         </scene>
     </scenes>
     <resources>
@@ -921,6 +1011,7 @@ Malang 65115, Indonasia</string>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="dLM-yB-54s"/>
         <segue reference="Tzc-Ae-RGx"/>
     </inferredMetricsTieBreakers>
 </document>

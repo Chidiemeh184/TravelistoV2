@@ -40,7 +40,6 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restuarant-1" translatesAutoresizingMaskIntoConstraints="NO" id="KRz-Pv-LEQ">
                         <rect key="frame" x="258" y="11" width="97" height="105"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="105" id="Mfc-CT-Pbo"/>
                             <constraint firstAttribute="width" constant="97" id="o31-fr-KzG"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -59,7 +58,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="212" height="15"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="15" id="7lO-SU-V4O"/>
-                                            <constraint firstAttribute="width" constant="212" id="s8Y-Bk-Tl6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
                                         <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,7 +66,6 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Piazza Restaurant Italy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V4-N2-DYp">
                                         <rect key="frame" x="0.0" y="21" width="212" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="212" id="XJa-en-nIf"/>
                                             <constraint firstAttribute="height" constant="21" id="oGe-aK-fkM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Heavy" family="SF Pro Display" pointSize="17"/>
@@ -79,7 +76,6 @@
                                         <rect key="frame" x="0.0" y="48" width="212" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="XoJ-NZ-SIH"/>
-                                            <constraint firstAttribute="width" constant="212" id="gEO-GP-NQF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="15"/>
                                         <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -108,7 +104,6 @@
                                         </subviews>
                                         <color key="backgroundColor" name="TravelistoLightOrange"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="35N-5v-kMg"/>
                                             <constraint firstAttribute="width" constant="34" id="B2o-tC-9C9"/>
                                             <constraint firstItem="reL-gx-HjR" firstAttribute="top" secondItem="0Tc-bp-jKv" secondAttribute="top" id="BXC-68-vgo"/>
                                             <constraint firstItem="reL-gx-HjR" firstAttribute="leading" secondItem="0Tc-bp-jKv" secondAttribute="leading" id="RSj-Yi-Rcp"/>
