@@ -1,4 +1,8 @@
+#Travelisto
+
+<h1>Find places to explore, cheap hotels, flights and great restuarants</h1>
+
 
 <p align="center">
-<a href="http://g.recordit.co/WzLP2kRt8n.gif"><img src="http://g.recordit.co/WzLP2kRt8n.gif" title="Explore-home"/></a>
+![alt text](TravelistoV2/explore-travelisto-screenshots/1.png "Home screen - Explore")
 </p>
