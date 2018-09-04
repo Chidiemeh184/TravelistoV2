@@ -33,6 +33,26 @@ class POIDetailTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setUp(withModel place: TravelistoPlace ){
+        
+        //1
+        let image = place.images.first
+        let url = image?.largeImageURL
+        placeImageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceHolder"), options: [.continueInBackground], completed: nil)
+        placeNameLabel.text = place.detail.name
+        let rating = place.detail.rating
+        let localRating = (place.detail.ratingLocal * 100)
+        ratingLabel.text = "\(String(describing: rating.round(rating, to: 3))) (\(String(describing: localRating.round(localRating, to: 1))) ratings)"
+        placeAddressLabel.text = place.detail.address ?? ""
+        
+        let latitude = place.detail.location.lat
+        let longitude = place.detail.location.lng
+        let placeCoordinates = CLLocationCoordinate2D(latitude: latitude , longitude: longitude)
+        let placeAnnotation = DestinationAnnotation(coordinate: placeCoordinates, title: place.detail.name, subtitle: "")
+        placeMapview.setRegion(placeAnnotation.region, animated: true)
+        
+    }
+    
     
 
 }

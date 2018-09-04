@@ -32,4 +32,13 @@ class TopImageHeaderTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setUp(withModel placeDetail: TravelistoPlace){
+        
+        //Set Up Image
+        let image = placeDetail.images.first// place.place.images.randomElement()
+        let url = image?.largeImageURL
+        placeImageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceHolder"), options: [.continueInBackground], completed: nil)
+        titleCaptionOneLabel.text = placeDetail.detail.name
+    }
+    
 }

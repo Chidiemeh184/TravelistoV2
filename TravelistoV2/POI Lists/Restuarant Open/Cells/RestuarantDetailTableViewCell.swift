@@ -31,4 +31,18 @@ class RestuarantDetailTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    
+    func setUp(withModel place: TravelistoPlace ){
+        
+        restuarantNameLabel.text = place.detail.name
+        let image = place.images.first
+        let url = image?.largeImageURL
+        restuarantImageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceHolder"), options: [.continueInBackground], completed: nil)
+        restuarantTypeLabel.text = place.detail.nameSuffix
+        let rating = place.detail.rating
+        let localRating = (place.detail.ratingLocal * 100)
+        restuarantRatingLabel.text = "\(String(describing: rating.round(rating, to: 3))) (\(String(describing: localRating.round(localRating, to: 1))) ratings)"
+        restuarantPriceRangeLabel.text = place.detail.admission ?? ""
+        
+    }
 }

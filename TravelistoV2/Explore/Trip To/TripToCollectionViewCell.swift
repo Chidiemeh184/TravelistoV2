@@ -12,7 +12,27 @@ class TripToCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "TripToCollectionViewCell"
     @IBOutlet weak var placeImageView: UIImageView!
+    @IBOutlet weak var mainTitleLabel: UILabel!
+    var place : ExploreBaseModel?
     
+    var typeIdentityNumber = 0
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
     
+    func setUp(withModel place: ExploreBaseModel){
+        self.place = place
+        let image = place.place.images.first // place.place.images.randomElement()
+        let url = image?.largeImageURL
+        mainTitleLabel.text = place.place.detail.name
+        
+        placeImageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceHolder"), options: [.continueInBackground]) { (image, error, type, url) in
+            if error == nil {
+                let placeImage = image
+                let imageGCColor = UIColor(averageColorFrom: placeImage).cgColor
+                self.applyShadowBlurEffect(withColor: imageGCColor, cornerRadius: 8.0, shadowRadius: 5.0)
+            }
+        }
+    }
 }

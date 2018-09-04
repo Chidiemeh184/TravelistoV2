@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class PlaceMapTableViewCell: UITableViewCell {
     
@@ -20,11 +21,32 @@ class PlaceMapTableViewCell: UITableViewCell {
         self.placeMapView.layer.cornerRadius = 8
         self.placeMapView.layer.masksToBounds = true
     }
+    
+    func setUp(withModel location: SygicPlaceDetail.Location){
+        let latitude = location.lat
+        let longitude = location.lng
+        let placeCoordinates = CLLocationCoordinate2D(latitude: latitude , longitude: longitude)
+        let placeAnnotation = DestinationAnnotation(coordinate: placeCoordinates, title: "", subtitle: "")
+        placeMapView.setRegion(placeAnnotation.region, animated: true)
+    }
+}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+final class DestinationAnnotation: NSObject, MKAnnotation{
+    var coordinate: CLLocationCoordinate2D
+    var title: String?
+    var subtitle: String?
+    
+    init(coordinate : CLLocationCoordinate2D, title : String?, subtitle: String?) {
+        self.coordinate = coordinate
+        self.title = title
+        self.subtitle = subtitle
+        
+        super.init()
     }
     
+    var region: MKCoordinateRegion {
+        let span = MKCoordinateSpanMake(0.01, 0.01)
+        return MKCoordinateRegion(center: coordinate, span: span)
+    }
 }

@@ -26,4 +26,5 @@ struct Segue {
     
     static let placeOfInterestToPOIOpen = "placeOfInterestToPOIOpen"
     static let restuarantsListToRestuarantOpen = "restuarantsListToRestuarantOpen"
+    static let poiOpenToSlideShow = "poiOpenToSlideShow"
 }

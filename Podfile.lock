@@ -45,6 +45,9 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - RevealingSplashView (0.5.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -54,6 +57,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - RevealingSplashView
+  - SDWebImage
   - SVProgressHUD
 
 SPEC REPOS:
@@ -71,6 +75,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - RevealingSplashView
+    - SDWebImage
     - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -87,8 +92,9 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   RevealingSplashView: 0794eecad3a8983ac11a1fe474e9a9b51b926780
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: bb27b90d09dbf6947c27ef5b7b134c4412372126
+PODFILE CHECKSUM: ccde58bb9a7022bb9feee6661b4b90bde2defe4e
 
 COCOAPODS: 1.5.0

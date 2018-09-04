@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class RestuarantMapTableViewCell: UITableViewCell {
 
@@ -25,5 +26,15 @@ class RestuarantMapTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setUp(withModel location: SygicPlaceDetail.Location){
+        let latitude = location.lat
+        let longitude = location.lng
+        let placeCoordinates = CLLocationCoordinate2D(latitude: latitude , longitude: longitude)
+        let placeAnnotation = DestinationAnnotation(coordinate: placeCoordinates, title: "", subtitle: "")
+        restuarantMap.setRegion(placeAnnotation.region, animated: true)
+    }
+    
+    
 
 }

@@ -10,9 +10,12 @@ import UIKit
 
 class RestuarantOpenTableViewController: UITableViewController {
 
+    var place : TravelistoPlace?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: PlaceDescriptionTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: PlaceDescriptionTableViewCell.identifier)
+        self.navigationItem.title = place?.detail.name
     }
     
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
@@ -24,7 +27,7 @@ class RestuarantOpenTableViewController: UITableViewController {
 
 extension RestuarantOpenTableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let restuarantDetailTableViewCellHeight     = CGFloat(372)
+        let restuarantDetailTableViewCellHeight     = CGFloat(376)
         let restuarantMapTableViewCellHeight        = CGFloat(127)
         let restuarantScheduleTableViewCellHeight   = CGFloat(81)
         let restuarantAddressTableViewCellHeight    = CGFloat(75)
@@ -61,10 +64,16 @@ extension RestuarantOpenTableViewController {
         case 0:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: RestuarantDetailTableViewCell.identifier) as!
             RestuarantDetailTableViewCell
+            if let restuarant = self.place {
+                tableViewCell.setUp(withModel: restuarant)
+            }
             return tableViewCell
         case 1:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: RestuarantMapTableViewCell.identifier) as!
             RestuarantMapTableViewCell
+            if let restuarantLocation = self.place?.detail.location {
+                tableViewCell.setUp(withModel: restuarantLocation)
+            }
             return tableViewCell
         case 2:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: RestuarantScheduleTableViewCell.identifier) as!
@@ -73,29 +82,20 @@ extension RestuarantOpenTableViewController {
         case 3:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: RestuarantAddressTableViewCell.identifier) as!
             RestuarantAddressTableViewCell
+            if let address = self.place?.detail.address {
+                tableViewCell.setUp(withModel: address)
+            }
             return tableViewCell
         case 4:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: PlaceDescriptionTableViewCell.identifier) as!
             PlaceDescriptionTableViewCell
             tableViewCell.descriptionMoreButton.isHidden = true
+            if let wikidescription = self.place?.wikipedia {
+                tableViewCell.setUp(withModel: wikidescription)
+            }
             return tableViewCell
         default:
             return UITableViewCell()
         }
-    }
-}
-
-// MARK: - Navigation & Segue
-
-extension RestuarantOpenTableViewController {
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //        if segue.identifier == Segue.showMoreToExploreOpen {
-        //            //Send stuffs
-        //        }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // self.performSegue(withIdentifier: Segue.showMoreToExploreOpen, sender: (tableView, indexPath))
     }
 }

@@ -13,4 +13,9 @@ class SlideShowCollectionViewCell: UICollectionViewCell {
     static let identifier = "SlideShowCollectionViewCell"
     @IBOutlet weak var placeImageView: UIImageView!
     
+    func setUp(withImage image : PixabayImage){
+        let url = image.largeImageURL
+        placeImageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceHolder"), options: [.continueInBackground], completed: nil)
+    }
+    
 }

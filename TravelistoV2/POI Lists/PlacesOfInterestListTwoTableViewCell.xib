@@ -89,7 +89,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Tc-bp-jKv">
                                         <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reL-gx-HjR">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8.8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="reL-gx-HjR">
                                                 <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="16"/>
                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -136,6 +136,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="JRP-qf-fmA" id="DwB-dd-ezj"/>
+                <outlet property="placeImageView" destination="KRz-Pv-LEQ" id="pds-cQ-sQp"/>
+                <outlet property="ratingDescriptionLabel" destination="I5Q-ho-rKM" id="Z6O-LC-1UN"/>
+                <outlet property="ratingNumberLabel" destination="reL-gx-HjR" id="LWa-6S-x2N"/>
+                <outlet property="restuarantNameLabel" destination="0V4-N2-DYp" id="Q0d-At-vpE"/>
+                <outlet property="starsLabel" destination="tZW-DL-zJZ" id="uwp-PF-WIa"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="101"/>
         </tableViewCell>
     </objects>

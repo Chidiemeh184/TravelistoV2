@@ -17,6 +17,9 @@ struct Storyboard {
     static let Trips = "Trips"
     static let Settings = "Settings"
     static let Flights = "Flights"
+    static let SlideShowSB = "SlideShowSB"
+    static let ExploreOpen = "ExploreOpen"
+    static let SlideShow = "SlideShow"
     
     //MARK: ViewControllers
     static let ExploreTableViewController = "ExploreTableViewController"

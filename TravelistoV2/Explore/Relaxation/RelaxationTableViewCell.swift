@@ -12,8 +12,12 @@ class RelaxationTableViewCell: UITableViewCell {
 
     @IBOutlet weak var relaxationCollectionView: UICollectionView!
     @IBOutlet weak var showMoreButton: UIButton!
-    
+    @IBOutlet weak var relaxationHeaderTitleLabel: UILabel!
     static let identifier = "RelaxationTableViewCell"
+    
+    var typeIdentityNumber = 0
+    
+    var places : [ExploreBaseModel]?
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class POIOpenTableViewController: UITableViewController {
 
+    var place : TravelistoPlace?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.tableView.register(UINib(nibName: PlaceDescriptionTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: PlaceDescriptionTableViewCell.identifier)
+        self.navigationItem.title = place?.detail.name
     }
 
     @IBAction func backButtonTapped(_ sender: UIBarButtonItem) {
@@ -56,15 +59,26 @@ extension POIOpenTableViewController {
         case 0:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: POIDetailTableViewCell.identifier) as!
             POIDetailTableViewCell
+            if let poi = self.place {
+                tableViewCell.setUp(withModel: poi)
+            }
+            let slideShowButton = tableViewCell.viewPhotosButton
+            slideShowButton?.addTarget(self, action: #selector(POIOpenTableViewController.slideShowModalButtonTapped), for: .touchUpInside)
             return tableViewCell
         case 1:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: POIRatingReviewTableViewCell.identifier) as!
             POIRatingReviewTableViewCell
+            if let detail = self.place?.detail {
+                tableViewCell.setUp(withModel: detail)
+            }
             return tableViewCell
         case 2:
             let tableViewCell = tableView.dequeueReusableCell(withIdentifier: PlaceDescriptionTableViewCell.identifier) as!
             PlaceDescriptionTableViewCell
             tableViewCell.descriptionMoreButton.isHidden = true
+            if let poiDescription = place?.wikipedia {
+                tableViewCell.setUp(withModel: poiDescription)
+            }
             return tableViewCell
         default:
             return UITableViewCell()
@@ -72,18 +86,21 @@ extension POIOpenTableViewController {
     }
 }
 
-// MARK: - Navigation & Segue
+// MARK: - Show More Open
 
 extension POIOpenTableViewController {
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == Segue.showMoreToExploreOpen {
-//            //Send stuffs
-//        }
-    }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // self.performSegue(withIdentifier: Segue.showMoreToExploreOpen, sender: (tableView, indexPath))
+    @objc func slideShowModalButtonTapped(){
+        if let images = self.place?.images, images.count > 0 {
+            let storyboard = UIStoryboard(name: Storyboard.SlideShow, bundle: nil)
+            let slideShowViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.SlideShowSB) as! SlideShowViewController
+            slideShowViewController.navTitle = self.place?.detail.name ?? ""
+            slideShowViewController.pixabayImages = images
+            self.present(slideShowViewController, animated: true, completion: nil)
+        }else {
+            CustomProgressHud.blackTheme()
+            SVProgressHUD.showError(withStatus: TravelistoMessages.imagesUnavailable)
+        }
     }
 }
 

@@ -24,5 +24,10 @@ class RestuarantAddressTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setUp(withModel address: String){
+        detailInformationLabel.text = address
+    }
+    
 
 }

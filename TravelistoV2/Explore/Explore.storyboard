@@ -59,12 +59,12 @@
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-11" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-ag-YzX">
                                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
                                                             </imageView>
-                                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-fh-GAm">
+                                                            <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-fh-GAm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
-                                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.85137521400000005" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eP5-jq-WV7">
-                                                                <rect key="frame" x="8" y="75.5" width="318" height="73"/>
+                                                                <rect key="frame" x="8" y="94" width="318" height="36"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip to Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmc-zu-VGu">
                                                                         <rect key="frame" x="0.0" y="0.0" width="318" height="36"/>
@@ -76,8 +76,8 @@
                                                                         <nil key="highlightedColor"/>
                                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a journey to the city of Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPM-ZW-5AJ">
-                                                                        <rect key="frame" x="0.0" y="41" width="318" height="32"/>
+                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a journey to the city of Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPM-ZW-5AJ">
+                                                                        <rect key="frame" x="0.0" y="-94" width="318" height="32"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="32" id="u2F-gV-KZg"/>
                                                                         </constraints>
@@ -103,6 +103,7 @@
                                                         <constraint firstAttribute="trailing" secondItem="4ce-ag-YzX" secondAttribute="trailing" id="vvF-DP-xaK"/>
                                                     </constraints>
                                                     <connections>
+                                                        <outlet property="mainTitleLabel" destination="Xmc-zu-VGu" id="Wyv-0V-7BP"/>
                                                         <outlet property="placeImageView" destination="4ce-ag-YzX" id="lbH-rH-vBe"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -179,6 +180,7 @@
                                                         <constraint firstItem="aJA-hk-wmn" firstAttribute="leading" secondItem="dwa-Zt-PGk" secondAttribute="leading" id="kbq-nj-6f0"/>
                                                     </constraints>
                                                     <connections>
+                                                        <outlet property="mainTitleLabel" destination="DCj-5r-gC9" id="309-95-UKa"/>
                                                         <outlet property="placeImageView" destination="aJA-hk-wmn" id="16G-L5-SzM"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -220,6 +222,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="relaxationCollectionView" destination="YNm-K9-fOZ" id="Ox8-nG-8DO"/>
+                                    <outlet property="relaxationHeaderTitleLabel" destination="EEL-7Y-ghy" id="CnZ-Po-Sgj"/>
                                     <outlet property="showMoreButton" destination="f7Z-2V-kLg" id="w18-M9-6wO"/>
                                 </connections>
                             </tableViewCell>

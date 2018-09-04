@@ -16,6 +16,9 @@ class PlacesOfInterestListViewController: UIViewController, UITableViewDelegate,
     
     var navTitle  = ""
     
+    var places : [TravelistoPlace]?
+    var restuarants : [TravelistoPlace]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideNav()
@@ -49,7 +52,7 @@ class PlacesOfInterestListViewController: UIViewController, UITableViewDelegate,
 
 extension PlacesOfInterestListViewController {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let cellHeight = self.tableViewCellType == .placeOfInterest ? CGFloat(87) : CGFloat(138)
+        let cellHeight = self.tableViewCellType == .placeOfInterest ? CGFloat(90) : CGFloat(138)
         return cellHeight
     }
 }
@@ -58,22 +61,30 @@ extension PlacesOfInterestListViewController {
 
 extension PlacesOfInterestListViewController {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let numberOfTableCellRows = 9
-        return numberOfTableCellRows
+        let numberOfTableCellRows = (self.tableViewCellType == .placeOfInterest) ? self.places?.count : self.restuarants?.count
+        return numberOfTableCellRows!
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var defaultCell = UITableViewCell()
+        let defaultCell = UITableViewCell()
         if let cellType = self.tableViewCellType {
             switch cellType {
             case .placeOfInterest:
-                defaultCell = tableView.dequeueReusableCell(withIdentifier: PlacesOfInterestListTableViewCell.identifier) as!
+                let cell = tableView.dequeueReusableCell(withIdentifier: PlacesOfInterestListTableViewCell.identifier) as!
                 PlacesOfInterestListTableViewCell
-                defaultCell.contentView.frame = CGRect(x: 0, y: 0, width: 375, height: 87)
+                cell.contentView.frame = CGRect(x: 0, y: 0, width: 375, height: 90)
+                if let poi = self.places {
+                    cell.setUp(withModel: poi[indexPath.row])
+                }
+                return cell
             case .restuarant:
-                defaultCell = tableView.dequeueReusableCell(withIdentifier: PlacesOfInterestListTwoTableViewCell.identifier) as!
+                let cell = tableView.dequeueReusableCell(withIdentifier: PlacesOfInterestListTwoTableViewCell.identifier) as!
                 PlacesOfInterestListTwoTableViewCell
+                if let resturants = self.restuarants {
+                    cell.setUp(withModel: resturants[indexPath.row])
+                }
+                return cell
             }
         }
         
@@ -89,8 +100,18 @@ extension PlacesOfInterestListViewController {
         
         if segue.identifier == Segue.placeOfInterestToPOIOpen {
             //Send stuffs
+            guard let info = sender as? (TravelistoPlace, IndexPath) else { return }
+            let place = info.0
+            let nav = segue.destination as! UINavigationController
+            let POIOpenTableViewController = nav.viewControllers.first as! POIOpenTableViewController
+            POIOpenTableViewController.place = place
         }else if segue.identifier == Segue.restuarantsListToRestuarantOpen {
             //Send restuarant
+            guard let info = sender as? (TravelistoPlace, IndexPath) else { return }
+            let place = info.0
+            let nav = segue.destination as! UINavigationController
+            let restuarantOpenTableViewController = nav.viewControllers.first as! RestuarantOpenTableViewController
+            restuarantOpenTableViewController.place = place
         }
     }
     
@@ -99,9 +120,11 @@ extension PlacesOfInterestListViewController {
         
         switch cellType {
         case is PlacesOfInterestListTableViewCell :
-            self.performSegue(withIdentifier: Segue.placeOfInterestToPOIOpen, sender: (tableView, indexPath))
+            let cell = tableView.cellForRow(at: indexPath) as! PlacesOfInterestListTableViewCell
+            self.performSegue(withIdentifier: Segue.placeOfInterestToPOIOpen, sender: (cell.place, indexPath))
         default:
-            self.performSegue(withIdentifier: Segue.restuarantsListToRestuarantOpen, sender: (tableView, indexPath))
+            let cell = tableView.cellForRow(at: indexPath) as! PlacesOfInterestListTwoTableViewCell
+            self.performSegue(withIdentifier: Segue.restuarantsListToRestuarantOpen, sender: (cell.place, indexPath))
         }
     }
 }

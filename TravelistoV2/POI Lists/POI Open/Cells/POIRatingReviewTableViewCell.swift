@@ -27,5 +27,19 @@ class POIRatingReviewTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setUp(withModel detail: SygicPlaceDetail){
+        let rating = detail.rating
+        let roundedRating = rating.round(rating, to: 3)
+        ratingNumberLabel.text = "\(String(describing: roundedRating))"
+        switch roundedRating {
+        case 8.0...11.0:
+            ratingDescriptionLabel.text = "Excellent"
+        case 6.0...7.9:
+            ratingDescriptionLabel.text = "Very Good"
+        default:
+            ratingDescriptionLabel.text = "Good"
+        }
+    }
 
 }

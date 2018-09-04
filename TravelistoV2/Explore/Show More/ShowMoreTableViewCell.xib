@@ -27,64 +27,56 @@
                 <rect key="frame" x="0.0" y="0.0" width="341" height="74.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z8U-gb-X8t">
-                        <rect key="frame" x="0.0" y="0.0" width="341" height="74.5"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="PJT-0j-0Qt">
-                                <rect key="frame" x="20" y="12" width="309" height="50"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-11" translatesAutoresizingMaskIntoConstraints="NO" id="x9G-R4-VKd">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="gnD-H7-u9G"/>
-                                            <constraint firstAttribute="height" constant="50" id="nEt-mh-6xB"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vEO-1L-YC9">
-                                        <rect key="frame" x="68" y="0.0" width="241" height="50"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="France" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTq-Sz-hhT">
-                                                <rect key="frame" x="0.0" y="0.0" width="241" height="28"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="28" id="ySd-n7-Rdg"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Points of interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYP-EJ-8us">
-                                                <rect key="frame" x="0.0" y="36" width="241" height="14"/>
-                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
-                                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-11" translatesAutoresizingMaskIntoConstraints="NO" id="x9G-R4-VKd">
+                        <rect key="frame" x="20" y="12" width="50" height="50"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="PJT-0j-0Qt" secondAttribute="trailing" constant="12" id="NKH-Ss-toZ"/>
-                            <constraint firstAttribute="bottom" secondItem="PJT-0j-0Qt" secondAttribute="bottom" constant="12" id="eeB-dA-eMJ"/>
-                            <constraint firstItem="PJT-0j-0Qt" firstAttribute="leading" secondItem="z8U-gb-X8t" secondAttribute="leading" constant="20" id="fKx-t3-z2A"/>
-                            <constraint firstItem="PJT-0j-0Qt" firstAttribute="top" secondItem="z8U-gb-X8t" secondAttribute="top" constant="12" id="grg-f9-lcM"/>
+                            <constraint firstAttribute="width" constant="50" id="y3x-g7-x4U"/>
+                            <constraint firstAttribute="height" constant="50" id="yhz-5M-JgF"/>
                         </constraints>
-                    </view>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QUo-Cu-NFq">
+                        <rect key="frame" x="88" y="12" width="119" height="51.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="France" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTq-Sz-hhT">
+                                <rect key="frame" x="0.0" y="0.0" width="119" height="26.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="253" id="3cm-t4-9hu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Points of interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYP-EJ-8us">
+                                <rect key="frame" x="0.0" y="31.5" width="119" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="WYm-qq-i8i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="z8U-gb-X8t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZPg-ez-Rc3"/>
-                    <constraint firstAttribute="trailing" secondItem="z8U-gb-X8t" secondAttribute="trailing" id="hsF-hp-tju"/>
-                    <constraint firstItem="z8U-gb-X8t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="r0C-ki-Wwx"/>
-                    <constraint firstAttribute="bottom" secondItem="z8U-gb-X8t" secondAttribute="bottom" id="wsk-bH-fL5"/>
+                    <constraint firstItem="x9G-R4-VKd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="B5L-fI-oSD"/>
+                    <constraint firstItem="x9G-R4-VKd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BJ8-D5-Xo8"/>
+                    <constraint firstItem="QUo-Cu-NFq" firstAttribute="leading" secondItem="x9G-R4-VKd" secondAttribute="trailing" constant="18" id="Gq2-O2-0bX"/>
+                    <constraint firstItem="QUo-Cu-NFq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="abt-DM-sMu"/>
+                    <constraint firstAttribute="trailing" secondItem="QUo-Cu-NFq" secondAttribute="trailing" id="fq4-gf-OQ4"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mainTitleLabel" destination="yTq-Sz-hhT" id="eQB-rJ-6mS"/>
+                <outlet property="placeImageView" destination="x9G-R4-VKd" id="YSF-KN-M9p"/>
+                <outlet property="pointsOfInterestNumberLabel" destination="iYP-EJ-8us" id="Gyi-AH-miN"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </tableViewCell>
     </objects>

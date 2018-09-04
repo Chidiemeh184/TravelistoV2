@@ -13,6 +13,22 @@ class ExploreOpenTableViewController: UITableViewController {
     //Class properties
     var isCountryDescriptionMoreButtonTapped = false
     var isFoodDescriptionMoreButtonTapped  = false
+    
+    var detail : SygicPlaceDetail?
+    var images : [PixabayImage]?
+    var wikipedia : String?
+    var placesOfInterest : [[TravelistoPlace]]?
+    var restuarants : [[TravelistoPlace]]?
+    
+    var place : ExploreBaseModel? {
+        didSet {
+            self.detail = place?.place.detail
+            self.images = place?.place.images
+            self.wikipedia = place?.place.wikipedia
+            self.placesOfInterest = place?.placesOfInterest
+            self.restuarants = place?.restuarants
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +37,8 @@ class ExploreOpenTableViewController: UITableViewController {
         let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView
         statusBar?.backgroundColor = UIColor.clear
         self.makeNavBarInvisible()
+        
+        //print(place)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -151,22 +169,38 @@ extension ExploreOpenTableViewController  {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: TopImageHeaderTableViewCell.identifier, for: indexPath) as! TopImageHeaderTableViewCell
+            if let placeModel = self.place?.place {
+                cell.setUp(withModel: placeModel)
+            }
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: PlaceDescriptionTableViewCell.identifier, for: indexPath) as! PlaceDescriptionTableViewCell
+            if let wikipediaDescription = self.place?.place.wikipedia {
+                cell.setUp(withModel: wikipediaDescription)
+            }
             cell.descriptionMoreButton.tag = 0
             let moreExpandingButton = cell.descriptionMoreButton
             moreExpandingButton?.addTarget(self, action: #selector(ExploreOpenTableViewController.expandDescriptionButtonTapped(sender:)), for: .touchUpInside)
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: PlaceMapTableViewCell.identifier, for: indexPath) as! PlaceMapTableViewCell
+            if let location = self.place?.place.detail.location {
+                cell.setUp(withModel: location)
+            }
             return cell
         case 3:
             let cell = tableView.dequeueReusableCell(withIdentifier: TopExperiencesTableViewCell.identifier, for: indexPath) as! TopExperiencesTableViewCell
+            if let placesOfInterest = self.placesOfInterest?.first {
+                cell.setUp(withModel: placesOfInterest)
+            }
             cell.showMoreButtton.addTarget(self, action: #selector(ExploreOpenTableViewController.showMorePlacesOfInterestsButtonTapped), for: .touchUpInside)
             return cell
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: PlaceDescriptionTableViewCell.identifier, for: indexPath) as! PlaceDescriptionTableViewCell
+            if let restuarant = self.place?.restuarants.first?.first {
+                let restuaranFoodDescription = restuarant.wikipedia
+                cell.setUp(withModel: restuaranFoodDescription)
+            }
             cell.descriptionMoreButton.tag = 1
             let moreExpandingButton = cell.descriptionMoreButton
             moreExpandingButton?.addTarget(self, action: #selector(ExploreOpenTableViewController.expandDescriptionButtonTapped(sender:)), for: .touchUpInside)
@@ -225,11 +259,14 @@ extension ExploreOpenTableViewController : UICollectionViewDelegate, UICollectio
 extension ExploreOpenTableViewController {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return self.restuarants?.first?.count ?? 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HorizontalPlaceListCollectionViewCell.identifier, for: indexPath) as! HorizontalPlaceListCollectionViewCell
+        if let restuarants = self.restuarants?.first {
+            cell.setUp(withModel: restuarants[indexPath.row])
+        }
         cell.applyCornerRadius(cornerRadius: 8)
         return cell
     }
@@ -245,31 +282,30 @@ extension ExploreOpenTableViewController {
         if segue.identifier == Segue.exploreOpenToPlacesOfInterest {
             if let placesOfInterestViewController = segue.destination as? PlacesOfInterestListViewController {
                 placesOfInterestViewController.navTitle = "Places of Interest"
+                placesOfInterestViewController.places = self.placesOfInterest?.first
                 placesOfInterestViewController.tableViewCellType = PlaceOfInterestCellType.placeOfInterest
             }
         }else if segue.identifier == Segue.exploreToShowMoreRestuarants {
             if let placesOfInterestViewController = segue.destination as? PlacesOfInterestListViewController {
                 placesOfInterestViewController.navTitle = "Restuarants"
+                placesOfInterestViewController.restuarants = self.restuarants?.first
                 placesOfInterestViewController.tableViewCellType = PlaceOfInterestCellType.restuarant
             }
+        }else if segue.identifier == Segue.exploreOpenToRestuarantOpen {
+            guard let info = sender as? (UICollectionView, IndexPath) else { return }
+            let restuarantCollectionView = info.0
+            let restuarantCollectionViewCell = restuarantCollectionView.cellForItem(at: info.1) as! HorizontalPlaceListCollectionViewCell
+            let selectedRestuarant = restuarantCollectionViewCell.restuarant
+            let nav = segue.destination as! UINavigationController
+            let restuarantOpenTableViewController = nav.viewControllers.first as! RestuarantOpenTableViewController
+            restuarantOpenTableViewController.place = selectedRestuarant
         }
     }
-        
 }
 
 extension ExploreOpenTableViewController {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //GET Item from datasource before sending
-        
-//        let storyboard = UIStoryboard(name: "ExploreOpen", bundle: nil)
-//        let slideShow = storyboard.instantiateViewController(withIdentifier: "SlideShowSB") as! SlideShowViewController
-//        self.present(slideShow, animated: true, completion: nil)
-        
-//        let signInViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.SignInViewController) as! SignInViewController
-//        signInViewController.isSecondLaunched = true
-//        window?.rootViewController = signInViewController
-        
         self.performSegue(withIdentifier: Segue.exploreOpenToRestuarantOpen, sender: (collectionView, indexPath))
     }
 }

@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         UITextField.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.1450980392, blue: 0.2392156863, alpha: 1)
+        
         let storyboard = UIStoryboard(name: Storyboard.main, bundle: nil)
         
 //        do {
