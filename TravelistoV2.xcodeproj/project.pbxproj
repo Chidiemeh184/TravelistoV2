@@ -57,6 +57,7 @@
 		EF3093E521385DE1005F1FA9 /* amass2.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3093E421385DE1005F1FA9 /* amass2.json */; };
 		EF3093E7213B117B005F1FA9 /* amass3.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3093E6213B117B005F1FA9 /* amass3.json */; };
 		EF3093E9213EADC3005F1FA9 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3093E8213EADC3005F1FA9 /* UITableViewCell+Extensions.swift */; };
+		EF3093EB213EF786005F1FA9 /* explore-travelisto-screenshots in Resources */ = {isa = PBXBuildFile; fileRef = EF3093EA213EF786005F1FA9 /* explore-travelisto-screenshots */; };
 		EF3D922A212069DF0012DF97 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D9229212069DF0012DF97 /* Segue.swift */; };
 		EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D922B2120716E0012DF97 /* Storyboard.swift */; };
 		EF3D922F212235810012DF97 /* FlightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D922E212235810012DF97 /* FlightsTableViewController.swift */; };
@@ -184,6 +185,7 @@
 		EF3093E421385DE1005F1FA9 /* amass2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amass2.json; sourceTree = "<group>"; };
 		EF3093E6213B117B005F1FA9 /* amass3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amass3.json; sourceTree = "<group>"; };
 		EF3093E8213EADC3005F1FA9 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		EF3093EA213EF786005F1FA9 /* explore-travelisto-screenshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "explore-travelisto-screenshots"; sourceTree = "<group>"; };
 		EF3D9229212069DF0012DF97 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		EF3D922B2120716E0012DF97 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		EF3D922E212235810012DF97 /* FlightsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsTableViewController.swift; sourceTree = "<group>"; };
@@ -525,6 +527,7 @@
 		EFA8C81C2116605D00F179B9 = {
 			isa = PBXGroup;
 			children = (
+				EF3093EA213EF786005F1FA9 /* explore-travelisto-screenshots */,
 				EFA8C8272116605D00F179B9 /* TravelistoV2 */,
 				EFA8C8262116605D00F179B9 /* Products */,
 				9744FD7E6E99D5CDAFAA49B4 /* Pods */,
@@ -704,6 +707,7 @@
 				EF255FC0211BA7F400942F13 /* SF-Pro-Text-Regular.otf in Resources */,
 				EF255FB2211BA7F400942F13 /* SF-Pro-Display-Black.otf in Resources */,
 				EF733C5A212AE38C00B88880 /* PlacesOfInterestListTableViewCell.xib in Resources */,
+				EF3093EB213EF786005F1FA9 /* explore-travelisto-screenshots in Resources */,
 				EF255FB3211BA7F400942F13 /* SF-Pro-Text-RegularItalic.otf in Resources */,
 				EF3093E521385DE1005F1FA9 /* amass2.json in Resources */,
 				EFCD830821286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib in Resources */,
@@ -1023,7 +1027,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelistoV2/TravelistoV2-Bridging-Header.h";
@@ -1042,7 +1049,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TravelistoV2/TravelistoV2-Bridging-Header.h";
