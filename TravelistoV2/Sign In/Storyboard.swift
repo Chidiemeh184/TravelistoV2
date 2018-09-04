@@ -17,10 +17,15 @@ struct Storyboard {
     static let Trips = "Trips"
     static let Settings = "Settings"
     static let Flights = "Flights"
+    static let SlideShowSB = "SlideShowSB"
+    static let ExploreOpen = "ExploreOpen"
+    static let SlideShow = "SlideShow"
     
     //MARK: ViewControllers
     static let ExploreTableViewController = "ExploreTableViewController"
     static let SignInViewController = "SignInViewController"
     static let OnboardingViewController = "OnboardingViewController"
     static let StartNavigationController = "StartNavigationController"
+    static let CreateAccountViewController = "CreateAccountViewController"
+    static let ResetPasswordViewController = "ResetPasswordViewController"
 }

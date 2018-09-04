@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         UITextField.appearance().tintColor = #colorLiteral(red: 0.1411764706, green: 0.1450980392, blue: 0.2392156863, alpha: 1)
+        
         let storyboard = UIStoryboard(name: Storyboard.main, bundle: nil)
         
 //        do {
@@ -33,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if Auth.auth().currentUser != nil {
             let tabBarController = storyboard.instantiateViewController(withIdentifier: Storyboard.tabBar) as! UITabBarController
             window?.rootViewController = tabBarController
+            
         }else{
             //show login Screen
             let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
@@ -42,10 +44,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 window?.rootViewController = signInViewController
             } else {
                 UserDefaults.standard.set(true, forKey: "launchedBefore")
-                let onboardingViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.OnboardingViewController) as! OnboardingViewController
-                let startNavigationController = storyboard.instantiateViewController(withIdentifier: Storyboard.StartNavigationController) as! UINavigationController
-                startNavigationController.viewControllers = [onboardingViewController]
-                window?.rootViewController = startNavigationController
+//                let onboardingViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.OnboardingViewController) as! OnboardingViewController
+//                let startNavigationController = storyboard.instantiateViewController(withIdentifier: Storyboard.StartNavigationController) as! UINavigationController
+////                let signInViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.SignInViewController) as! SignInViewController
+////                let createAccountViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.CreateAccountViewController) as! CreateAccountViewController
+////                let ResetPasswordViewController = storyboard.instantiateViewController(withIdentifier: Storyboard.ResetPasswordViewController) as! ResetPasswordViewController
+////                let tabBarController = storyboard.instantiateViewController(withIdentifier: Storyboard.tabBar) as! UITabBarController
+////                startNavigationController.viewControllers = [onboardingViewController, signInViewController, createAccountViewController, ResetPasswordViewController]
+//                startNavigationController.viewControllers = [onboardingViewController]
+//                window?.rootViewController = startNavigationController
             }
         }
         

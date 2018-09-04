@@ -15,6 +15,7 @@ struct TravelistoMessages {
     static let wrongPasswordErrorMessage =  "The password is invalid or the user does not have a password."
     static let emptySignInFieldsErrorMessage = "Please enter an email and password."
     static let emptySignUpFieldsErrorMessage = "Please enter a username, email and password."
+    static let imagesUnavailable = "Images Unavailable"
     
     //MARK: Events
     static let createdUserSuccess = "Success! \n A email verification has been sent to your email address. Please follow the link to verify and comelete your registration."

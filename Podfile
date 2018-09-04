@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '11.0'
+# platform :ios, '8.0'
 
 target 'TravelistoV2' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -12,5 +12,7 @@ target 'TravelistoV2' do
   pod 'Firebase/Storage'
   pod 'RevealingSplashView' 
   pod 'SVProgressHUD'
+  pod 'ChameleonFramework'
+  pod 'SDWebImage'
 
 end

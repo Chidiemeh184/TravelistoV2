@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		92298045EE947EB707E84282 /* Pods_TravelistoV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBB689482D521EFBA9058CBE /* Pods_TravelistoV2.framework */; };
+		6502BE24D7A725BBA28DA25A /* Pods_TravelistoV2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA827972FA36F54FD88952D /* Pods_TravelistoV2.framework */; };
 		EF255F7C21173E2B00942F13 /* test2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255F7B21173E2B00942F13 /* test2.swift */; };
 		EF255F7E21175F1F00942F13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF255F7D21175F1F00942F13 /* GoogleService-Info.plist */; };
 		EF255FA7211BA7F400942F13 /* SF-Pro-Text-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = EF255F89211BA7F000942F13 /* SF-Pro-Text-BoldItalic.otf */; };
@@ -50,6 +50,13 @@
 		EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */; };
 		EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FDF211C4A4100942F13 /* CreateAccountViewController.swift */; };
 		EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF255FE1211C6D4700942F13 /* AuthService.swift */; };
+		EF3093DB2136BE3D005F1FA9 /* SlideShow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3093DA2136BE3D005F1FA9 /* SlideShow.storyboard */; };
+		EF3093DD2136FE4C005F1FA9 /* data2.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3093DC2136FE4C005F1FA9 /* data2.json */; };
+		EF3093DF2136FFF9005F1FA9 /* data3.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3093DE2136FFF9005F1FA9 /* data3.json */; };
+		EF3093E121384925005F1FA9 /* amass.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3093E021384925005F1FA9 /* amass.json */; };
+		EF3093E521385DE1005F1FA9 /* amass2.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3093E421385DE1005F1FA9 /* amass2.json */; };
+		EF3093E7213B117B005F1FA9 /* amass3.json in Resources */ = {isa = PBXBuildFile; fileRef = EF3093E6213B117B005F1FA9 /* amass3.json */; };
+		EF3093E9213EADC3005F1FA9 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3093E8213EADC3005F1FA9 /* UITableViewCell+Extensions.swift */; };
 		EF3D922A212069DF0012DF97 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D9229212069DF0012DF97 /* Segue.swift */; };
 		EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D922B2120716E0012DF97 /* Storyboard.swift */; };
 		EF3D922F212235810012DF97 /* FlightsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D922E212235810012DF97 /* FlightsTableViewController.swift */; };
@@ -60,6 +67,40 @@
 		EF3D923D2122564D0012DF97 /* Trips.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D923C2122564D0012DF97 /* Trips.storyboard */; };
 		EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D923F212257000012DF97 /* SettingsTableViewController.swift */; };
 		EF3D9242212257170012DF97 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3D9241212257170012DF97 /* Settings.storyboard */; };
+		EF66D09521250CD500E3C43C /* TripToTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09421250CD500E3C43C /* TripToTableViewCell.swift */; };
+		EF66D09721250CF900E3C43C /* TripToCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09621250CF900E3C43C /* TripToCollectionViewCell.swift */; };
+		EF66D09921250DC500E3C43C /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09821250DC500E3C43C /* Cell.swift */; };
+		EF66D09C21250F0D00E3C43C /* RelaxationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09B21250F0D00E3C43C /* RelaxationTableViewCell.swift */; };
+		EF66D09E21250F2C00E3C43C /* RelaxationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */; };
+		EF66D0A02125463E00E3C43C /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */; };
+		EF66D0A221254FB800E3C43C /* UICollectionViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */; };
+		EF66D0A5212558E300E3C43C /* ExploreOpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */; };
+		EF66D0A72125D96500E3C43C /* ExploreOpenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */; };
+		EF66D0A921261BB600E3C43C /* ExploreOpenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */; };
+		EF733C452129F64D00B88880 /* ExploreOpen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF733C442129F64D00B88880 /* ExploreOpen.storyboard */; };
+		EF733C48212A047600B88880 /* ShowMoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C47212A047600B88880 /* ShowMoreTableViewController.swift */; };
+		EF733C4B212A04AF00B88880 /* ShowMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C49212A04AF00B88880 /* ShowMoreTableViewCell.swift */; };
+		EF733C4C212A04AF00B88880 /* ShowMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF733C4A212A04AF00B88880 /* ShowMoreTableViewCell.xib */; };
+		EF733C4E212A151B00B88880 /* ShowMore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF733C4D212A151B00B88880 /* ShowMore.storyboard */; };
+		EF733C51212A342200B88880 /* SlideShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C50212A342200B88880 /* SlideShowViewController.swift */; };
+		EF733C53212A42F800B88880 /* SlideShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C52212A42F800B88880 /* SlideShowCollectionViewCell.swift */; };
+		EF733C59212AE38C00B88880 /* PlacesOfInterestListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C57212AE38C00B88880 /* PlacesOfInterestListTableViewCell.swift */; };
+		EF733C5A212AE38C00B88880 /* PlacesOfInterestListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF733C58212AE38C00B88880 /* PlacesOfInterestListTableViewCell.xib */; };
+		EF733C5C212B25D600B88880 /* PlacesOfInterestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C5B212B25D600B88880 /* PlacesOfInterestListViewController.swift */; };
+		EF733C5F212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C5D212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.swift */; };
+		EF733C60212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF733C5E212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.xib */; };
+		EF733C63212E893900B88880 /* POIOpenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C62212E893900B88880 /* POIOpenTableViewController.swift */; };
+		EF733C67212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C65212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift */; };
+		EF733C68212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF733C66212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib */; };
+		EF733C6C212F36B300B88880 /* RestuarantOpenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C6B212F36B300B88880 /* RestuarantOpenTableViewController.swift */; };
+		EF733C6E212F3B7000B88880 /* POIDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C6D212F3B7000B88880 /* POIDetailTableViewCell.swift */; };
+		EF733C70212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C6F212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift */; };
+		EF733C72212F41A100B88880 /* RestuarantDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C71212F41A100B88880 /* RestuarantDetailTableViewCell.swift */; };
+		EF733C74212F437E00B88880 /* RestuarantMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C73212F437E00B88880 /* RestuarantMapTableViewCell.swift */; };
+		EF733C76212F46D900B88880 /* RestuarantScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C75212F46D900B88880 /* RestuarantScheduleTableViewCell.swift */; };
+		EF733C78212F477D00B88880 /* RestuarantAddressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C77212F477D00B88880 /* RestuarantAddressTableViewCell.swift */; };
+		EF733C7A2135B06200B88880 /* Explore+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF733C792135B06100B88880 /* Explore+Models.swift */; };
+		EF733C7C2135F88200B88880 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EF733C7B2135F88200B88880 /* data.json */; };
 		EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA8C8282116605D00F179B9 /* AppDelegate.swift */; };
 		EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82C2116605D00F179B9 /* Main.storyboard */; };
 		EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA8C82F2116605F00F179B9 /* Assets.xcassets */; };
@@ -72,12 +113,27 @@
 		EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */; };
 		EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */; };
 		EFC9AD92211FD07400E41FEA /* RevealSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */; };
+		EFCD82EE212856D100EF2A25 /* TopImageHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82EC212856D100EF2A25 /* TopImageHeaderTableViewCell.swift */; };
+		EFCD82EF212856D100EF2A25 /* TopImageHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82ED212856D100EF2A25 /* TopImageHeaderTableViewCell.xib */; };
+		EFCD82F22128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82F02128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift */; };
+		EFCD82F32128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82F12128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib */; };
+		EFCD82F6212857A400EF2A25 /* PlaceMapTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82F4212857A400EF2A25 /* PlaceMapTableViewCell.swift */; };
+		EFCD82F7212857A400EF2A25 /* PlaceMapTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82F5212857A400EF2A25 /* PlaceMapTableViewCell.xib */; };
+		EFCD82FA212857EE00EF2A25 /* TopExperiencesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82F8212857EE00EF2A25 /* TopExperiencesTableViewCell.swift */; };
+		EFCD82FB212857EE00EF2A25 /* TopExperiencesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82F9212857EE00EF2A25 /* TopExperiencesTableViewCell.xib */; };
+		EFCD82FE212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD82FC212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift */; };
+		EFCD82FF212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD82FD212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib */; };
+		EFCD830221286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD830021286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift */; };
+		EFCD830321286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD830121286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib */; };
+		EFCD830721286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD830521286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift */; };
+		EFCD830821286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFCD830621286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib */; };
+		EFCD830A2128747D00EF2A25 /* ExploreOpenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD83092128747D00EF2A25 /* ExploreOpenTableViewController.swift */; };
+		EFCD830C2128F62800EF2A25 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCD830B2128F62800EF2A25 /* UILabel+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BB5AA9B267CE4D8B9E57B38F /* Pods-TravelistoV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelistoV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2.debug.xcconfig"; sourceTree = "<group>"; };
-		C42EA45687200C73AB7EE5C8 /* Pods-TravelistoV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelistoV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2.release.xcconfig"; sourceTree = "<group>"; };
-		DBB689482D521EFBA9058CBE /* Pods_TravelistoV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelistoV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA827972FA36F54FD88952D /* Pods_TravelistoV2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelistoV2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6332CEB4AF4F7A87D064D1 /* Pods-TravelistoV2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelistoV2.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2.release.xcconfig"; sourceTree = "<group>"; };
 		EF255F7B21173E2B00942F13 /* test2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test2.swift; sourceTree = "<group>"; };
 		EF255F7D21175F1F00942F13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF255F89211BA7F000942F13 /* SF-Pro-Text-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -120,6 +176,14 @@
 		EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		EF255FDF211C4A4100942F13 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		EF255FE1211C6D4700942F13 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		EF3093D9213616E3005F1FA9 /* TravelistoV2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelistoV2-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF3093DA2136BE3D005F1FA9 /* SlideShow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SlideShow.storyboard; sourceTree = "<group>"; };
+		EF3093DC2136FE4C005F1FA9 /* data2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data2.json; sourceTree = "<group>"; };
+		EF3093DE2136FFF9005F1FA9 /* data3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data3.json; sourceTree = "<group>"; };
+		EF3093E021384925005F1FA9 /* amass.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amass.json; sourceTree = "<group>"; };
+		EF3093E421385DE1005F1FA9 /* amass2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amass2.json; sourceTree = "<group>"; };
+		EF3093E6213B117B005F1FA9 /* amass3.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amass3.json; sourceTree = "<group>"; };
+		EF3093E8213EADC3005F1FA9 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		EF3D9229212069DF0012DF97 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 		EF3D922B2120716E0012DF97 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		EF3D922E212235810012DF97 /* FlightsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsTableViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +194,40 @@
 		EF3D923C2122564D0012DF97 /* Trips.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Trips.storyboard; sourceTree = "<group>"; };
 		EF3D923F212257000012DF97 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		EF3D9241212257170012DF97 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		EF66D09421250CD500E3C43C /* TripToTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripToTableViewCell.swift; sourceTree = "<group>"; };
+		EF66D09621250CF900E3C43C /* TripToCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripToCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF66D09821250DC500E3C43C /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		EF66D09B21250F0D00E3C43C /* RelaxationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxationTableViewCell.swift; sourceTree = "<group>"; };
+		EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxationCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenViewController.swift; sourceTree = "<group>"; };
+		EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenTableViewCell.swift; sourceTree = "<group>"; };
+		EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF733C442129F64D00B88880 /* ExploreOpen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExploreOpen.storyboard; sourceTree = "<group>"; };
+		EF733C47212A047600B88880 /* ShowMoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreTableViewController.swift; sourceTree = "<group>"; };
+		EF733C49212A04AF00B88880 /* ShowMoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMoreTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C4A212A04AF00B88880 /* ShowMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowMoreTableViewCell.xib; sourceTree = "<group>"; };
+		EF733C4D212A151B00B88880 /* ShowMore.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowMore.storyboard; sourceTree = "<group>"; };
+		EF733C50212A342200B88880 /* SlideShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowViewController.swift; sourceTree = "<group>"; };
+		EF733C52212A42F800B88880 /* SlideShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShowCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF733C57212AE38C00B88880 /* PlacesOfInterestListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesOfInterestListTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C58212AE38C00B88880 /* PlacesOfInterestListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesOfInterestListTableViewCell.xib; sourceTree = "<group>"; };
+		EF733C5B212B25D600B88880 /* PlacesOfInterestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesOfInterestListViewController.swift; sourceTree = "<group>"; };
+		EF733C5D212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesOfInterestListTwoTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C5E212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesOfInterestListTwoTableViewCell.xib; sourceTree = "<group>"; };
+		EF733C62212E893900B88880 /* POIOpenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIOpenTableViewController.swift; sourceTree = "<group>"; };
+		EF733C65212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIOpenHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C66212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = POIOpenHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		EF733C6B212F36B300B88880 /* RestuarantOpenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantOpenTableViewController.swift; sourceTree = "<group>"; };
+		EF733C6D212F3B7000B88880 /* POIDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C6F212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIRatingReviewTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C71212F41A100B88880 /* RestuarantDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantDetailTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C73212F437E00B88880 /* RestuarantMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantMapTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C75212F46D900B88880 /* RestuarantScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C77212F477D00B88880 /* RestuarantAddressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestuarantAddressTableViewCell.swift; sourceTree = "<group>"; };
+		EF733C792135B06100B88880 /* Explore+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Explore+Models.swift"; sourceTree = "<group>"; };
+		EF733C7B2135F88200B88880 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		EFA8C8252116605D00F179B9 /* TravelistoV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelistoV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA8C8282116605D00F179B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFA8C82D2116605D00F179B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +242,23 @@
 		EFC9AD8A211FCE4700E41FEA /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		EFC9AD8F211FD07400E41FEA /* RevealSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevealSplashViewController.swift; sourceTree = "<group>"; };
 		EFC9AD90211FD07400E41FEA /* RevealSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RevealSplashViewController.xib; sourceTree = "<group>"; };
+		EFCD82EC212856D100EF2A25 /* TopImageHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopImageHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82ED212856D100EF2A25 /* TopImageHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopImageHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82F02128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82F12128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceDescriptionTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82F4212857A400EF2A25 /* PlaceMapTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMapTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82F5212857A400EF2A25 /* PlaceMapTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceMapTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82F8212857EE00EF2A25 /* TopExperiencesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopExperiencesTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82F9212857EE00EF2A25 /* TopExperiencesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopExperiencesTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD82FC212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPlaceListTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD82FD212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalPlaceListTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD830021286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPlaceListCollectionViewCell.swift; sourceTree = "<group>"; };
+		EFCD830121286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalPlaceListCollectionViewCell.xib; sourceTree = "<group>"; };
+		EFCD830521286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationButtonTableViewCell.swift; sourceTree = "<group>"; };
+		EFCD830621286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationButtonTableViewCell.xib; sourceTree = "<group>"; };
+		EFCD83092128747D00EF2A25 /* ExploreOpenTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreOpenTableViewController.swift; sourceTree = "<group>"; };
+		EFCD830B2128F62800EF2A25 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
+		FCF46A20627753EBE52954D8 /* Pods-TravelistoV2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelistoV2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,28 +266,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92298045EE947EB707E84282 /* Pods_TravelistoV2.framework in Frameworks */,
+				6502BE24D7A725BBA28DA25A /* Pods_TravelistoV2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		26750A1F1EB3E885359ADBF2 /* Frameworks */ = {
+		9744FD7E6E99D5CDAFAA49B4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DBB689482D521EFBA9058CBE /* Pods_TravelistoV2.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		285BAA2F186E44D4D5CB6B4E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BB5AA9B267CE4D8B9E57B38F /* Pods-TravelistoV2.debug.xcconfig */,
-				C42EA45687200C73AB7EE5C8 /* Pods-TravelistoV2.release.xcconfig */,
+				FCF46A20627753EBE52954D8 /* Pods-TravelistoV2.debug.xcconfig */,
+				AF6332CEB4AF4F7A87D064D1 /* Pods-TravelistoV2.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		C003B6CF57C747407BD5054C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BA827972FA36F54FD88952D /* Pods_TravelistoV2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EF255F83211B9F3400942F13 /* Resources */ = {
@@ -235,9 +350,13 @@
 			children = (
 				EF255FCE211C226900942F13 /* CustomButton.swift */,
 				EF255FD7211C3AD300942F13 /* CustomTextField.swift */,
-				EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */,
 				EFC9AD81211F9C6500E41FEA /* CustomProgressHud.swift */,
 				EFC9AD83211FB43D00E41FEA /* TravelistoMessages.swift */,
+				EF255FDC211C492700942F13 /* UIViewController+Extensions.swift */,
+				EF66D09F2125463E00E3C43C /* UIImageView+Extensions.swift */,
+				EF66D0A121254FB800E3C43C /* UICollectionViewCell+Extensions.swift */,
+				EFCD830B2128F62800EF2A25 /* UILabel+Extensions.swift */,
+				EF3093E8213EADC3005F1FA9 /* UITableViewCell+Extensions.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -249,6 +368,7 @@
 				EF255FE1211C6D4700942F13 /* AuthService.swift */,
 				EF3D9229212069DF0012DF97 /* Segue.swift */,
 				EF3D922B2120716E0012DF97 /* Storyboard.swift */,
+				EF66D09821250DC500E3C43C /* Cell.swift */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -296,13 +416,119 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		EF66D09321250C4F00E3C43C /* Trip To */ = {
+			isa = PBXGroup;
+			children = (
+				EF66D09421250CD500E3C43C /* TripToTableViewCell.swift */,
+				EF66D09621250CF900E3C43C /* TripToCollectionViewCell.swift */,
+			);
+			path = "Trip To";
+			sourceTree = "<group>";
+		};
+		EF66D09A21250ED200E3C43C /* Relaxation */ = {
+			isa = PBXGroup;
+			children = (
+				EF66D09B21250F0D00E3C43C /* RelaxationTableViewCell.swift */,
+				EF66D09D21250F2C00E3C43C /* RelaxationCollectionViewCell.swift */,
+			);
+			path = Relaxation;
+			sourceTree = "<group>";
+		};
+		EF66D0A3212558AB00E3C43C /* Explore Open */ = {
+			isa = PBXGroup;
+			children = (
+				EF733C442129F64D00B88880 /* ExploreOpen.storyboard */,
+				EFCD83092128747D00EF2A25 /* ExploreOpenTableViewController.swift */,
+				EFCD82D92128522100EF2A25 /* Cells */,
+				EF66D0A4212558E300E3C43C /* ExploreOpenViewController.swift */,
+				EF66D0A62125D96500E3C43C /* ExploreOpenTableViewCell.swift */,
+				EF66D0A821261BB600E3C43C /* ExploreOpenCollectionViewCell.swift */,
+			);
+			path = "Explore Open";
+			sourceTree = "<group>";
+		};
+		EF733C46212A045100B88880 /* Show More */ = {
+			isa = PBXGroup;
+			children = (
+				EF733C4D212A151B00B88880 /* ShowMore.storyboard */,
+				EF733C47212A047600B88880 /* ShowMoreTableViewController.swift */,
+				EF733C4A212A04AF00B88880 /* ShowMoreTableViewCell.xib */,
+				EF733C49212A04AF00B88880 /* ShowMoreTableViewCell.swift */,
+			);
+			path = "Show More";
+			sourceTree = "<group>";
+		};
+		EF733C4F212A245E00B88880 /* Slideshow */ = {
+			isa = PBXGroup;
+			children = (
+				EF3093DA2136BE3D005F1FA9 /* SlideShow.storyboard */,
+				EF733C50212A342200B88880 /* SlideShowViewController.swift */,
+				EF733C52212A42F800B88880 /* SlideShowCollectionViewCell.swift */,
+			);
+			path = Slideshow;
+			sourceTree = "<group>";
+		};
+		EF733C54212AE30200B88880 /* POI Lists */ = {
+			isa = PBXGroup;
+			children = (
+				EF733C5B212B25D600B88880 /* PlacesOfInterestListViewController.swift */,
+				EF733C58212AE38C00B88880 /* PlacesOfInterestListTableViewCell.xib */,
+				EF733C57212AE38C00B88880 /* PlacesOfInterestListTableViewCell.swift */,
+				EF733C5E212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.xib */,
+				EF733C5D212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.swift */,
+				EF733C61212E211F00B88880 /* POI Open */,
+				EF733C69212F367E00B88880 /* Restuarant Open */,
+			);
+			path = "POI Lists";
+			sourceTree = "<group>";
+		};
+		EF733C61212E211F00B88880 /* POI Open */ = {
+			isa = PBXGroup;
+			children = (
+				EF733C62212E893900B88880 /* POIOpenTableViewController.swift */,
+				EF733C64212E894000B88880 /* Cells */,
+			);
+			path = "POI Open";
+			sourceTree = "<group>";
+		};
+		EF733C64212E894000B88880 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF733C6D212F3B7000B88880 /* POIDetailTableViewCell.swift */,
+				EF733C66212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib */,
+				EF733C65212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift */,
+				EF733C6F212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EF733C69212F367E00B88880 /* Restuarant Open */ = {
+			isa = PBXGroup;
+			children = (
+				EF733C6B212F36B300B88880 /* RestuarantOpenTableViewController.swift */,
+				EF733C6A212F369100B88880 /* Cells */,
+			);
+			path = "Restuarant Open";
+			sourceTree = "<group>";
+		};
+		EF733C6A212F369100B88880 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF733C71212F41A100B88880 /* RestuarantDetailTableViewCell.swift */,
+				EF733C73212F437E00B88880 /* RestuarantMapTableViewCell.swift */,
+				EF733C75212F46D900B88880 /* RestuarantScheduleTableViewCell.swift */,
+				EF733C77212F477D00B88880 /* RestuarantAddressTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		EFA8C81C2116605D00F179B9 = {
 			isa = PBXGroup;
 			children = (
 				EFA8C8272116605D00F179B9 /* TravelistoV2 */,
 				EFA8C8262116605D00F179B9 /* Products */,
-				285BAA2F186E44D4D5CB6B4E /* Pods */,
-				26750A1F1EB3E885359ADBF2 /* Frameworks */,
+				9744FD7E6E99D5CDAFAA49B4 /* Pods */,
+				C003B6CF57C747407BD5054C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -325,6 +551,8 @@
 				EF255FDE211C4A2900942F13 /* Create Account */,
 				EF255FC7211BB7A500942F13 /* RevealingSplashVC */,
 				EFC9AD86211FC8BF00E41FEA /* Explore */,
+				EF733C4F212A245E00B88880 /* Slideshow */,
+				EF733C54212AE30200B88880 /* POI Lists */,
 				EF3D922D212235410012DF97 /* Flights */,
 				EF3D9239212253BF0012DF97 /* Trips */,
 				EF3D923E212256E50012DF97 /* Settings */,
@@ -334,6 +562,7 @@
 				EFA8C82F2116605F00F179B9 /* Assets.xcassets */,
 				EF255FC5211BAB9900942F13 /* Colors.xcassets */,
 				EFA8C8312116605F00F179B9 /* LaunchScreen.storyboard */,
+				EF3093D9213616E3005F1FA9 /* TravelistoV2-Bridging-Header.h */,
 				EFA8C8342116605F00F179B9 /* Info.plist */,
 				EF255F7D21175F1F00942F13 /* GoogleService-Info.plist */,
 				EFA8C83C21172C7400F179B9 /* test.swift */,
@@ -348,6 +577,17 @@
 			children = (
 				EF3D9235212252090012DF97 /* Explore.storyboard */,
 				EFC9AD87211FC8F300E41FEA /* ExploreTableViewController.swift */,
+				EF733C792135B06100B88880 /* Explore+Models.swift */,
+				EF733C7B2135F88200B88880 /* data.json */,
+				EF3093DE2136FFF9005F1FA9 /* data3.json */,
+				EF3093DC2136FE4C005F1FA9 /* data2.json */,
+				EF3093E021384925005F1FA9 /* amass.json */,
+				EF3093E421385DE1005F1FA9 /* amass2.json */,
+				EF3093E6213B117B005F1FA9 /* amass3.json */,
+				EF66D09321250C4F00E3C43C /* Trip To */,
+				EF66D09A21250ED200E3C43C /* Relaxation */,
+				EF66D0A3212558AB00E3C43C /* Explore Open */,
+				EF733C46212A045100B88880 /* Show More */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -361,6 +601,35 @@
 			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
+		EFCD82D92128522100EF2A25 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EFCD82ED212856D100EF2A25 /* TopImageHeaderTableViewCell.xib */,
+				EFCD82EC212856D100EF2A25 /* TopImageHeaderTableViewCell.swift */,
+				EFCD82F12128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib */,
+				EFCD82F02128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift */,
+				EFCD82F5212857A400EF2A25 /* PlaceMapTableViewCell.xib */,
+				EFCD82F4212857A400EF2A25 /* PlaceMapTableViewCell.swift */,
+				EFCD82F9212857EE00EF2A25 /* TopExperiencesTableViewCell.xib */,
+				EFCD82F8212857EE00EF2A25 /* TopExperiencesTableViewCell.swift */,
+				EFCD830421286B3C00EF2A25 /* Horizontal Place List */,
+				EFCD830621286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib */,
+				EFCD830521286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EFCD830421286B3C00EF2A25 /* Horizontal Place List */ = {
+			isa = PBXGroup;
+			children = (
+				EFCD82FD212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib */,
+				EFCD82FC212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift */,
+				EFCD830121286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib */,
+				EFCD830021286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift */,
+			);
+			path = "Horizontal Place List";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,11 +637,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFA8C8372116605F00F179B9 /* Build configuration list for PBXNativeTarget "TravelistoV2" */;
 			buildPhases = (
-				AB1891D6859EB3CFC79B7D7B /* [CP] Check Pods Manifest.lock */,
+				801ED5D45E383F92EBFDFF94 /* [CP] Check Pods Manifest.lock */,
 				EFA8C8212116605D00F179B9 /* Sources */,
 				EFA8C8222116605D00F179B9 /* Frameworks */,
 				EFA8C8232116605D00F179B9 /* Resources */,
-				262D9F2F6D753E96C0471677 /* [CP] Embed Pods Frameworks */,
+				6E5D07DE37BCDEB5FE38AE37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,6 +664,7 @@
 				TargetAttributes = {
 					EFA8C8242116605D00F179B9 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -421,36 +691,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF733C4E212A151B00B88880 /* ShowMore.storyboard in Resources */,
+				EFCD82F7212857A400EF2A25 /* PlaceMapTableViewCell.xib in Resources */,
 				EF255FBC211BA7F400942F13 /* SF-Pro-Text-Medium.otf in Resources */,
 				EF3D9234212247F50012DF97 /* TabBarSB.storyboard in Resources */,
 				EF255FB8211BA7F400942F13 /* SF-Pro-Text-Light.otf in Resources */,
 				EF255FB0211BA7F400942F13 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				EFCD830321286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.xib in Resources */,
 				EFA8C8332116605F00F179B9 /* LaunchScreen.storyboard in Resources */,
 				EF255FBD211BA7F400942F13 /* SF-Pro-Display-Light.otf in Resources */,
 				EF255F7E21175F1F00942F13 /* GoogleService-Info.plist in Resources */,
 				EF255FC0211BA7F400942F13 /* SF-Pro-Text-Regular.otf in Resources */,
 				EF255FB2211BA7F400942F13 /* SF-Pro-Display-Black.otf in Resources */,
+				EF733C5A212AE38C00B88880 /* PlacesOfInterestListTableViewCell.xib in Resources */,
 				EF255FB3211BA7F400942F13 /* SF-Pro-Text-RegularItalic.otf in Resources */,
+				EF3093E521385DE1005F1FA9 /* amass2.json in Resources */,
+				EFCD830821286D9E00EF2A25 /* ConfirmationButtonTableViewCell.xib in Resources */,
 				EFA8C8302116605F00F179B9 /* Assets.xcassets in Resources */,
+				EF3093E7213B117B005F1FA9 /* amass3.json in Resources */,
 				EF3D9242212257170012DF97 /* Settings.storyboard in Resources */,
 				EF255FA7211BA7F400942F13 /* SF-Pro-Text-BoldItalic.otf in Resources */,
+				EF733C452129F64D00B88880 /* ExploreOpen.storyboard in Resources */,
 				EF255FAA211BA7F400942F13 /* SF-Pro-Display-RegularItalic.otf in Resources */,
 				EF255FB7211BA7F400942F13 /* SF-Pro-Text-Bold.otf in Resources */,
+				EF3093DB2136BE3D005F1FA9 /* SlideShow.storyboard in Resources */,
 				EF255FAB211BA7F400942F13 /* SF-Pro-Text-HeavyItalic.otf in Resources */,
+				EFCD82FB212857EE00EF2A25 /* TopExperiencesTableViewCell.xib in Resources */,
+				EFCD82F32128574F00EF2A25 /* PlaceDescriptionTableViewCell.xib in Resources */,
 				EF255FAE211BA7F400942F13 /* SF-Pro-Display-BoldItalic.otf in Resources */,
 				EF3D9238212253480012DF97 /* Flights.storyboard in Resources */,
 				EF3D923D2122564D0012DF97 /* Trips.storyboard in Resources */,
 				EF255FAC211BA7F400942F13 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				EFCD82EF212856D100EF2A25 /* TopImageHeaderTableViewCell.xib in Resources */,
 				EFC9AD92211FD07400E41FEA /* RevealSplashViewController.xib in Resources */,
 				EF255FC4211BA7F400942F13 /* SF-Pro-Display-Medium.otf in Resources */,
+				EF733C68212E8ADA00B88880 /* POIOpenHeaderTableViewCell.xib in Resources */,
 				EF255FAD211BA7F400942F13 /* SF-Pro-Text-MediumItalic.otf in Resources */,
+				EF733C7C2135F88200B88880 /* data.json in Resources */,
 				EF255FBA211BA7F400942F13 /* SF-Pro-Display-Bold.otf in Resources */,
 				EF255FB1211BA7F400942F13 /* SF-Pro-Text-LightItalic.otf in Resources */,
+				EF733C60212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.xib in Resources */,
 				EF255FC2211BA7F400942F13 /* SF-Pro-Display-Heavy.otf in Resources */,
 				EF255FB4211BA7F400942F13 /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				EF3093E121384925005F1FA9 /* amass.json in Resources */,
 				EF255FC1211BA7F400942F13 /* SF-Pro-Text-SemiboldItalic.otf in Resources */,
+				EF733C4C212A04AF00B88880 /* ShowMoreTableViewCell.xib in Resources */,
+				EF3093DD2136FE4C005F1FA9 /* data2.json in Resources */,
 				EF255FA8211BA7F400942F13 /* SF-Pro-Display-Regular.otf in Resources */,
 				EF255FC3211BA7F400942F13 /* SF-Pro-Display-Thin.otf in Resources */,
+				EF3093DF2136FFF9005F1FA9 /* data3.json in Resources */,
 				EF255FBF211BA7F400942F13 /* SF-Pro-Text-Semibold.otf in Resources */,
 				EFA8C82E2116605D00F179B9 /* Main.storyboard in Resources */,
 				EF255FB9211BA7F400942F13 /* SF-Pro-Text-Heavy.otf in Resources */,
@@ -462,31 +751,36 @@
 				EF255FBB211BA7F400942F13 /* SF-Pro-Display-Semibold.otf in Resources */,
 				EF255FB5211BA7F400942F13 /* SF-Pro-Display-ThinItalic.otf in Resources */,
 				EF255FB6211BA7F400942F13 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				EFCD82FF212858E800EF2A25 /* HorizontalPlaceListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		262D9F2F6D753E96C0471677 /* [CP] Embed Pods Frameworks */ = {
+		6E5D07DE37BCDEB5FE38AE37 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -496,7 +790,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelistoV2/Pods-TravelistoV2-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AB1891D6859EB3CFC79B7D7B /* [CP] Check Pods Manifest.lock */ = {
+		801ED5D45E383F92EBFDFF94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,29 +815,66 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF733C6C212F36B300B88880 /* RestuarantOpenTableViewController.swift in Sources */,
+				EF66D0A02125463E00E3C43C /* UIImageView+Extensions.swift in Sources */,
+				EF733C74212F437E00B88880 /* RestuarantMapTableViewCell.swift in Sources */,
+				EF66D09C21250F0D00E3C43C /* RelaxationTableViewCell.swift in Sources */,
 				EF255FCA211BBEFB00942F13 /* OnboardingViewController.swift in Sources */,
+				EF733C48212A047600B88880 /* ShowMoreTableViewController.swift in Sources */,
 				EFC9AD82211F9C6500E41FEA /* CustomProgressHud.swift in Sources */,
+				EF733C51212A342200B88880 /* SlideShowViewController.swift in Sources */,
+				EFCD82F6212857A400EF2A25 /* PlaceMapTableViewCell.swift in Sources */,
 				EF3D922F212235810012DF97 /* FlightsTableViewController.swift in Sources */,
+				EF733C5F212B4A0000B88880 /* PlacesOfInterestListTwoTableViewCell.swift in Sources */,
+				EFCD830C2128F62800EF2A25 /* UILabel+Extensions.swift in Sources */,
+				EF733C53212A42F800B88880 /* SlideShowCollectionViewCell.swift in Sources */,
 				EFC9AD8B211FCE4700E41FEA /* TabBarController.swift in Sources */,
+				EFCD82FA212857EE00EF2A25 /* TopExperiencesTableViewCell.swift in Sources */,
+				EF733C78212F477D00B88880 /* RestuarantAddressTableViewCell.swift in Sources */,
+				EFCD830721286D9E00EF2A25 /* ConfirmationButtonTableViewCell.swift in Sources */,
 				EFA8C83D21172C7400F179B9 /* test.swift in Sources */,
+				EFCD82FE212858E800EF2A25 /* HorizontalPlaceListTableViewCell.swift in Sources */,
+				EF66D09921250DC500E3C43C /* Cell.swift in Sources */,
+				EF66D0A221254FB800E3C43C /* UICollectionViewCell+Extensions.swift in Sources */,
+				EF733C63212E893900B88880 /* POIOpenTableViewController.swift in Sources */,
 				EF255FDB211C48F200942F13 /* ResetPasswordViewController.swift in Sources */,
+				EFCD830221286B1F00EF2A25 /* HorizontalPlaceListCollectionViewCell.swift in Sources */,
+				EF733C7A2135B06200B88880 /* Explore+Models.swift in Sources */,
 				EF255FDD211C492700942F13 /* UIViewController+Extensions.swift in Sources */,
+				EFCD830A2128747D00EF2A25 /* ExploreOpenTableViewController.swift in Sources */,
+				EF66D0A5212558E300E3C43C /* ExploreOpenViewController.swift in Sources */,
 				EF255FE0211C4A4100942F13 /* CreateAccountViewController.swift in Sources */,
+				EF66D0A72125D96500E3C43C /* ExploreOpenTableViewCell.swift in Sources */,
 				EFA8C83B21172C6600F179B9 /* key.swift in Sources */,
 				EFC9AD84211FB43D00E41FEA /* TravelistoMessages.swift in Sources */,
 				EF3D923B212253D50012DF97 /* TripsTableViewController.swift in Sources */,
 				EFC9AD88211FC8F300E41FEA /* ExploreTableViewController.swift in Sources */,
 				EF255FD8211C3AD300942F13 /* CustomTextField.swift in Sources */,
 				EF255FCF211C226900942F13 /* CustomButton.swift in Sources */,
+				EF66D0A921261BB600E3C43C /* ExploreOpenCollectionViewCell.swift in Sources */,
+				EF733C5C212B25D600B88880 /* PlacesOfInterestListViewController.swift in Sources */,
+				EF3093E9213EADC3005F1FA9 /* UITableViewCell+Extensions.swift in Sources */,
 				EF255FD4211C2E6C00942F13 /* SignInViewController.swift in Sources */,
+				EFCD82F22128574F00EF2A25 /* PlaceDescriptionTableViewCell.swift in Sources */,
 				EF255F7C21173E2B00942F13 /* test2.swift in Sources */,
 				EFC9AD91211FD07400E41FEA /* RevealSplashViewController.swift in Sources */,
+				EF733C4B212A04AF00B88880 /* ShowMoreTableViewCell.swift in Sources */,
+				EF66D09521250CD500E3C43C /* TripToTableViewCell.swift in Sources */,
 				EF255FCC211BCE7100942F13 /* OnboardingCollectionViewCell.swift in Sources */,
 				EF3D922C2120716E0012DF97 /* Storyboard.swift in Sources */,
+				EF733C67212E8ADA00B88880 /* POIOpenHeaderTableViewCell.swift in Sources */,
+				EF733C6E212F3B7000B88880 /* POIDetailTableViewCell.swift in Sources */,
+				EF733C76212F46D900B88880 /* RestuarantScheduleTableViewCell.swift in Sources */,
+				EF733C72212F41A100B88880 /* RestuarantDetailTableViewCell.swift in Sources */,
 				EFA8C8292116605D00F179B9 /* AppDelegate.swift in Sources */,
+				EF66D09721250CF900E3C43C /* TripToCollectionViewCell.swift in Sources */,
+				EF733C70212F3CDC00B88880 /* POIRatingReviewTableViewCell.swift in Sources */,
 				EF3D922A212069DF0012DF97 /* Segue.swift in Sources */,
 				EF3D9240212257000012DF97 /* SettingsTableViewController.swift in Sources */,
+				EF733C59212AE38C00B88880 /* PlacesOfInterestListTableViewCell.swift in Sources */,
 				EF255FE2211C6D4700942F13 /* AuthService.swift in Sources */,
+				EFCD82EE212856D100EF2A25 /* TopImageHeaderTableViewCell.swift in Sources */,
+				EF66D09E21250F2C00E3C43C /* RelaxationCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,18 +1016,18 @@
 		};
 		EFA8C8382116605F00F179B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB5AA9B267CE4D8B9E57B38F /* Pods-TravelistoV2.debug.xcconfig */;
+			baseConfigurationReference = FCF46A20627753EBE52954D8 /* Pods-TravelistoV2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelistoV2/TravelistoV2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -704,18 +1035,17 @@
 		};
 		EFA8C8392116605F00F179B9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C42EA45687200C73AB7EE5C8 /* Pods-TravelistoV2.release.xcconfig */;
+			baseConfigurationReference = AF6332CEB4AF4F7A87D064D1 /* Pods-TravelistoV2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8V82X98L5Q;
 				INFOPLIST_FILE = TravelistoV2/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.travelistoApp.TravelistoV2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelistoV2/TravelistoV2-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
