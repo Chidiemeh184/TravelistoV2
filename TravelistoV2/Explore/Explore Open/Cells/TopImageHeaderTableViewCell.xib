@@ -38,6 +38,9 @@
                     <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8R-ZE-3SW" userLabel="tintView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="219"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84803082190000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="exploreOpenImage"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BWX-zw-s0f">
                         <rect key="frame" x="16" y="79" width="345" height="62.5"/>

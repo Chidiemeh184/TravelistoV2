@@ -43,6 +43,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Bco-wJ-PXk" kind="show" identifier="exploreOpenToPlacesOfInterest" id="DcW-re-htc"/>
                         <segue destination="Bco-wJ-PXk" kind="show" identifier="exploreToShowMoreRestuarants" id="Tzc-Ae-RGx"/>
@@ -788,7 +791,7 @@ Malang 65115, Indonasia</string>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iZA-TI-uC4"/>
+        <segue reference="dLM-yB-54s"/>
         <segue reference="Tzc-Ae-RGx"/>
     </inferredMetricsTieBreakers>
 </document>

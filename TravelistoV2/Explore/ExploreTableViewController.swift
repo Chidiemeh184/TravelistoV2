@@ -32,11 +32,8 @@ class ExploreTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.hideNav()
         self.loadData()
-       // print(data![0])
         datasource = [data, data2, data3]
-        
     }
     
     @objc
@@ -246,7 +243,6 @@ extension ExploreTableViewController {
             let place = info.0
             let exploreOpenTableViewController = segue.destination as! ExploreOpenTableViewController
             exploreOpenTableViewController.place = place
-
         }else if segue.identifier == Segue.exploreToShowMore {
             let buttonTagIndexPathRow = sender as! Int
             let placesToSend = self.datasource![buttonTagIndexPathRow]

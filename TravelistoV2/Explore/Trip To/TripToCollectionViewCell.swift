@@ -26,7 +26,7 @@ class TripToCollectionViewCell: UICollectionViewCell {
         let image = place.place.images.first // place.place.images.randomElement()
         let url = image?.largeImageURL
         mainTitleLabel.text = place.place.detail.name
-        
+
         placeImageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceHolder"), options: [.continueInBackground]) { (image, error, type, url) in
             if error == nil {
                 let placeImage = image

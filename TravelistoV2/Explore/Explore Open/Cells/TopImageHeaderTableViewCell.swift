@@ -39,6 +39,13 @@ class TopImageHeaderTableViewCell: UITableViewCell {
         let url = image?.largeImageURL
         placeImageView.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "imagePlaceHolder"), options: [.continueInBackground], completed: nil)
         titleCaptionOneLabel.text = placeDetail.detail.name
+        let stars = self.getStarImageRatings(rating: placeDetail.detail.rating)
+        
+        starOneImageView.image = stars[0]
+        starTwoImageView.image = stars[1]
+        starThreeImageView.image = stars[2]
+        starFourImageView.image = stars[3]
+        starFiveImageView.image = stars[4]
     }
     
 }

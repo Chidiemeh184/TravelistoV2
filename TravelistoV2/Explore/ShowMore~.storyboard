@@ -58,16 +58,13 @@
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="travel-11" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-ag-YzX">
                                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
-                                                                <userDefinedRuntimeAttributes>
-                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                                                                </userDefinedRuntimeAttributes>
                                                             </imageView>
-                                                            <view alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-fh-GAm">
+                                                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-fh-GAm">
                                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="224"/>
-                                                                <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.85137521400000005" colorSpace="custom" customColorSpace="sRGB"/>
                                                             </view>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eP5-jq-WV7">
-                                                                <rect key="frame" x="8" y="94" width="318" height="36"/>
+                                                                <rect key="frame" x="8" y="75.5" width="318" height="73"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip to Paris" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmc-zu-VGu">
                                                                         <rect key="frame" x="0.0" y="0.0" width="318" height="36"/>
@@ -79,8 +76,8 @@
                                                                         <nil key="highlightedColor"/>
                                                                         <size key="shadowOffset" width="0.0" height="1"/>
                                                                     </label>
-                                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a journey to the city of Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPM-ZW-5AJ">
-                                                                        <rect key="frame" x="0.0" y="-94" width="318" height="32"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a journey to the city of Love" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPM-ZW-5AJ">
+                                                                        <rect key="frame" x="0.0" y="41" width="318" height="32"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="32" id="u2F-gV-KZg"/>
                                                                         </constraints>
@@ -106,7 +103,6 @@
                                                         <constraint firstAttribute="trailing" secondItem="4ce-ag-YzX" secondAttribute="trailing" id="vvF-DP-xaK"/>
                                                     </constraints>
                                                     <connections>
-                                                        <outlet property="mainTitleLabel" destination="Xmc-zu-VGu" id="Wyv-0V-7BP"/>
                                                         <outlet property="placeImageView" destination="4ce-ag-YzX" id="lbH-rH-vBe"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -183,7 +179,6 @@
                                                         <constraint firstItem="aJA-hk-wmn" firstAttribute="leading" secondItem="dwa-Zt-PGk" secondAttribute="leading" id="kbq-nj-6f0"/>
                                                     </constraints>
                                                     <connections>
-                                                        <outlet property="mainTitleLabel" destination="DCj-5r-gC9" id="309-95-UKa"/>
                                                         <outlet property="placeImageView" destination="aJA-hk-wmn" id="16G-L5-SzM"/>
                                                     </connections>
                                                 </collectionViewCell>
@@ -225,7 +220,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="relaxationCollectionView" destination="YNm-K9-fOZ" id="Ox8-nG-8DO"/>
-                                    <outlet property="relaxationHeaderTitleLabel" destination="EEL-7Y-ghy" id="CnZ-Po-Sgj"/>
                                     <outlet property="showMoreButton" destination="f7Z-2V-kLg" id="w18-M9-6wO"/>
                                 </connections>
                             </tableViewCell>
@@ -242,12 +236,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
-                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="w9j-JP-sQk" kind="show" identifier="exploreToExploreOpen" id="vob-LF-Nma"/>
-                        <segue destination="cgZ-PW-R6i" kind="show" identifier="exploreToShowMore" id="S4z-92-aQZ"/>
+                        <segue destination="zKf-CY-3Fe" kind="show" identifier="exploreToShowMore" id="S4z-92-aQZ"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebh-RY-w6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -303,24 +294,58 @@
                 <viewControllerPlaceholder storyboardName="ExploreOpen" referencedIdentifier="ExploreOpenSB" id="w9j-JP-sQk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PHe-FB-XY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3578" y="1915"/>
+            <point key="canvasLocation" x="3578" y="1896"/>
         </scene>
-        <!--ShowMoreSB-->
-        <scene sceneID="Nlc-Gx-ntO">
+        <!--Relaxation-->
+        <scene sceneID="OYW-dp-fdK">
             <objects>
-                <viewControllerPlaceholder storyboardName="ShowMore" referencedIdentifier="ShowMoreSB" id="cgZ-PW-R6i" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mc0-gv-xU8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="zKf-CY-3Fe" customClass="ShowMoreTableViewController" customModule="TravelistoV2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Yd-JO-6aZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="551"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="scrollIndicatorInsets" minX="68" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <connections>
+                            <outlet property="dataSource" destination="zKf-CY-3Fe" id="9fF-gu-9RQ"/>
+                            <outlet property="delegate" destination="zKf-CY-3Fe" id="qVa-Rj-mYs"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Relaxation" id="QoV-7J-cFi">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="back-24" id="QiD-aP-VyR">
+                            <color key="tintColor" name="TravelistoLightOrange"/>
+                            <connections>
+                                <action selector="backButtonTapped:" destination="zKf-CY-3Fe" id="ASm-Vy-cKF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="FSx-Zv-IA1" kind="show" identifier="showMoreToExploreOpen" id="3pK-Nj-GJZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZH-Az-0Cg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3567" y="2449"/>
+            <point key="canvasLocation" x="3719" y="2528"/>
+        </scene>
+        <!--ExploreOpenSB-->
+        <scene sceneID="6Xj-r0-8if">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExploreOpen" referencedIdentifier="ExploreOpenSB" id="FSx-Zv-IA1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nus-4o-5WY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4694" y="2256"/>
         </scene>
     </scenes>
     <resources>
+        <image name="back-24" width="24" height="24"/>
         <image name="travel-10" width="720" height="480"/>
         <image name="travel-11" width="720" height="480"/>
         <image name="worldglobe-icon" width="21" height="27"/>
         <image name="worldglobe-icon-filled" width="21" height="28"/>
         <namedColor name="TravelistoBlack">
             <color red="0.14117647058823529" green="0.14509803921568629" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TravelistoLightOrange">
+            <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TravelistoLightOrange">
             <color red="0.99215686274509807" green="0.3411764705882353" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
