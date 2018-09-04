@@ -1,5 +1,4 @@
 # TravelistoV2
-Find places of interest. Explore travel destinations. Flights, restaurants and hotels.
 
 
 <p align="center">
